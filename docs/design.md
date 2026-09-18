@@ -83,7 +83,7 @@ Treat this section as the design authority for the product. Use Tailwind + shadc
 
 #### Shell
 
-Masthead: inverted `bg-foreground text-background` band, not sticky. Large stacked AWESOME / JEV wordmark (offset outline via `.wordmark-line`, 4px on-grid), directory subtitle, tagline to the right on large screens. GitHub and language controls sit on the band. Search is a full-width underline field in the main column, with rank tabs beneath it. Source filter (GitHub / X / YouTube) is a left rail on large screens and a left Sheet on small screens — not a floating chip. Search is GitHub-only. Footer: short directory note and launch-post pointer. No third-party logos or decorative marks.
+Masthead: inverted `bg-foreground text-background` band, not sticky. Large stacked AWESOME / JEV wordmark (offset outline via `.wordmark-line`, 4px on-grid), directory subtitle, tagline to the right on large screens. GitHub and language controls sit on the band. Search is a full-width underline field in the main column, with rank tabs beneath it. GitHub also has a cards/list view toggle (Phosphor `SquaresFour` / `List`); list is a ranked table of #, project, stars — no invented activity charts. Source filter (GitHub / X / YouTube) is a left rail on large screens and a left Sheet on small screens — not a floating chip. Search is GitHub-only. Footer: short directory note and launch-post pointer. No third-party logos or decorative marks.
 
 Keep skip-to-content. One `h1`. Source order is reading order.
 

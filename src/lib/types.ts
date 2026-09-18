@@ -46,5 +46,6 @@ export interface DirectoryItem {
 export type FilterType = ItemType
 
 export type GithubSort = 'stars' | 'date' | 'name'
+export type GithubView = 'cards' | 'list'
 export type XSort = 'date' | 'likes'
 export type YoutubeSort = 'date' | 'views'

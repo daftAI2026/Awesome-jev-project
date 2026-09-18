@@ -41,4 +41,9 @@ export const zh: Messages = {
   tweetLikes: '点赞',
   tweetBookmarks: '收藏',
   githubStarRank: '星标第 {rank}',
+  viewLabel: '视图',
+  viewCards: '卡片',
+  viewList: '列表',
+  githubColRank: '#',
+  githubColProject: '项目',
 }

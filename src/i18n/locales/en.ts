@@ -39,6 +39,11 @@ export const en = {
   tweetLikes: 'Likes',
   tweetBookmarks: 'Bookmarks',
   githubStarRank: 'Star rank {rank}',
+  viewLabel: 'View',
+  viewCards: 'Cards',
+  viewList: 'List',
+  githubColRank: '#',
+  githubColProject: 'Project',
 } as const
 
 export type MessageKey = keyof typeof en

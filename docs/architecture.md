@@ -26,6 +26,7 @@ Body
   └── Main
         ├── Search (GitHub only; full-width underline, / to focus)
         ├── Rank tabs (Stars / Date / Name, or Date / Likes / Views)
+        ├── GitHub view toggle (cards / list)
         ├── Section boards
         └── Footer notice
 Mobile

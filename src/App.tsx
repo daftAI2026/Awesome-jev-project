@@ -1,7 +1,14 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import { GithubLogo, Info, List, MagnifyingGlass } from '@phosphor-icons/react'
+import {
+  GithubLogo,
+  Info,
+  List,
+  MagnifyingGlass,
+  SquaresFour,
+} from '@phosphor-icons/react'
 import itemsData from '../data/items.json'
 import xData from '../data/x.json'
+import { GithubList } from '@/components/GithubList'
 import { ItemCard } from '@/components/ItemCard'
 import { ZoneNav } from '@/components/ZoneNav'
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
@@ -34,6 +41,7 @@ import type {
   DirectoryItem,
   FilterType,
   GithubSort,
+  GithubView,
   XSort,
   YoutubeSort,
 } from '@/lib/types'
@@ -56,6 +64,7 @@ const visibleZones: FilterType[] = [
 ]
 
 const GITHUB_SORT_KEY = 'awesome-jev-github-sort'
+const GITHUB_VIEW_KEY = 'awesome-jev-github-view'
 const X_SORT_KEY = 'awesome-jev-x-sort'
 const YOUTUBE_SORT_KEY = 'awesome-jev-youtube-sort'
 const ZONE_KEY = 'awesome-jev-zone'
@@ -68,6 +77,16 @@ function readStoredGithubSort(): GithubSort {
     /* ignore */
   }
   return 'stars'
+}
+
+function readStoredGithubView(): GithubView {
+  try {
+    const v = localStorage.getItem(GITHUB_VIEW_KEY)
+    if (v === 'cards' || v === 'list') return v
+  } catch {
+    /* ignore */
+  }
+  return 'cards'
 }
 
 function readStoredXSort(): XSort {
@@ -104,6 +123,7 @@ export default function App() {
   const { locale, setLocale, t } = useI18n()
   const [query, setQuery] = useState('')
   const [githubSort, setGithubSort] = useState<GithubSort>(readStoredGithubSort)
+  const [githubView, setGithubView] = useState<GithubView>(readStoredGithubView)
   const [xSort, setXSort] = useState<XSort>(readStoredXSort)
   const [youtubeSort, setYoutubeSort] = useState<YoutubeSort>(
     readStoredYoutubeSort,
@@ -119,6 +139,14 @@ export default function App() {
       /* ignore */
     }
   }, [githubSort])
+
+  useEffect(() => {
+    try {
+      localStorage.setItem(GITHUB_VIEW_KEY, githubView)
+    } catch {
+      /* ignore */
+    }
+  }, [githubView])
 
   useEffect(() => {
     try {
@@ -433,6 +461,26 @@ export default function App() {
                   <ToggleGroupItem value="name">{t('sortName')}</ToggleGroupItem>
                 </ToggleGroup>
               )}
+              {githubSearching ? (
+                <ToggleGroup
+                  value={[githubView]}
+                  onValueChange={(vals) => {
+                    const next = vals[0]
+                    if (next === 'cards' || next === 'list') setGithubView(next)
+                  }}
+                  variant="outline"
+                  size="sm"
+                  aria-label={t('viewLabel')}
+                  className="ml-auto rounded-lg"
+                >
+                  <ToggleGroupItem value="cards" aria-label={t('viewCards')}>
+                    <SquaresFour className="size-3.5" weight="fill" />
+                  </ToggleGroupItem>
+                  <ToggleGroupItem value="list" aria-label={t('viewList')}>
+                    <List className="size-3.5" weight="fill" />
+                  </ToggleGroupItem>
+                </ToggleGroup>
+              ) : null}
             </div>
           </div>
 
@@ -470,6 +518,8 @@ export default function App() {
                         </li>
                       ))}
                     </ul>
+                  ) : githubView === 'list' ? (
+                    <GithubList items={section.items} ranks={githubRanks} />
                   ) : (
                     <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
                       {section.items.map((item) => (
