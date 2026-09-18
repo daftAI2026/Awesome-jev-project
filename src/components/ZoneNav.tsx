@@ -3,13 +3,11 @@ import { Button } from '@/components/ui/button'
 import { useI18n } from '@/i18n'
 import type { FilterType } from '@/lib/types'
 
-const ZONE_LABEL: Record<FilterType, 'zoneAll' | 'zoneGithub' | 'zoneX' | 'zoneYoutube'> =
-  {
-    all: 'zoneAll',
-    github: 'zoneGithub',
-    x: 'zoneX',
-    youtube: 'zoneYoutube',
-  }
+const ZONE_LABEL: Record<FilterType, 'zoneGithub' | 'zoneX' | 'zoneYoutube'> = {
+  github: 'zoneGithub',
+  x: 'zoneX',
+  youtube: 'zoneYoutube',
+}
 
 export function ZoneNav({
   zone,

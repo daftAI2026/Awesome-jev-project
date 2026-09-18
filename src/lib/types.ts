@@ -32,7 +32,7 @@ export interface DirectoryItem {
   sourceMeta: SourceMeta
 }
 
-export type FilterType = 'all' | ItemType
+export type FilterType = ItemType
 
 export type GithubSort = 'stars' | 'date' | 'name'
 export type XSort = 'date' | 'likes'

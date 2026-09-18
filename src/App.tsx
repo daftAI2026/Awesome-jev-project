@@ -31,7 +31,6 @@ import type {
   DirectoryItem,
   FilterType,
   GithubSort,
-  ItemType,
   XSort,
   YoutubeSort,
 } from '@/lib/types'
@@ -42,13 +41,11 @@ const items = [
 ]
 const githubProjectCount = countGithubProjects(items)
 const zoneCounts: Record<FilterType, number> = {
-  all: items.length,
   github: countByType(items, 'github'),
   x: countByType(items, 'x'),
   youtube: countByType(items, 'youtube'),
 }
 const visibleZones: FilterType[] = [
-  'all',
   'github',
   'x',
   ...(zoneCounts.youtube > 0 ? (['youtube'] as const) : []),
@@ -92,11 +89,11 @@ function readStoredYoutubeSort(): YoutubeSort {
 function readStoredZone(): FilterType {
   try {
     const v = localStorage.getItem(ZONE_KEY)
-    if (v === 'all' || v === 'github' || v === 'x' || v === 'youtube') return v
+    if (v === 'github' || v === 'x' || v === 'youtube') return v
   } catch {
     /* ignore */
   }
-  return 'all'
+  return 'github'
 }
 
 function RankTab({
@@ -172,6 +169,7 @@ export default function App() {
 
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
+      if (zone !== 'github') return
       if (event.key !== '/' || event.metaKey || event.ctrlKey || event.altKey) {
         return
       }
@@ -190,7 +188,7 @@ export default function App() {
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
-  }, [])
+  }, [zone])
 
   const onZoneChange = useCallback((next: FilterType) => {
     setZone(next)
@@ -200,59 +198,33 @@ export default function App() {
   const socialZone = zone === 'x'
   const youtubeZone = zone === 'youtube'
 
-  const matched = useMemo(
-    () => searchItems(items, query, zone, []),
-    [query, zone],
-  )
+  const matched = useMemo(() => {
+    if (zone === 'github') {
+      return searchItems(items, query, 'github', [])
+    }
+    return items.filter((item) => item.type === zone)
+  }, [query, zone])
 
   const sections = useMemo(() => {
-    const sectionIds: ItemType[] =
-      zone === 'all'
-        ? visibleZones.filter((id): id is ItemType => id !== 'all')
-        : [zone]
-    const defs: { id: ItemType; title: string }[] = sectionIds.map((id) => ({
-      id,
-      title:
-        id === 'github'
-          ? t('sectionGithub')
-          : id === 'x'
-            ? t('sectionX')
-            : t('sectionYoutube'),
-    }))
-    return defs
-      .map((section) => {
-        let sectionItems = matched.filter((item) => item.type === section.id)
-        if (section.id === 'github') {
-          sectionItems = sortGithubItems(sectionItems, githubSort)
-        } else if (section.id === 'youtube') {
-          if (zone === 'all') {
-            if (githubSort === 'stars') {
-              sectionItems = sortYoutubeItems(sectionItems, 'views')
-            } else if (githubSort === 'name') {
-              sectionItems = sortGithubItems(sectionItems, 'name')
-            } else {
-              sectionItems = sortYoutubeItems(sectionItems, 'date')
-            }
-          } else {
-            sectionItems = sortYoutubeItems(sectionItems, youtubeSort)
-          }
-        } else if (zone === 'all') {
-          if (githubSort === 'stars') {
-            sectionItems = sortXItems(sectionItems, 'likes')
-          } else if (githubSort === 'name') {
-            sectionItems = sortGithubItems(sectionItems, 'name')
-          } else {
-            sectionItems = sortXItems(sectionItems, 'date')
-          }
-        } else {
-          sectionItems = sortXItems(sectionItems, xSort)
-        }
-        return { ...section, items: sectionItems }
-      })
-      .filter((section) => section.items.length > 0 || !query.trim())
-  }, [matched, query, zone, githubSort, xSort, youtubeSort, t])
+    const title =
+      zone === 'github'
+        ? t('sectionGithub')
+        : zone === 'x'
+          ? t('sectionX')
+          : t('sectionYoutube')
+    let sectionItems = matched
+    if (zone === 'github') {
+      sectionItems = sortGithubItems(sectionItems, githubSort)
+    } else if (zone === 'youtube') {
+      sectionItems = sortYoutubeItems(sectionItems, youtubeSort)
+    } else {
+      sectionItems = sortXItems(sectionItems, xSort)
+    }
+    return [{ id: zone, title, items: sectionItems }]
+  }, [matched, zone, githubSort, xSort, youtubeSort, t])
 
-  const hasQuery = query.trim().length > 0
+  const githubSearching = zone === 'github'
+  const hasQuery = githubSearching && query.trim().length > 0
   const totalMatched = matched.length
   const resultLabel =
     totalMatched === 1
@@ -334,35 +306,42 @@ export default function App() {
           </p>
 
           <div className="mb-6">
-            <div className="relative">
-              <MagnifyingGlass
-                className="pointer-events-none absolute top-1/2 left-0 size-4 -translate-y-1/2 text-muted-foreground"
-                weight="regular"
-                aria-hidden
-              />
-              <label htmlFor="directory-search" className="sr-only">
-                {t('searchLabel')}
-              </label>
-              <Input
-                ref={searchRef}
-                id="directory-search"
-                type="search"
-                value={query}
-                onChange={(e) => setQuery(e.target.value)}
-                placeholder={t('searchPlaceholder')}
-                autoComplete="off"
-                className="h-12 rounded-none border-0 border-b border-border bg-transparent px-8 py-3 text-base shadow-none focus-visible:border-foreground focus-visible:ring-0 md:text-sm dark:bg-transparent"
-              />
-              <kbd
-                className="pointer-events-none absolute inset-y-0 right-0 hidden items-center sm:flex"
-                title={t('searchHint')}
-              >
-                <span className="rounded-lg border border-border px-2 py-1 font-mono text-xs text-muted-foreground">
-                  /
-                </span>
-              </kbd>
-            </div>
-            <div className="mt-4 flex flex-wrap items-center gap-4">
+            {githubSearching && (
+              <div className="relative">
+                <MagnifyingGlass
+                  className="pointer-events-none absolute top-1/2 left-0 size-4 -translate-y-1/2 text-muted-foreground"
+                  weight="regular"
+                  aria-hidden
+                />
+                <label htmlFor="directory-search" className="sr-only">
+                  {t('searchLabel')}
+                </label>
+                <Input
+                  ref={searchRef}
+                  id="directory-search"
+                  type="search"
+                  value={query}
+                  onChange={(e) => setQuery(e.target.value)}
+                  placeholder={t('searchPlaceholder')}
+                  autoComplete="off"
+                  className="h-12 rounded-none border-0 border-b border-border bg-transparent px-8 py-3 text-base shadow-none focus-visible:border-foreground focus-visible:ring-0 md:text-sm dark:bg-transparent"
+                />
+                <kbd
+                  className="pointer-events-none absolute inset-y-0 right-0 hidden items-center sm:flex"
+                  title={t('searchHint')}
+                >
+                  <span className="rounded-lg border border-border px-2 py-1 font-mono text-xs text-muted-foreground">
+                    /
+                  </span>
+                </kbd>
+              </div>
+            )}
+            <div
+              className={cn(
+                'flex flex-wrap items-center gap-4',
+                githubSearching && 'mt-4',
+              )}
+            >
               <Sheet open={zoneOpen} onOpenChange={setZoneOpen}>
                 <SheetTrigger
                   render={
@@ -375,13 +354,11 @@ export default function App() {
                   }
                 >
                   <List className="size-4" weight="regular" aria-hidden />
-                  {zone === 'all'
-                    ? t('zoneAll')
-                    : zone === 'github'
-                      ? t('zoneGithub')
-                      : zone === 'x'
-                        ? t('zoneX')
-                        : t('zoneYoutube')}
+                  {zone === 'github'
+                    ? t('zoneGithub')
+                    : zone === 'x'
+                      ? t('zoneX')
+                      : t('zoneYoutube')}
                 </SheetTrigger>
                 <SheetContent side="left" className="w-72 p-0">
                   <SheetHeader>

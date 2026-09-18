@@ -25,8 +25,7 @@ export function searchItems(
   filter: FilterType,
   activeTags: string[],
 ): DirectoryItem[] {
-  const typed =
-    filter === 'all' ? items : items.filter((item) => item.type === filter)
+  const typed = items.filter((item) => item.type === filter)
 
   const tagged =
     activeTags.length === 0

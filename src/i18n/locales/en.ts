@@ -2,7 +2,7 @@ export const en = {
   githubCount: '{count} GitHub projects indexed',
   tagline:
     "Curated GitHub projects, X posts, and YouTube explainers about TypeSafe AI's System One model Jev — typed decisions, SDKs, demos, integrations.",
-  searchPlaceholder: 'Search…',
+  searchPlaceholder: 'Search GitHub…',
   searchLabel: 'Search',
   skipToContent: 'Skip to content',
   openGithub: 'Open source on GitHub',
@@ -11,7 +11,6 @@ export const en = {
   sectionX: 'X Posts',
   sectionYoutube: 'YouTube',
   zoneLabel: 'Source',
-  zoneAll: 'All',
   zoneGithub: 'GitHub',
   zoneX: 'X',
   zoneYoutube: 'YouTube',

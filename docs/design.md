@@ -83,7 +83,7 @@ Treat this section as the design authority for the product. Use Tailwind + shadc
 
 #### Shell
 
-Sticky header: product title, source link, language toggle. Search is a full-width underline field in the main column, with rank tabs beneath it. Source filter (All / GitHub / X, plus YouTube when videos exist) is a left rail on large screens and a left Sheet on small screens — not a floating chip. Footer: short directory note and launch-post pointer. No third-party logos or decorative marks.
+Sticky header: product title, source link, language toggle. Search is a full-width underline field in the main column, with rank tabs beneath it. Source filter (GitHub / X / YouTube) is a left rail on large screens and a left Sheet on small screens — not a floating chip. Search is GitHub-only. Footer: short directory note and launch-post pointer. No third-party logos or decorative marks.
 
 Keep skip-to-content. One `h1`. Source order is reading order.
 
