@@ -49,7 +49,8 @@ interface SourceMeta {
   handle?: string | null
   likes?: number | null
   date?: string | null
-  mediaUrls?: string[] | null  // first URL used as tweet card image
+  mediaUrls?: string[] | null  // first URL used as tweet card image / video poster
+  videoUrls?: string[] | null  // remote mp4 URLs; first plays in the card
   avatarUrl?: string | null    // optional profile image
 }
 ```
@@ -67,7 +68,8 @@ interface SourceMeta {
 - `handle` — `@user` or `user` (UI normalizes `@`)
 - `date` — ISO or short display string (YYYY-MM-DD preferred for sorting)
 - `likes` — engagement count
-- **`mediaUrls`** — remote image URLs from the post; the UI shows the **first** image inside the social / video card. Never commit binary media into this repo.
+- **`mediaUrls`** — remote image URLs from the post; the UI shows the **first** image inside the social card (or as the `<video poster>`). Never commit binary media into this repo.
+- **`videoUrls`** — remote mp4 URLs from the post; the UI plays the **first** with native `<video controls playsInline preload="metadata">`. No autoplay.
 - **`avatarUrl`** — optional; reserved for future avatar chrome
 - YouTube rows use `type: "youtube"`, `sourceMeta.videoId`, `sourceMeta.views`, and a watch URL. Thumbnail is the first `mediaUrls` entry or `https://i.ytimg.com/vi/{videoId}/hqdefault.jpg`.
 

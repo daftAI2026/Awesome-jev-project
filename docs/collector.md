@@ -17,13 +17,13 @@ Intended cadence: **weekday sync** (Mon–Fri) — pull new GitHub finds and hig
 Each collected row must match the [`DirectoryItem`](data-model.md) schema:
 
 - GitHub → `type: "github"` with `sourceMeta.repo`, `stars`, `forks`, `openIssues`, `language`, …
-- X → append to `data/x.json`, `type: "x"`, with `sourceMeta.handle`, `date`, `likes`, and optionally `mediaUrls` / `avatarUrl`. Do **not** add `tags`.
+- X → append to `data/x.json`, `type: "x"`, with `sourceMeta.handle`, `date`, `likes`, and optionally `mediaUrls` / `videoUrls` / `avatarUrl`. Do **not** add `tags`. Prefer original posts, not reply threads.
 
 Rules:
 
 - Real URLs only (no invented tweet ids, no `PLACEHOLDER`).
 - Prefer posts/repos that clearly mention TypeSafe, System One, or Jev.
-- Links only — do not download or commit media binaries; store remote `mediaUrls`.
+- Links only — do not download or commit media binaries; store remote `mediaUrls` and `videoUrls`.
 
 ## How the site consumes it
 

@@ -11,8 +11,10 @@ export interface SourceMeta {
   likes?: number | null
   date?: string | null
   repo?: string | null
-  /** X / YouTube: remote preview image URLs (first used as card image). */
+  /** X / YouTube: remote preview image URLs (first used as card image / video poster). */
   mediaUrls?: string[] | null
+  /** X: remote mp4 URLs from the post; the UI plays the first inside the card. */
+  videoUrls?: string[] | null
   /** Optional profile avatar URL (X or GitHub). */
   avatarUrl?: string | null
   /** YouTube: watch id `xxxxxxxxxxx`. */
