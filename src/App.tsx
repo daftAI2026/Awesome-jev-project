@@ -293,8 +293,14 @@ export default function App() {
 
       <div className="mx-auto w-full max-w-6xl px-4 py-8 sm:px-8 lg:py-10">
         <AsciiWordmark />
-        <p className="mt-8 max-w-3xl text-xl leading-tight tracking-tight text-muted-foreground sm:text-2xl">
-          {t('tagline')}
+        <p className="mt-8 text-center text-xl leading-snug tracking-tight text-muted-foreground sm:text-2xl">
+          {t('tagline')
+            .split('\n')
+            .map((line) => (
+              <span key={line} className="block">
+                {line}
+              </span>
+            ))}
         </p>
       </div>
 
