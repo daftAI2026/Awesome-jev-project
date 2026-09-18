@@ -19,17 +19,22 @@ Design stays monochrome / restrained: no decorative gradients. See [design.md](d
 ## Information architecture
 
 ```
-Header
-  ├── Title + GitHub (ghost icon Button)
-  └── Search (top-right on sm+)
-Main
-  ├── Section: GitHub 开源  → restrained Card grid
-  └── Section: X 动态       → compact tweet-style Cards
-Footer
-  └── Links-only notice (Alert)
+Sticky header
+  └── Title + GitHub + language
+Body
+  ├── Aside (lg+): source nav — All / GitHub / X / TikTok
+  └── Main
+        ├── Search (full-width underline, / to focus)
+        ├── Rank tabs (Stars / Date / Name, or Date / Likes)
+        ├── Section boards
+        └── Footer notice
+Mobile
+  └── Source nav in a left Sheet (not a floating chip)
 ```
 
-- **Search** lives in the header (top-right on wider viewports). Query filters all boards via Fuse.js (`src/lib/search.ts`).
+- **Search** is a full-width underline field in the main column (skills.sh pattern). Query filters all boards via Fuse.js (`src/lib/search.ts`).
+- **Rank** sits under search as underline tabs, not per-section toggles.
+- **Source filter** is a left rail on large screens; below `lg` it opens a shadcn Sheet from the left.
 - **Section boards** are type-scoped lists (`github` / `x` / `tiktok`). Empty sections show “No items yet.”
 - Cards link out (`target="_blank"`) to the original GitHub repo or X post — this site does not host media.
 
