@@ -1,6 +1,7 @@
 import type { Messages } from './en'
 
 export const zh: Messages = {
+  githubCount: '已收录 {count} 个 GitHub 项目',
   tagline:
     '精选 GitHub 项目与 X 动态：TypeSafe AI 的 System One 模型 Jev（类型化决策、SDK、演示与集成）。',
   searchPlaceholder: '搜索…',

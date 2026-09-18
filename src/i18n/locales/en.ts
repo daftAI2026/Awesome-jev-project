@@ -1,4 +1,5 @@
 export const en = {
+  githubCount: '{count} GitHub projects indexed',
   tagline:
     "Curated GitHub projects and X posts about TypeSafe AI's System One model Jev — typed decisions, SDKs, demos, integrations.",
   searchPlaceholder: 'Search…',

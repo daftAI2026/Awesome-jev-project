@@ -8,6 +8,7 @@ import { Input } from '@/components/ui/input'
 import { Separator } from '@/components/ui/separator'
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group'
 import { useI18n } from '@/i18n'
+import { countGithubProjects } from '@/lib/counts'
 import { searchItems } from '@/lib/search'
 import { sortGithubItems, sortXItems } from '@/lib/sort'
 import type {
@@ -19,6 +20,7 @@ import type {
 } from '@/lib/types'
 
 const items = itemsData as DirectoryItem[]
+const githubProjectCount = countGithubProjects(items)
 
 const GITHUB_SORT_KEY = 'awesome-jev-github-sort'
 const X_SORT_KEY = 'awesome-jev-x-sort'
@@ -151,7 +153,7 @@ export default function App() {
 
       <header className="mb-10 flex flex-col gap-4 sm:mb-12 sm:flex-row sm:items-center sm:justify-between sm:gap-8">
         <div className="min-w-0">
-          <div className="flex items-center gap-2.5">
+          <div className="flex items-center gap-2">
             <h1 className="text-[1.375rem] font-semibold leading-tight tracking-tight text-foreground sm:text-[1.5rem]">
               Awesome JEV
             </h1>
@@ -172,7 +174,7 @@ export default function App() {
               <GithubLogo className="size-4" weight="regular" aria-hidden />
             </Button>
             <div
-              className="ml-1 flex items-center gap-0.5"
+              className="ml-1 flex items-center gap-1"
               role="group"
               aria-label={t('languageToggle')}
             >
@@ -196,6 +198,9 @@ export default function App() {
           </div>
           <p className="mt-1 text-sm leading-relaxed text-muted-foreground sm:text-sm">
             {t('tagline')}
+          </p>
+          <p className="mt-1 text-xs text-muted-foreground">
+            {t('githubCount', { count: githubProjectCount })}
           </p>
         </div>
 
