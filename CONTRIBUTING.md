@@ -28,6 +28,8 @@ Prefer editing those files (or letting the collector merge into them) over hand-
 
 Do not invent fake tweet URLs. If you lack a real `url`, skip the item. Never commit `PLACEHOLDER` entries.
 
+To score harvested rows with Jev, copy `.env.example` to `.env.local`, set `TYPESAFE_API_KEY`, and run `npm run score:sources`. Never commit the key or put it in client code. See [`docs/collector.md`](docs/collector.md).
+
 ## Theme
 
 **In scope:** TypeSafe AI, System One models, **Jev**, official/community SDKs, agent skills, browser & computer-use demos, MCP connectors, routers, awesome-lists, and high-signal discussion with outbound links (e.g. typesafe.ai, GitHub, docs).

@@ -34,6 +34,21 @@ Rules:
 
 There is no runtime live API yet; the footer Alert notes that live sync is future work. Until then, weekday collector commits are the refresh path.
 
+## Score sources with Jev
+
+After a harvest, the collector can ask TypeSafe Jev whether each row belongs on the board. This is **offline / script-only**. The static site never calls TypeSafe and must never receive the API key.
+
+1. Copy [`.env.example`](../.env.example) to `.env.local` (gitignored).
+2. Put `TYPESAFE_API_KEY=` in that file. Mint a key at [console.typesafe.ai/settings/keys](https://console.typesafe.ai/settings/keys). Do not paste the key into chat, git, or client code.
+3. Run `npm run score:sources`. Useful flags: `--limit=20`, `--only=x`, `--dry-run`, `--force`.
+
+Jev answers two independent questions on the same state (`title`, `summary`, `url`, `type`, `handle` / `repo`):
+
+- **Noul `about`** → `sourceMeta.jevAbout` (probability the row is about TypeSafe Jev / System One). Noul has no separate confidence field.
+- **Choice `keep`** → `sourceMeta.jevKeep` (`keep` | `review` | `drop`) and `sourceMeta.jevKeepConfidence`.
+
+Code owns thresholds. The script writes scores; it does not delete rows. A later pass can drop `jevKeep=drop` when `jevKeepConfidence` is high and `jevAbout` is low, after those cutoffs are checked on this corpus.
+
 ## Status / TODO
 
 Seed includes official TypeSafe SDKs/skills, community demos (browser-use Jev Ultrafast, openjev, jevlike, …), MCP/routers, and linked X posts. First incremental TypeSafe sync can upsert from GitHub search + X after this seed lands on `main`.

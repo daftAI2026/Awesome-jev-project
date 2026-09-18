@@ -24,6 +24,12 @@ export interface SourceMeta {
   videoId?: string | null
   /** YouTube: view count. */
   views?: number | null
+  /** Collector: Jev noul P(this row is about TypeSafe Jev). */
+  jevAbout?: number | null
+  /** Collector: Jev choice for keeping the row on the board. */
+  jevKeep?: 'keep' | 'review' | 'drop' | null
+  /** Collector: confidence of `jevKeep` (Choice confidence, 0–1). */
+  jevKeepConfidence?: number | null
 }
 
 export interface DirectoryItem {

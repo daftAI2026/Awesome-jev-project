@@ -76,6 +76,7 @@ interface SourceMeta {
 - **`videoUrls`** — remote mp4 URLs from the post; the UI plays the **first** with native `<video controls playsInline preload="metadata">`. No autoplay.
 - **`avatarUrl`** — X profile image in the card header
 - YouTube rows use `type: "youtube"`, `sourceMeta.videoId`, `sourceMeta.views`, and a watch URL. Thumbnail is the first `mediaUrls` entry or `https://i.ytimg.com/vi/{videoId}/hqdefault.jpg`.
+- **`jevAbout` / `jevKeep` / `jevKeepConfidence`** — optional collector scores from TypeSafe Jev. Written by `npm run score:sources`, never invented by hand. Not shown on cards until a later pass.
 
 ### Collector note
 
