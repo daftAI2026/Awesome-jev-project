@@ -2,6 +2,7 @@ export const en = {
   githubCount: '{count} GitHub projects indexed',
   tagline:
     "Curated GitHub projects, X posts, and YouTube explainers about TypeSafe AI's System One model Jev — typed decisions, SDKs, demos, integrations.",
+  mastheadSub: 'TypeSafe System One directory',
   searchPlaceholder: 'Search GitHub…',
   searchLabel: 'Search',
   skipToContent: 'Skip to content',

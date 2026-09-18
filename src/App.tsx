@@ -214,12 +214,9 @@ export default function App() {
         {t('skipToContent')}
       </a>
 
-      <header className="sticky top-0 z-50 border-b border-border bg-background">
-        <div className="mx-auto flex h-14 w-full max-w-6xl items-center justify-between gap-4 px-4 sm:px-8">
-          <div className="flex min-w-0 flex-1 items-center gap-2">
-            <h1 className="truncate text-lg font-medium tracking-tight text-foreground">
-              Awesome JEV
-            </h1>
+      <header className="bg-foreground text-background">
+        <div className="mx-auto w-full max-w-6xl px-4 sm:px-8">
+          <div className="flex h-14 items-center justify-end gap-2">
             <Button
               variant="ghost"
               size="icon-sm"
@@ -232,39 +229,74 @@ export default function App() {
                 />
               }
               aria-label={t('openGithub')}
-              className="text-muted-foreground"
+              className="text-background hover:bg-background/10 hover:text-background"
             >
               <GithubLogo className="size-4" weight="fill" aria-hidden />
             </Button>
+            <div
+              className="flex shrink-0 items-center gap-2"
+              role="group"
+              aria-label={t('languageToggle')}
+            >
+              <Button
+                variant={locale === 'zh' ? 'secondary' : 'outline'}
+                size="sm"
+                onClick={() => setLocale('zh')}
+                aria-pressed={locale === 'zh'}
+                className={
+                  locale === 'zh'
+                    ? undefined
+                    : 'border-background/40 bg-transparent text-background hover:bg-background/10 hover:text-background'
+                }
+              >
+                中文
+              </Button>
+              <Button
+                variant={locale === 'en' ? 'secondary' : 'outline'}
+                size="sm"
+                onClick={() => setLocale('en')}
+                aria-pressed={locale === 'en'}
+                className={
+                  locale === 'en'
+                    ? undefined
+                    : 'border-background/40 bg-transparent text-background hover:bg-background/10 hover:text-background'
+                }
+              >
+                EN
+              </Button>
+            </div>
           </div>
-          <div
-            className="flex shrink-0 items-center gap-2"
-            role="group"
-            aria-label={t('languageToggle')}
-          >
-            <Button
-              variant={locale === 'zh' ? 'secondary' : 'outline'}
-              size="sm"
-              onClick={() => setLocale('zh')}
-              aria-pressed={locale === 'zh'}
-            >
-              中文
-            </Button>
-            <Button
-              variant={locale === 'en' ? 'secondary' : 'outline'}
-              size="sm"
-              onClick={() => setLocale('en')}
-              aria-pressed={locale === 'en'}
-            >
-              EN
-            </Button>
+          <div className="grid gap-8 pb-16 pt-4 lg:grid-cols-[minmax(0,1fr)_minmax(16rem,20rem)] lg:items-end lg:gap-16 lg:pb-24">
+            <div className="min-w-0">
+              <h1 className="font-semibold tracking-tighter text-background">
+                <span className="sr-only">Awesome JEV</span>
+                <span aria-hidden="true" className="block">
+                  <span
+                    className="wordmark-line text-4xl sm:text-5xl"
+                    data-text="AWESOME"
+                  >
+                    AWESOME
+                  </span>
+                  <span
+                    className="wordmark-line mt-2 text-7xl sm:text-8xl lg:text-9xl"
+                    data-text="JEV"
+                  >
+                    JEV
+                  </span>
+                </span>
+              </h1>
+              <p className="mt-4 text-sm text-background/60">{t('mastheadSub')}</p>
+            </div>
+            <p className="max-w-md text-base leading-relaxed text-background/70 lg:justify-self-end">
+              {t('tagline')}
+            </p>
           </div>
         </div>
       </header>
 
       <div className="mx-auto grid w-full max-w-6xl flex-1 grid-cols-1 gap-8 px-4 py-8 sm:px-8 lg:grid-cols-[12rem_minmax(0,1fr)] lg:gap-10 lg:py-10">
         <aside className="hidden lg:block">
-          <div className="sticky top-24">
+          <div className="sticky top-4">
             <ZoneNav
               zone={zone}
               zones={visibleZones}
@@ -275,10 +307,6 @@ export default function App() {
         </aside>
 
         <div className="min-w-0">
-          <p className="mb-6 text-sm leading-relaxed text-muted-foreground">
-            {t('tagline')}
-          </p>
-
           <div className="mb-6">
             {githubSearching && (
               <div className="relative">
