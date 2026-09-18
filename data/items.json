@@ -8560,5 +8560,26 @@
       "jevKeep": "review",
       "jevKeepConfidence": 0.15
     }
+  },
+  {
+    "id": "gh-kylemclaren-jevql",
+    "type": "github",
+    "title": "jevql",
+    "summary": "psql-shaped CLI and Go/TypeScript/Python SDKs that add jev(), jev_prob, jev_choice, and jev_score to queries against vanilla Postgres with no extension: plain SQL runs on the server, surviving rows are judged by Jev in batches, and the client applies the filter, sort, or group.",
+    "tags": [
+      "postgres",
+      "sql",
+      "cli",
+      "sdk"
+    ],
+    "url": "https://github.com/kylemclaren/jevql",
+    "sourceMeta": {
+      "stars": 0,
+      "forks": 0,
+      "openIssues": 3,
+      "language": "Go",
+      "author": "kylemclaren",
+      "repo": "kylemclaren/jevql"
+    }
   }
 ]
