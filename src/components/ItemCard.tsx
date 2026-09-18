@@ -43,34 +43,34 @@ function GithubCard({ item }: ItemCardProps) {
     >
       <Card size="sm" className="h-full transition-colors hover:bg-muted/60">
         <CardHeader>
-          <CardTitle className="flex items-start justify-between gap-2 text-[15px] tracking-tight group-hover:underline group-hover:underline-offset-2">
-            <span className="flex min-w-0 items-start gap-1.5">
+          <CardTitle className="flex items-start justify-between gap-2 text-sm tracking-tight group-hover:underline group-hover:underline-offset-2">
+            <span className="flex min-w-0 items-start gap-2">
               <GithubLogo
-                className="mt-0.5 size-3.5 shrink-0 text-muted-foreground"
+                className="mt-1 size-3.5 shrink-0 text-muted-foreground"
                 weight="regular"
                 aria-hidden
               />
               <span className="min-w-0">{item.title}</span>
             </span>
             <ArrowSquareOut
-              className="mt-0.5 size-3.5 shrink-0 text-muted-foreground opacity-0 transition-opacity group-hover:opacity-100"
+              className="mt-1 size-3.5 shrink-0 text-muted-foreground opacity-0 transition-opacity group-hover:opacity-100"
               weight="regular"
               aria-hidden
             />
           </CardTitle>
-          <CardDescription className="text-[14px] leading-relaxed">
+          <CardDescription className="text-sm leading-relaxed">
             {item.summary}
           </CardDescription>
         </CardHeader>
         {(metaBits.length > 0 || hasMetrics || item.tags.length > 0) && (
           <CardContent className="mt-auto space-y-2">
             {metaBits.length > 0 && (
-              <p className="font-mono text-[12px] tabular-nums leading-relaxed text-muted-foreground">
+              <p className="font-mono text-xs tabular-nums leading-relaxed text-muted-foreground">
                 {metaBits.join(' · ')}
               </p>
             )}
             {hasMetrics && (
-              <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[12px] tabular-nums text-muted-foreground">
+              <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs tabular-nums text-muted-foreground">
                 {meta.stars != null && (
                   <span className="inline-flex items-center gap-1">
                     <Star className="size-3 shrink-0" weight="regular" aria-hidden />
@@ -92,7 +92,7 @@ function GithubCard({ item }: ItemCardProps) {
               </div>
             )}
             {item.tags.length > 0 && (
-              <div className="flex flex-wrap gap-1.5">
+              <div className="flex flex-wrap gap-2">
                 {item.tags.map((tag) => (
                   <Badge key={tag} variant="outline" className="font-normal">
                     {tag}
@@ -131,7 +131,7 @@ function SocialCard({ item }: ItemCardProps) {
         className="overflow-hidden transition-colors hover:bg-muted/60"
       >
         <CardHeader className="pb-0">
-          <div className="flex items-center gap-2 text-[12px] text-muted-foreground">
+          <div className="flex items-center gap-2 text-xs text-muted-foreground">
             {handle && (
               <span className="font-medium text-foreground">{handle}</span>
             )}
@@ -163,7 +163,7 @@ function SocialCard({ item }: ItemCardProps) {
           </div>
         </CardHeader>
         <CardContent className="space-y-3 pt-2">
-          <p className="text-[14px] leading-relaxed text-foreground whitespace-pre-wrap">
+          <p className="text-sm leading-relaxed text-foreground whitespace-pre-wrap">
             {body}
           </p>
           {preview && (
@@ -177,7 +177,7 @@ function SocialCard({ item }: ItemCardProps) {
             </div>
           )}
           {item.tags.length > 0 && (
-            <div className="flex flex-wrap gap-1.5">
+            <div className="flex flex-wrap gap-2">
               {item.tags.map((tag) => (
                 <Badge key={tag} variant="outline" className="font-normal">
                   {tag}

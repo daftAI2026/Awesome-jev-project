@@ -144,7 +144,7 @@ export default function App() {
       : t('resultCountPlural', { count: totalMatched })
 
   return (
-    <div className="mx-auto flex min-h-dvh w-full max-w-6xl flex-col px-5 pb-20 pt-8 sm:px-8 sm:pt-10">
+    <div className="mx-auto flex min-h-dvh w-full max-w-6xl flex-col px-4 pb-20 pt-8 sm:px-8 sm:pt-10">
       <a href="#main" className="skip-link sr-only">
         {t('skipToContent')}
       </a>
@@ -194,7 +194,7 @@ export default function App() {
               </Button>
             </div>
           </div>
-          <p className="mt-1 text-[13px] leading-relaxed text-muted-foreground sm:text-[14px]">
+          <p className="mt-1 text-sm leading-relaxed text-muted-foreground sm:text-sm">
             {t('tagline')}
           </p>
         </div>
@@ -210,7 +210,7 @@ export default function App() {
             onChange={(e) => setQuery(e.target.value)}
             placeholder={t('searchPlaceholder')}
             autoComplete="off"
-            className="h-9 text-[13px]"
+            className="h-9 text-sm"
           />
           <ToggleGroup
             value={[zone]}
@@ -237,29 +237,29 @@ export default function App() {
       </header>
 
       {hasQuery && (
-        <p className="mb-6 text-[13px] text-muted-foreground tabular-nums">
+        <p className="mb-6 text-sm text-muted-foreground tabular-nums">
           {resultLabel}
         </p>
       )}
 
-      <main id="main" className="flex-1 space-y-14" tabIndex={-1}>
+      <main id="main" className="flex-1 space-y-12" tabIndex={-1}>
         {hasQuery && totalMatched === 0 ? (
-          <p className="py-10 text-[15px] text-muted-foreground">
+          <p className="py-10 text-sm text-muted-foreground">
             {t('emptySearch')}
           </p>
         ) : (
           sections.map((section, index) => (
             <section key={section.id} aria-labelledby={`section-${section.id}`}>
               {index > 0 && <Separator className="mb-10" />}
-              <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
+              <div className="mb-6 flex flex-wrap items-center justify-between gap-3">
                 <div className="flex min-w-0 items-baseline gap-3">
                   <h2
                     id={`section-${section.id}`}
-                    className="text-[15px] font-medium tracking-tight text-foreground"
+                    className="text-sm font-medium tracking-tight text-foreground"
                   >
                     {section.title}
                   </h2>
-                  <span className="text-[12px] tabular-nums text-muted-foreground">
+                  <span className="text-xs tabular-nums text-muted-foreground">
                     {section.items.length}
                   </span>
                 </div>
@@ -295,7 +295,7 @@ export default function App() {
               </div>
 
               {section.items.length === 0 ? (
-                <p className="text-[14px] text-muted-foreground">
+                <p className="text-sm text-muted-foreground">
                   {t('emptySection')}
                 </p>
               ) : section.id === 'x' || section.id === 'tiktok' ? (
