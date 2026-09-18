@@ -216,6 +216,27 @@
     }
   },
   {
+    "id": "gh-valentynkit-awesome-jev-typesafe",
+    "type": "github",
+    "title": "awesome-jev-typesafe",
+    "summary": "CC0, awesome-lint clean list of Jev projects sorted by what you would install, with a short section on the model's limits up top.",
+    "tags": [
+      "jev",
+      "awesome",
+      "awesome-lists",
+      "typesafe"
+    ],
+    "url": "https://github.com/valentynkit/awesome-jev-typesafe",
+    "sourceMeta": {
+      "stars": 7,
+      "forks": 3,
+      "openIssues": 0,
+      "language": null,
+      "author": "valentynkit",
+      "repo": "valentynkit/awesome-jev-typesafe"
+    }
+  },
+  {
     "id": "gh-fhshaik-typesafe-mario",
     "type": "github",
     "title": "typesafe-mario",
