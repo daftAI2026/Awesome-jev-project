@@ -2,6 +2,7 @@ import {
   createContext,
   useCallback,
   useContext,
+  useEffect,
   useMemo,
   useState,
   type ReactNode,
@@ -60,6 +61,22 @@ export function I18nProvider({ children }: { children: ReactNode }) {
     },
     [locale],
   )
+
+  useEffect(() => {
+    const title = catalogs[locale].documentTitle
+    const description = catalogs[locale].documentDescription
+    document.title = title
+    document.documentElement.lang = locale === 'zh' ? 'zh-CN' : 'en'
+    const setMeta = (selector: string, content: string) => {
+      const el = document.querySelector(selector)
+      if (el) el.setAttribute('content', content)
+    }
+    setMeta('meta[name="description"]', description)
+    setMeta('meta[property="og:title"]', title)
+    setMeta('meta[property="og:description"]', description)
+    setMeta('meta[name="twitter:title"]', title)
+    setMeta('meta[name="twitter:description"]', description)
+  }, [locale])
 
   const value = useMemo(
     () => ({ locale, setLocale, t }),

@@ -2,8 +2,11 @@ import type { Messages } from './en'
 
 export const zh: Messages = {
   githubCount: '已收录 {count} 个 GitHub 项目',
+  documentTitle: 'Awesome JEV · TypeSafe Jev 免费 AI 目录',
+  documentDescription:
+    'TypeSafe Jev / System One 的免费 AI 精选目录：GitHub 项目、X 动态与 YouTube 讲解。',
   tagline:
-    'TypeSafe Jev / System One 的精选目录：GitHub 项目、X 动态与 YouTube 讲解。',
+    'TypeSafe Jev / System One 的免费 AI 精选目录：GitHub 项目、X 动态与 YouTube 讲解。',
   searchPlaceholder: '搜索 GitHub…',
   searchLabel: '搜索',
   skipToContent: '跳到主要内容',
