@@ -243,12 +243,12 @@ export default function App() {
         {t('skipToContent')}
       </a>
 
-      <header className="sticky top-0 z-50 border-b border-border bg-background">
-        <div className="mx-auto flex h-14 w-full max-w-6xl items-center justify-between gap-4 px-4 sm:px-8">
+      <header className="sticky top-0 z-50 bg-background">
+        <div className="flex h-14 w-full items-center justify-between gap-3 px-4">
           <h1 className="truncate text-lg font-medium tracking-tight text-foreground">
             Awesome JEV
           </h1>
-          <div className="flex shrink-0 items-center gap-2">
+          <div className="flex shrink-0 items-center gap-3">
             <Button
               variant="ghost"
               size="icon-sm"
@@ -291,19 +291,16 @@ export default function App() {
         </div>
       </header>
 
-      <div className="mx-auto w-full max-w-6xl px-4 py-8 sm:px-8 lg:py-10">
-        <AsciiWordmark />
-        <div className="mt-8 max-w-xl">
-          <p className="text-sm font-medium tracking-tight text-foreground">
-            {t('mastheadSub')}
-          </p>
-          <p className="mt-2 text-xl leading-tight tracking-tight text-muted-foreground sm:text-2xl lg:text-3xl">
+      <div className="mx-auto w-full max-w-6xl px-4 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
+        <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] lg:gap-14">
+          <AsciiWordmark />
+          <p className="text-center text-xl leading-tight tracking-tight text-balance text-muted-foreground sm:text-2xl lg:text-left lg:text-3xl">
             {t('tagline')}
           </p>
         </div>
       </div>
 
-      <div className="mx-auto grid w-full max-w-6xl flex-1 grid-cols-1 gap-8 px-4 pb-8 sm:px-8 lg:grid-cols-[12rem_minmax(0,1fr)] lg:gap-10 lg:pb-10">
+      <div className="mx-auto grid w-full max-w-6xl flex-1 grid-cols-1 gap-8 px-4 pb-8 sm:px-6 lg:grid-cols-[12rem_minmax(0,1fr)] lg:gap-10 lg:px-8 lg:pb-10">
         <aside className="hidden lg:block">
           <div className="sticky top-16">
             <ZoneNav

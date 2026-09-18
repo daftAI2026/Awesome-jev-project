@@ -3,8 +3,7 @@ import type { Messages } from './en'
 export const zh: Messages = {
   githubCount: '已收录 {count} 个 GitHub 项目',
   tagline:
-    '精选 GitHub 项目、X 动态与 YouTube 讲解：TypeSafe AI 的 System One 模型 Jev（类型化决策、SDK、演示与集成）。',
-  mastheadSub: 'TypeSafe System One 目录',
+    'TypeSafe Jev / System One 的精选目录：GitHub 项目、X 动态与 YouTube 讲解。',
   searchPlaceholder: '搜索 GitHub…',
   searchLabel: '搜索',
   skipToContent: '跳到主要内容',

@@ -19,10 +19,10 @@ Design stays monochrome / restrained: no decorative gradients. See [design.md](d
 ## Information architecture
 
 ```
-Sticky header
+Sticky header (full viewport, no divider)
   └── Title + GitHub + language
 Hero
-  └── ASCII wordmark + tagline
+  └── ASCII wordmark (scale to column) + tagline (stacked on small, beside on lg)
 Body
   ├── Aside (lg+): source nav — GitHub / X / YouTube
   └── Main

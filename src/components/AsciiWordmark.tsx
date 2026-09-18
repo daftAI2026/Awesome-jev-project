@@ -1,3 +1,4 @@
+import { useLayoutEffect, useRef } from 'react'
 import bannerSrc from '../../scripts/awesome-jev-banner.txt?raw'
 
 const banner = bannerSrc
@@ -6,12 +7,37 @@ const banner = bannerSrc
   .join('\n')
 
 export function AsciiWordmark() {
+  const wrapRef = useRef<HTMLDivElement>(null)
+  const preRef = useRef<HTMLPreElement>(null)
+
+  useLayoutEffect(() => {
+    const wrap = wrapRef.current
+    const pre = preRef.current
+    if (!wrap || !pre) return
+
+    const fit = () => {
+      pre.style.fontSize = '16px'
+      const width = wrap.clientWidth
+      const natural = pre.scrollWidth
+      if (width <= 0 || natural <= 0) return
+      pre.style.fontSize = `${Math.max(4, (16 * width) / natural)}px`
+    }
+
+    fit()
+    const ro = new ResizeObserver(fit)
+    ro.observe(wrap)
+    return () => ro.disconnect()
+  }, [])
+
   return (
-    <pre
-      aria-hidden="true"
-      className="overflow-x-auto font-mono text-xs leading-tight tracking-tight whitespace-pre text-foreground lg:text-sm"
-    >
-      {banner}
-    </pre>
+    <div ref={wrapRef} className="min-w-0 w-full">
+      <pre
+        ref={preRef}
+        aria-hidden="true"
+        className="overflow-hidden font-mono leading-tight tracking-tight whitespace-pre text-foreground select-none"
+      >
+        {banner}
+      </pre>
+    </div>
   )
 }
