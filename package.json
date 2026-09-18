@@ -9,7 +9,7 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "deploy": "npm run build && wrangler deploy",
-    "generate:og": "node scripts/generate-og.mjs"
+    "generate:og": "node --experimental-strip-types scripts/generate-og.ts"
   },
   "dependencies": {
     "@base-ui/react": "^1.8.0",

@@ -7,18 +7,24 @@ import { readFileSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
+interface DirectoryRow {
+  type?: string
+}
+
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
-const items = JSON.parse(readFileSync(join(root, 'data/items.json'), 'utf8'))
+const items = JSON.parse(
+  readFileSync(join(root, 'data/items.json'), 'utf8'),
+) as DirectoryRow[]
 const github = items.reduce((n, it) => n + (it.type === 'github' ? 1 : 0), 0)
 const banner = readFileSync(join(root, 'scripts/awesome-jev-banner.txt'), 'utf8')
   .split(/\n/)
   .filter((ln, i, arr) => ln.trim().length > 0 || i < arr.length - 1)
   .filter((ln) => ln.trim().length > 0)
 
-const esc = (s) =>
+const esc = (s: string) =>
   s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
 
-const lines = []
+const lines: string[] = []
 lines.push('<?xml version="1.0" encoding="UTF-8"?>')
 lines.push(
   '<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">',
@@ -47,8 +53,22 @@ writeFileSync(join(root, 'public/og.svg'), lines.join('\n') + '\n')
 console.log(`og.svg written · ${github} GitHub projects`)
 try {
   const { execFileSync } = await import('node:child_process')
-  execFileSync('rsvg-convert', ['-w', '1200', '-h', '630', join(root, 'public/og.svg'), '-o', join(root, 'public/og.png')], { stdio: 'inherit' })
+  execFileSync(
+    'rsvg-convert',
+    [
+      '-w',
+      '1200',
+      '-h',
+      '630',
+      join(root, 'public/og.svg'),
+      '-o',
+      join(root, 'public/og.png'),
+    ],
+    { stdio: 'inherit' },
+  )
   console.log('og.png written via rsvg-convert')
 } catch {
-  console.log('rsvg-convert unavailable; public/og.svg is the source of truth — keep an existing og.png or install librsvg')
+  console.log(
+    'rsvg-convert unavailable; public/og.svg is the source of truth — keep an existing og.png or install librsvg',
+  )
 }
