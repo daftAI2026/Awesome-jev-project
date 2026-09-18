@@ -7,6 +7,7 @@ import {
   Play,
   Star,
 } from '@phosphor-icons/react'
+import { cn } from 'cn'
 import type { DirectoryItem } from '@/lib/types'
 import { TweetBody } from '@/components/TweetBody'
 import { Badge } from '@/components/ui/badge'
@@ -210,10 +211,13 @@ function YoutubeCard({ item }: ItemCardProps) {
     >
       <Card
         size="sm"
-        className="overflow-hidden transition-colors hover:bg-muted/60"
+        className={cn(
+          'overflow-hidden transition-colors hover:bg-muted/60',
+          preview && 'pt-0',
+        )}
       >
         {preview && (
-          <div className="relative overflow-hidden border-b border-border bg-muted">
+          <div className="relative overflow-hidden bg-muted">
             <img
               src={preview}
               alt=""
