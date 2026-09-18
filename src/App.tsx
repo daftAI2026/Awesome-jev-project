@@ -316,7 +316,7 @@ export default function App() {
               <div className="relative">
                 <MagnifyingGlass
                   className="pointer-events-none absolute top-1/2 left-0 size-4 -translate-y-1/2 text-muted-foreground"
-                  weight="fill"
+                  weight="regular"
                   aria-hidden
                 />
                 <label htmlFor="directory-search" className="sr-only">
