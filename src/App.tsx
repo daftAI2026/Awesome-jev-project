@@ -330,7 +330,7 @@ export default function App() {
                   onChange={(e) => setQuery(e.target.value)}
                   placeholder={t('searchPlaceholder')}
                   autoComplete="off"
-                  className="h-12 rounded-none border-0 border-b border-border bg-transparent px-8 py-3 text-base shadow-none focus-visible:border-foreground focus-visible:ring-0 md:text-sm dark:bg-transparent"
+                  className="h-12 rounded-none border-0 border-b border-border bg-transparent px-8 py-3 text-base shadow-none appearance-none focus-visible:border-foreground focus-visible:ring-0 md:text-sm dark:bg-transparent [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-decoration]:hidden [&::-webkit-search-results-button]:hidden"
                 />
                 <kbd
                   className="pointer-events-none absolute inset-y-0 right-0 hidden items-center sm:flex"
