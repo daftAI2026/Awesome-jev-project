@@ -23,7 +23,12 @@ import {
 import { useI18n } from '@/i18n'
 import { countByType, countGithubProjects } from '@/lib/counts'
 import { searchItems } from '@/lib/search'
-import { sortGithubItems, sortXItems, sortYoutubeItems } from '@/lib/sort'
+import {
+  githubStarRanks,
+  sortGithubItems,
+  sortXItems,
+  sortYoutubeItems,
+} from '@/lib/sort'
 import { cn } from 'cn'
 import type {
   DirectoryItem,
@@ -38,6 +43,7 @@ const items = [
   ...(xData as DirectoryItem[]),
 ]
 const githubProjectCount = countGithubProjects(items)
+const githubRanks = githubStarRanks(items)
 const zoneCounts: Record<FilterType, number> = {
   github: countByType(items, 'github'),
   x: countByType(items, 'x'),
@@ -440,7 +446,10 @@ export default function App() {
                     <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
                       {section.items.map((item) => (
                         <li key={item.id} className="min-w-0">
-                          <ItemCard item={item} />
+                          <ItemCard
+                            item={item}
+                            rank={githubRanks.get(item.id)}
+                          />
                         </li>
                       ))}
                     </ul>

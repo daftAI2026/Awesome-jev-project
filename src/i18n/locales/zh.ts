@@ -39,4 +39,5 @@ export const zh: Messages = {
   tweetReposts: '转发',
   tweetLikes: '点赞',
   tweetBookmarks: '收藏',
+  githubStarRank: '星标第 {rank}',
 }

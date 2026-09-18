@@ -1,6 +1,5 @@
 import type { ReactNode } from 'react'
 import {
-  ArrowSquareOut,
   Bookmark,
   Bug,
   ChatCircle,
@@ -18,6 +17,7 @@ import { useI18n } from '@/i18n'
 import { Badge } from '@/components/ui/badge'
 import {
   Card,
+  CardAction,
   CardContent,
   CardDescription,
   CardHeader,
@@ -26,6 +26,7 @@ import {
 
 interface ItemCardProps {
   item: DirectoryItem
+  rank?: number
 }
 
 function formatCount(n: number): string {
@@ -60,7 +61,8 @@ function TweetStat({
   )
 }
 
-function GithubCard({ item }: ItemCardProps) {
+function GithubCard({ item, rank }: ItemCardProps) {
+  const { t } = useI18n()
   const meta = item.sourceMeta
   const metaBits: string[] = []
 
@@ -79,24 +81,28 @@ function GithubCard({ item }: ItemCardProps) {
     >
       <Card size="sm" className="h-full transition-colors hover:bg-muted/60">
         <CardHeader>
-          <CardTitle className="flex items-start justify-between gap-2 text-sm tracking-tight group-hover:underline group-hover:underline-offset-2">
-            <span className="flex min-w-0 items-start gap-2">
-              <GithubLogo
-                className="mt-1 size-3.5 shrink-0 text-muted-foreground"
-                weight="fill"
-                aria-hidden
-              />
-              <span className="min-w-0">{item.title}</span>
-            </span>
-            <ArrowSquareOut
-              className="mt-1 size-3.5 shrink-0 text-muted-foreground opacity-0 transition-opacity group-hover:opacity-100"
+          <CardTitle className="flex min-w-0 items-start gap-2 text-sm tracking-tight group-hover:underline group-hover:underline-offset-2">
+            <GithubLogo
+              className="mt-1 size-3.5 shrink-0 text-muted-foreground"
               weight="fill"
               aria-hidden
             />
+            <span className="min-w-0">{item.title}</span>
           </CardTitle>
           <CardDescription className="text-sm leading-relaxed">
             {item.summary}
           </CardDescription>
+          {rank != null ? (
+            <CardAction>
+              <Badge
+                variant="outline"
+                className="rounded-lg font-mono font-normal tabular-nums text-muted-foreground"
+                aria-label={t('githubStarRank', { rank })}
+              >
+                {rank}
+              </Badge>
+            </CardAction>
+          ) : null}
         </CardHeader>
         {(metaBits.length > 0 || hasMetrics || (item.tags ?? []).length > 0) && (
           <CardContent className="mt-auto space-y-2">
@@ -338,12 +344,12 @@ function YoutubeCard({ item }: ItemCardProps) {
   )
 }
 
-export function ItemCard({ item }: ItemCardProps) {
+export function ItemCard({ item, rank }: ItemCardProps) {
   if (item.type === 'x') {
     return <XCard item={item} />
   }
   if (item.type === 'youtube') {
     return <YoutubeCard item={item} />
   }
-  return <GithubCard item={item} />
+  return <GithubCard item={item} rank={rank} />
 }

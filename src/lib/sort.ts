@@ -11,6 +11,25 @@ function dateKey(item: DirectoryItem): string | null {
   return String(d).slice(0, 10)
 }
 
+/** 1-based star rank among GitHub rows. Ties break by title, then id. */
+export function githubStarRanks(items: DirectoryItem[]): Map<string, number> {
+  const github = items.filter((item) => item.type === 'github')
+  github.sort((a, b) => {
+    const stars = numOrZero(b.sourceMeta.stars) - numOrZero(a.sourceMeta.stars)
+    if (stars !== 0) return stars
+    const name = a.title.localeCompare(b.title, undefined, {
+      sensitivity: 'base',
+    })
+    if (name !== 0) return name
+    return a.id.localeCompare(b.id)
+  })
+  const ranks = new Map<string, number>()
+  github.forEach((item, i) => {
+    ranks.set(item.id, i + 1)
+  })
+  return ranks
+}
+
 export function sortGithubItems(
   items: DirectoryItem[],
   sort: GithubSort,
