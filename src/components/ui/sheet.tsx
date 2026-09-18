@@ -69,7 +69,7 @@ function SheetContent({
               />
             }
           >
-            <X weight="regular" aria-hidden />
+            <X weight="fill" aria-hidden />
             <span className="sr-only">Close</span>
           </SheetPrimitive.Close>
         )}

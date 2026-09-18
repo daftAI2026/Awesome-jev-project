@@ -257,7 +257,7 @@ export default function App() {
               aria-label={t('openGithub')}
               className="text-muted-foreground"
             >
-              <GithubLogo className="size-4" weight="regular" aria-hidden />
+              <GithubLogo className="size-4" weight="fill" aria-hidden />
             </Button>
           </div>
           <div
@@ -288,9 +288,6 @@ export default function App() {
       <div className="mx-auto grid w-full max-w-6xl flex-1 grid-cols-1 gap-8 px-4 py-8 sm:px-8 lg:grid-cols-[12rem_minmax(0,1fr)] lg:gap-10 lg:py-10">
         <aside className="hidden lg:block">
           <div className="sticky top-24">
-            <p className="mb-3 px-3 text-xs text-muted-foreground">
-              {t('zoneLabel')}
-            </p>
             <ZoneNav
               zone={zone}
               zones={visibleZones}
@@ -310,7 +307,7 @@ export default function App() {
               <div className="relative">
                 <MagnifyingGlass
                   className="pointer-events-none absolute top-1/2 left-0 size-4 -translate-y-1/2 text-muted-foreground"
-                  weight="regular"
+                  weight="fill"
                   aria-hidden
                 />
                 <label htmlFor="directory-search" className="sr-only">
@@ -353,7 +350,7 @@ export default function App() {
                     />
                   }
                 >
-                  <List className="size-4" weight="regular" aria-hidden />
+                  <List className="size-4" weight="fill" aria-hidden />
                   {zone === 'github'
                     ? t('zoneGithub')
                     : zone === 'x'
@@ -361,7 +358,7 @@ export default function App() {
                       : t('zoneYoutube')}
                 </SheetTrigger>
                 <SheetContent side="left" className="w-72 p-0">
-                  <SheetHeader>
+                  <SheetHeader className="sr-only">
                     <SheetTitle>{t('zoneLabel')}</SheetTitle>
                   </SheetHeader>
                   <div className="px-4 pb-4">
@@ -456,17 +453,9 @@ export default function App() {
                   aria-labelledby={`section-${section.id}`}
                 >
                   {index > 0 && <Separator className="mb-10" />}
-                  <div className="mb-6 flex min-w-0 items-baseline gap-3">
-                    <h2
-                      id={`section-${section.id}`}
-                      className="text-sm font-medium tracking-tight text-foreground"
-                    >
-                      {section.title}
-                    </h2>
-                    <span className="text-xs tabular-nums text-muted-foreground">
-                      {section.items.length}
-                    </span>
-                  </div>
+                  <h2 id={`section-${section.id}`} className="sr-only">
+                    {section.title}
+                  </h2>
 
                   {section.items.length === 0 ? (
                     <p className="text-sm text-muted-foreground">
@@ -499,7 +488,7 @@ export default function App() {
       <footer className="mx-auto w-full max-w-6xl px-4 pt-8 pb-20 sm:px-8">
         <Separator className="mb-8" />
         <Alert>
-          <Info weight="regular" aria-hidden />
+          <Info weight="fill" aria-hidden />
           <AlertTitle>{t('footerTitle')}</AlertTitle>
           <AlertDescription>{t('footerDescription')}</AlertDescription>
         </Alert>

@@ -50,14 +50,14 @@ function GithubCard({ item }: ItemCardProps) {
             <span className="flex min-w-0 items-start gap-2">
               <GithubLogo
                 className="mt-1 size-3.5 shrink-0 text-muted-foreground"
-                weight="regular"
+                weight="fill"
                 aria-hidden
               />
               <span className="min-w-0">{item.title}</span>
             </span>
             <ArrowSquareOut
               className="mt-1 size-3.5 shrink-0 text-muted-foreground opacity-0 transition-opacity group-hover:opacity-100"
-              weight="regular"
+              weight="fill"
               aria-hidden
             />
           </CardTitle>
@@ -76,19 +76,19 @@ function GithubCard({ item }: ItemCardProps) {
               <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs tabular-nums text-muted-foreground">
                 {meta.stars != null && (
                   <span className="inline-flex items-center gap-1">
-                    <Star className="size-3 shrink-0" weight="regular" aria-hidden />
+                    <Star className="size-3 shrink-0" weight="fill" aria-hidden />
                     {formatCount(meta.stars)}
                   </span>
                 )}
                 {meta.forks != null && (
                   <span className="inline-flex items-center gap-1">
-                    <GitFork className="size-3 shrink-0" weight="regular" aria-hidden />
+                    <GitFork className="size-3 shrink-0" weight="fill" aria-hidden />
                     {formatCount(meta.forks)}
                   </span>
                 )}
                 {meta.openIssues != null && (
                   <span className="inline-flex items-center gap-1">
-                    <Bug className="size-3 shrink-0" weight="regular" aria-hidden />
+                    <Bug className="size-3 shrink-0" weight="fill" aria-hidden />
                     {formatCount(meta.openIssues)}
                   </span>
                 )}
@@ -155,7 +155,7 @@ function SocialCard({ item }: ItemCardProps) {
               <span className="inline-flex items-center gap-1 font-mono tabular-nums">
                 <Heart
                   className="size-3 shrink-0"
-                  weight="regular"
+                  weight="fill"
                   aria-hidden
                 />
                 {meta.likes.toLocaleString()}
