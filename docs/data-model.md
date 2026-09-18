@@ -1,6 +1,11 @@
 # Data model
 
-Canonical store: [`data/items.json`](../data/items.json) — a JSON array of `DirectoryItem`.
+Canonical stores:
+
+- [`data/items.json`](../data/items.json) — GitHub projects and YouTube explainers
+- [`data/x.json`](../data/x.json) — X posts (no tags)
+
+The site concatenates both arrays at build time.
 
 Types live in [`src/lib/types.ts`](../src/lib/types.ts).
 
@@ -12,7 +17,7 @@ interface DirectoryItem {
   type: 'github' | 'x' | 'youtube'
   title: string
   summary: string
-  tags: string[]
+  tags?: string[]
   url: string
   sourceMeta: SourceMeta
 }
@@ -23,8 +28,8 @@ interface DirectoryItem {
 | `id` | Stable unique key for React lists and collector upserts |
 | `type` | Board + card style |
 | `title` | Display title (repo name / short headline) — **not** translated by the UI |
-| `summary` | Description; for X this is usually the post text — **not** translated by the UI |
-| `tags` | Free-form tokens for Fuse search |
+| `summary` | Description; for X this is the post text — **not** translated by the UI |
+| `tags` | GitHub / YouTube only. X posts omit tags. |
 | `url` | Outbound link (repo page or original tweet) |
 | `sourceMeta` | Type-specific metadata |
 
@@ -68,7 +73,7 @@ interface SourceMeta {
 
 ### Collector note
 
-When upserting GitHub rows, include `forks` and `openIssues` alongside `stars` whenever the API provides them. Leave existing X rows (`type: "x"`) untouched unless updating that post.
+When upserting GitHub rows, include `forks` and `openIssues` alongside `stars` whenever the API provides them. Upsert X posts into `data/x.json` (never `items.json`), without `tags`. URLs and `@mentions` in `summary` are parsed into links in the tweet card.
 
 ## UI sort (client-only)
 
@@ -84,4 +89,4 @@ Missing numeric fields sort as `0`; missing dates sort last.
 
 ## Consumption
 
-`App.tsx` imports `data/items.json`, casts to `DirectoryItem[]`, filters by `type` into section boards, applies user sort after search, and passes each item to `ItemCard`.
+`App.tsx` imports `data/items.json` and `data/x.json`, concatenates them, filters by `type` into section boards, applies user sort after search, and passes each item to `ItemCard`.

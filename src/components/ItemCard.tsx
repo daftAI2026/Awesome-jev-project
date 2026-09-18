@@ -8,6 +8,7 @@ import {
   Star,
 } from '@phosphor-icons/react'
 import type { DirectoryItem } from '@/lib/types'
+import { TweetBody } from '@/components/TweetBody'
 import { Badge } from '@/components/ui/badge'
 import {
   Card,
@@ -63,7 +64,7 @@ function GithubCard({ item }: ItemCardProps) {
             {item.summary}
           </CardDescription>
         </CardHeader>
-        {(metaBits.length > 0 || hasMetrics || item.tags.length > 0) && (
+        {(metaBits.length > 0 || hasMetrics || (item.tags ?? []).length > 0) && (
           <CardContent className="mt-auto space-y-2">
             {metaBits.length > 0 && (
               <p className="font-mono text-xs tabular-nums leading-relaxed text-muted-foreground">
@@ -92,9 +93,9 @@ function GithubCard({ item }: ItemCardProps) {
                 )}
               </div>
             )}
-            {item.tags.length > 0 && (
+            {(item.tags ?? []).length > 0 && (
               <div className="flex flex-wrap gap-2">
-                {item.tags.map((tag) => (
+                {(item.tags ?? []).map((tag) => (
                   <Badge key={tag} variant="outline" className="font-normal">
                     {tag}
                   </Badge>
@@ -108,7 +109,7 @@ function GithubCard({ item }: ItemCardProps) {
   )
 }
 
-/** Compact social card for X posts. Whole card links to the source. */
+/** X post card. Body links stay clickable; the permalink is the header/media. */
 function SocialCard({ item }: ItemCardProps) {
   const meta = item.sourceMeta
   const handle = meta.handle
@@ -121,74 +122,66 @@ function SocialCard({ item }: ItemCardProps) {
   const body = item.summary || item.title
 
   return (
-    <a
-      href={item.url}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="group block rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+    <Card
+      size="sm"
+      className="overflow-hidden transition-colors hover:bg-muted/60"
     >
-      <Card
-        size="sm"
-        className="overflow-hidden transition-colors hover:bg-muted/60"
-      >
-        <CardHeader className="pb-0">
-          <div className="flex items-center gap-2 text-xs text-muted-foreground">
-            {handle && (
-              <span className="font-medium text-foreground">{handle}</span>
-            )}
-            {handle && meta.date && (
+      <CardHeader className="pb-0">
+        <a
+          href={item.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 text-xs text-muted-foreground rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+        >
+          {handle && (
+            <span className="font-medium text-foreground">{handle}</span>
+          )}
+          {handle && meta.date && (
+            <span aria-hidden className="text-muted-foreground/60">
+              ·
+            </span>
+          )}
+          {meta.date && (
+            <time className="font-mono tabular-nums" dateTime={meta.date}>
+              {meta.date}
+            </time>
+          )}
+          {meta.likes != null && (
+            <>
               <span aria-hidden className="text-muted-foreground/60">
                 ·
               </span>
-            )}
-            {meta.date && (
-              <time className="font-mono tabular-nums" dateTime={meta.date}>
-                {meta.date}
-              </time>
-            )}
-            {meta.likes != null && (
-              <>
-                <span aria-hidden className="text-muted-foreground/60">
-                  ·
-                </span>
-                <span className="inline-flex items-center gap-1 font-mono tabular-nums">
-                  <Heart
-                    className="size-3 shrink-0"
-                    weight="regular"
-                    aria-hidden
-                  />
-                  {meta.likes.toLocaleString()}
-                </span>
-              </>
-            )}
-          </div>
-        </CardHeader>
-        <CardContent className="space-y-3 pt-2">
-          <p className="text-sm leading-relaxed text-foreground whitespace-pre-wrap">
-            {body}
-          </p>
-          {preview && (
-            <div className="overflow-hidden rounded-lg border border-border bg-muted">
-              <img
-                src={preview}
-                alt=""
-                loading="lazy"
-                className="block h-auto w-full"
-              />
-            </div>
+              <span className="inline-flex items-center gap-1 font-mono tabular-nums">
+                <Heart
+                  className="size-3 shrink-0"
+                  weight="regular"
+                  aria-hidden
+                />
+                {meta.likes.toLocaleString()}
+              </span>
+            </>
           )}
-          {item.tags.length > 0 && (
-            <div className="flex flex-wrap gap-2">
-              {item.tags.map((tag) => (
-                <Badge key={tag} variant="outline" className="font-normal">
-                  {tag}
-                </Badge>
-              ))}
-            </div>
-          )}
-        </CardContent>
-      </Card>
-    </a>
+        </a>
+      </CardHeader>
+      <CardContent className="space-y-3 pt-2">
+        <TweetBody text={body} />
+        {preview && (
+          <a
+            href={item.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block overflow-hidden rounded-lg border border-border bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+          >
+            <img
+              src={preview}
+              alt=""
+              loading="lazy"
+              className="block h-auto w-full"
+            />
+          </a>
+        )}
+      </CardContent>
+    </Card>
   )
 }
 

@@ -7,7 +7,7 @@
 
 A curated list of **TypeSafe [Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev)** / **System One** ecosystem projects — official SDKs, agent skills, browser & computer-use demos, MCP connectors, routers, and community awesome-lists — plus high-signal X posts and YouTube explainers. Searchable navigation site mirrors this list.
 
-**Site:** [awesomejev.cc](https://awesomejev.cc) · **Data:** [`data/items.json`](data/items.json)
+**Site:** [awesomejev.cc](https://awesomejev.cc) · **Data:** [`data/items.json`](data/items.json) · **Posts:** [`data/x.json`](data/x.json)
 
 **Docs:** [Architecture](docs/architecture.md) · [Data model](docs/data-model.md) · [Collector](docs/collector.md) · [Contributing](CONTRIBUTING.md)
 
@@ -421,7 +421,7 @@ npm run dev
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the `data/items.json` schema, PR hygiene, and link-only policy.
 
 - Prefer PRs that add **real, maintained** open-source projects related to TypeSafe Jev / System One (or high-signal X posts via the collector bot).
-- Keep entries in `data/items.json` structured (`id`, `type`, `title`, `summary`, `tags`, `url`, `sourceMeta`).
+- Keep GitHub / YouTube entries in `data/items.json` and X posts in `data/x.json` (`id`, `type`, `title`, `summary`, `url`, `sourceMeta`; tags only on GitHub / YouTube).
 - One project per PR when possible; include a short summary and tags.
 - Links only — no invented tweet IDs or PLACEHOLDER entries.
 

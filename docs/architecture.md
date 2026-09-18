@@ -11,7 +11,7 @@ Searchable directory of curated **GitHub projects** and **X posts** about TypeSa
 | UI | Vite + React 19 + TypeScript |
 | Styling | Tailwind CSS 4 + shadcn **base-nova** (Base UI primitives under `@/components/ui/*`) |
 | Icons | Phosphor (`@phosphor-icons/react`) |
-| Search | Fuse.js over `data/items.json` |
+| Search | Fuse.js over `data/items.json` + `data/x.json` |
 | Deploy | Cloudflare Workers static assets (`wrangler.toml` → `./dist`, SPA `not_found_handling`) |
 
 Design stays monochrome / restrained: no decorative gradients. See [design.md](design.md).
@@ -61,7 +61,8 @@ npm run deploy   # build + wrangler deploy
 
 | Path | Role |
 | --- | --- |
-| `data/items.json` | Canonical directory data |
+| `data/items.json` | GitHub + YouTube directory data |
+| `data/x.json` | X posts (no tags; links parsed in the card) |
 | `src/lib/types.ts` | `DirectoryItem` / `SourceMeta` |
 | `src/components/ItemCard.tsx` | GitHub + X card UIs |
 | `src/App.tsx` | Header, search, section boards |

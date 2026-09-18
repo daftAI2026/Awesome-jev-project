@@ -2,19 +2,22 @@
 
 Thanks for helping curate **Awesome JEV** — a directory of **GitHub projects and X posts** about **TypeSafe AI’s System One model [Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev)** (typed decisions, SDKs, demos, integrations).
 
-## Add items via `data/items.json`
+## Add items via JSON
 
-All site content is seeded from [`data/items.json`](data/items.json). Prefer editing that file (or letting the collector merge into it) over hand-editing the README list alone.
+- GitHub projects and YouTube explainers: [`data/items.json`](data/items.json)
+- X posts: [`data/x.json`](data/x.json) — **no `tags` field**; URLs and `@mentions` in the post body are parsed into links on the card
+
+Prefer editing those files (or letting the collector merge into them) over hand-editing the README list alone.
 
 ### Schema (`DirectoryItem`)
 
 | Field | Type | Notes |
 | --- | --- | --- |
 | `id` | `string` | Stable unique id, e.g. `gh-owner-repo` or `x-<tweetId>` |
-| `type` | `"github"` \| `"x"` | Controls which board / card style |
+| `type` | `"github"` \| `"x"` \| `"youtube"` | Controls which board / card style |
 | `title` | `string` | Repo name or short post title |
-| `summary` | `string` | One–two sentence description (X: post body) |
-| `tags` | `string[]` | Lowercase tokens; used by search (prefer `jev`, `sdk`, `agent`, …) |
+| `summary` | `string` | One–two sentence description (X: post body, with real URLs) |
+| `tags` | `string[]` | GitHub / YouTube only. Omit on X posts. |
 | `url` | `string` | Canonical link (repo or original tweet) |
 | `sourceMeta` | `object` | See [`docs/data-model.md`](docs/data-model.md) |
 

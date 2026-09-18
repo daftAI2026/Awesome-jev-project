@@ -8,6 +8,7 @@ import {
 } from 'react'
 import { GithubLogo, Info, List, MagnifyingGlass } from '@phosphor-icons/react'
 import itemsData from '../data/items.json'
+import xData from '../data/x.json'
 import { ItemCard } from '@/components/ItemCard'
 import { ZoneNav } from '@/components/ZoneNav'
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
@@ -35,7 +36,10 @@ import type {
   YoutubeSort,
 } from '@/lib/types'
 
-const items = itemsData as DirectoryItem[]
+const items = [
+  ...(itemsData as DirectoryItem[]),
+  ...(xData as DirectoryItem[]),
+]
 const githubProjectCount = countGithubProjects(items)
 const zoneCounts: Record<FilterType, number> = {
   all: items.length,

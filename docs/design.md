@@ -6,7 +6,7 @@ Use this file when designing, building, or substantially changing the directory 
 
 ## Product context
 
-Awesome JEV is a searchable directory of curated **GitHub projects** and **X posts** about TypeSafe AI’s System One model **Jev** (typed decisions, SDKs, demos, integrations). The README awesome-list and the site both read from [`data/items.json`](../data/items.json).
+Awesome JEV is a searchable directory of curated **GitHub projects**, **X posts**, and **YouTube explainers** about TypeSafe AI’s System One model **Jev** (typed decisions, SDKs, demos, integrations). The README awesome-list and the site read from [`data/items.json`](../data/items.json) (GitHub / YouTube) and [`data/x.json`](../data/x.json) (posts).
 
 Make the artifact precise, calm, direct, technically literate, and restrained. Build confidence through clarity and proof. Never manufacture confidence through hype, decoration, novelty, or exaggerated claims.
 
@@ -18,7 +18,7 @@ Start with the reader’s job: find a relevant project or post, scan its summary
 
 When requirements compete, protect them in this order:
 
-1. Preserve supplied facts in `data/items.json` (titles, summaries, stars, dates, URLs). Do not invent tweet IDs or PLACEHOLDER rows.
+1. Preserve supplied facts in `data/items.json` and `data/x.json` (titles, summaries, stars, dates, URLs). Do not invent tweet IDs or PLACEHOLDER rows.
 2. Preserve the host stack: Vite, React, Tailwind, shadcn base-nova, `src/` conventions, Cloudflare Workers static deploy.
 3. Make the reader’s question and the current result set immediately clear.
 4. Establish the product through Geist typography, the 4px grid, monochrome surfaces, and restraint.

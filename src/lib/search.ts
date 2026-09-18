@@ -32,7 +32,7 @@ export function searchItems(
     activeTags.length === 0
       ? typed
       : typed.filter((item) =>
-          activeTags.every((tag) => item.tags.includes(tag)),
+          activeTags.every((tag) => (item.tags ?? []).includes(tag)),
         )
 
   const q = query.trim()
@@ -45,7 +45,7 @@ export function searchItems(
 export function collectTags(items: DirectoryItem[]): string[] {
   const set = new Set<string>()
   for (const item of items) {
-    for (const tag of item.tags) set.add(tag)
+    for (const tag of item.tags ?? []) set.add(tag)
   }
   return Array.from(set).sort((a, b) => a.localeCompare(b))
 }

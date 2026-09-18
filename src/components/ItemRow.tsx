@@ -41,15 +41,17 @@ export function ItemRow({ item }: ItemRowProps) {
       <p className="mt-1.5 text-[15px] leading-relaxed text-muted-foreground">
         {item.summary}
       </p>
-      {(metaBits.length > 0 || item.tags.length > 0) && (
+      {(metaBits.length > 0 || (item.tags ?? []).length > 0) && (
         <p className="mt-2 text-[13px] leading-relaxed text-muted-foreground">
           {metaBits.length > 0 && (
             <span className="font-mono tabular-nums">{metaBits.join(' · ')}</span>
           )}
-          {metaBits.length > 0 && item.tags.length > 0 && (
+          {metaBits.length > 0 && (item.tags ?? []).length > 0 && (
             <span aria-hidden="true"> · </span>
           )}
-          {item.tags.length > 0 && <span>{item.tags.join(', ')}</span>}
+          {(item.tags ?? []).length > 0 && (
+            <span>{(item.tags ?? []).join(', ')}</span>
+          )}
         </p>
       )}
     </a>

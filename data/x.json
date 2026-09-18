@@ -1,0 +1,449 @@
+[
+  {
+    "id": "x-2100495661942677648",
+    "type": "x",
+    "title": "Elixir SDK for TypeSafe Jev (System One)",
+    "summary": "[Announcing] TypeSafe SDK - Jev, the first System One model from TypeSafe — Elixir Forum write-up with SDK link. https://forum.elixirforum.com/t/76700",
+    "url": "https://x.com/elixirforum/status/2100495661942677648",
+    "sourceMeta": {
+      "handle": "@elixirforum",
+      "likes": 2,
+      "date": "2026-09-17",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/699037343802642433/S5HRThny_normal.png"
+    }
+  },
+  {
+    "id": "x-2100660981009617341",
+    "type": "x",
+    "title": "Jev のいう RLCD とは何か",
+    "summary": "Jevのいう　RLCD とは何か。「確率を当たる割合に合わせていく」学習 — article on TypeSafe Jev / RLCD training.",
+    "url": "https://x.com/minicoohei/status/2100660981009617341",
+    "sourceMeta": {
+      "handle": "@minicoohei",
+      "likes": 14,
+      "date": "2026-09-17",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/1921185156091834368/WdIzT_w3_normal.jpg"
+    }
+  },
+  {
+    "id": "x-2099990938781188585",
+    "type": "x",
+    "title": "System One 模型与 Jev：把「前沿智能」做成一次函数调用",
+    "summary": "Chinese article on System One models and Jev — turning frontier intelligence into a typed function call.",
+    "url": "https://x.com/yibie/status/2099990938781188585",
+    "sourceMeta": {
+      "handle": "@yibie",
+      "likes": 2,
+      "date": "2026-09-15",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/600475846747389952/3oVDhklx_normal.jpg"
+    }
+  },
+  {
+    "id": "x-2100005664311661052",
+    "type": "x",
+    "title": "TypeSafe AI ~$40M seed + Jev early access",
+    "summary": "TypeSafe AI exits stealth with ~$40M seed (DCVC) and opens early access to Jev — a System One model for fast, typed decisions software can call, not chat. https://badsignal.ai/?tab=news&story=typesafe-ai-40m-seed",
+    "url": "https://x.com/BadSignalAI/status/2100005664311661052",
+    "sourceMeta": {
+      "handle": "@BadSignalAI",
+      "likes": 1,
+      "date": "2026-09-15",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2099356310513025024/gUHVRtVv_normal.jpg",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HSS4BgCbQAAyYo8.jpg"
+      ]
+    }
+  },
+  {
+    "id": "x-2099960482010382389",
+    "type": "x",
+    "title": "Introducing System One Models and Jev",
+    "summary": "Introducing System One Models and Jev - TypeSafe AI Blog. Source: https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+    "url": "https://x.com/Midas_pcl/status/2099960482010382389",
+    "sourceMeta": {
+      "handle": "@Midas_pcl",
+      "likes": 0,
+      "date": "2026-09-15",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2094495175066148864/TGh9AAUK_normal.jpg",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HSSO6k7WsAAs8Pp.png"
+      ]
+    }
+  },
+  {
+    "id": "x-2100453820870640015",
+    "type": "x",
+    "title": "不会打字的AI，有啥用？TypeSafe Jev 中文解读",
+    "summary": "9月15日，ChatGPT 共同发明人之一、前 OpenAI 研究员 Diogo Almeida 发布 TypeSafe AI 第一个模型 Jev。它不会聊天、不会写代码，只回答结构化问题：选择、打分、是非判断。官方宣称速度比前沿大模型快 40 到 200 倍。",
+    "url": "https://x.com/whycallqq/status/2100453820870640015",
+    "sourceMeta": {
+      "handle": "@whycallqq",
+      "likes": 0,
+      "date": "2026-09-17",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2059642374385704960/rQt_5kiX_normal.jpg"
+    }
+  },
+  {
+    "id": "x-2100748198050738400",
+    "type": "x",
+    "title": "零幻觉、毫秒响应，Jev 真有宣传得那么强吗?",
+    "summary": "中文分析：大模型进生产时 JSON/工具调用/置信度的尴尬，以及 TypeSafe Jev System One 的定位。",
+    "url": "https://x.com/levix_dev/status/2100748198050738400",
+    "sourceMeta": {
+      "handle": "@levix_dev",
+      "likes": 0,
+      "date": "2026-09-18",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/1960708494971072512/Ht8EI5H1_normal.jpg"
+    }
+  },
+  {
+    "id": "x-2099995834104623380",
+    "type": "x",
+    "title": "【TypeSafe発表】Jev（System One Model）登場",
+    "summary": "【TypeSafe発表】Jev（System One Model）登場！元OpenAI研究者が開発。テキスト生成なしで構造化意思決定に特化。超高速（70-500ms）・超低コスト・幻覚ほぼゼロ。詳細→ https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+    "url": "https://x.com/Tyr_Nippon/status/2099995834104623380",
+    "sourceMeta": {
+      "handle": "@Tyr_Nippon",
+      "likes": 0,
+      "date": "2026-09-15",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/1952699172991430656/hNxeW0cN_normal.jpg"
+    }
+  },
+  {
+    "id": "x-2100888765212528735",
+    "type": "x",
+    "title": "ロリポップ！AIゲートウェイが TypeSafe Jev に対応",
+    "summary": "複数のAIモデルを1つのAPIキーで使える「ロリポップ！AIゲートウェイ」は、米 TypeSafe AI 提供の Jev に対応。国内事業者によるAIゲートウェイとしては初。https://pepabo.com/news/information/202609181900/",
+    "url": "https://x.com/pepabo/status/2100888765212528735",
+    "sourceMeta": {
+      "handle": "@pepabo",
+      "likes": 6,
+      "date": "2026-09-18",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2024008038383063040/xAuOVHUb_normal.png"
+    }
+  },
+  {
+    "id": "x-2100890035591512563",
+    "type": "x",
+    "title": "System One Models & Jev roundup",
+    "summary": "Introducing System One Models & Jev roundup with harness / WTF-is-Jev links. https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+    "url": "https://x.com/useaidb/status/2100890035591512563",
+    "sourceMeta": {
+      "handle": "@useaidb",
+      "likes": 5,
+      "date": "2026-09-18",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2017180034096676865/LWACSoXz_normal.jpg",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HSfb32sWUAAUi12.jpg"
+      ]
+    }
+  },
+  {
+    "id": "x-2100888977771258293",
+    "type": "x",
+    "title": "picaye/jev-compaction — Hermes + Jev",
+    "summary": "Jev use-case: score Hermes tool calls to cut tokens. https://github.com/picaye/jev-compaction @typesafeai",
+    "url": "https://x.com/picaye/status/2100888977771258293",
+    "sourceMeta": {
+      "handle": "@picaye",
+      "likes": 1,
+      "date": "2026-09-18",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/1782787983986343936/SDQ0Os4u_normal.jpg"
+    }
+  },
+  {
+    "id": "x-2100891358223388966",
+    "type": "x",
+    "title": "Rust app + Jev watching computer traffic",
+    "summary": "Native Rust app using @typesafeai Jev for unusual traffic signals — too slow for an LLM; built a Rust SDK too. Links CompleteSkeptic launch.",
+    "url": "https://x.com/ppweni/status/2100891358223388966",
+    "sourceMeta": {
+      "handle": "@ppweni",
+      "likes": 0,
+      "date": "2026-09-18",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2094689747587272704/gKWGjV6J_normal.jpg",
+      "mediaUrls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2100876503936319488/img/9kONj9RSsYGsZ_io.jpg"
+      ]
+    }
+  },
+  {
+    "id": "x-2100892180458225693",
+    "type": "x",
+    "title": "Jevとは？文章を作らず「判断」を返すAI（note.com）",
+    "summary": "JP note.com: Jev / TypeSafe AI features and how to embed into business systems. https://note.com/collaceptor/n/n4c1ad42cee37",
+    "url": "https://x.com/collaceptor/status/2100892180458225693",
+    "sourceMeta": {
+      "handle": "@collaceptor",
+      "likes": 0,
+      "date": "2026-09-18",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2057799629589348352/EJ5LhO8k_normal.jpg"
+    }
+  },
+  {
+    "id": "x-2100891199926063261",
+    "type": "x",
+    "title": "Awesome Jev Projects — jev-compaction added",
+    "summary": "Scoring tool calls with Jev to drop irrelevant context — added to Awesome Jev Projects. https://logicrw.github.io/awesome-jev-projects/",
+    "url": "https://x.com/0xLogicrw/status/2100891199926063261",
+    "sourceMeta": {
+      "handle": "@0xLogicrw",
+      "likes": 0,
+      "date": "2026-09-18",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2083261639135244288/KoOQO6zp_normal.jpg"
+    }
+  },
+  {
+    "id": "x-2100889112266121249",
+    "type": "x",
+    "title": "typesafe.ai site showcase (Framer Japan)",
+    "summary": "Framer製Webサイト紹介 — @typesafeai / Jev の typesafe.ai。https://typesafe.ai/",
+    "url": "https://x.com/framerjapan/status/2100889112266121249",
+    "sourceMeta": {
+      "handle": "@framerjapan",
+      "likes": 2,
+      "date": "2026-09-18",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2009302201248718848/ytXHSZ6I_normal.jpg",
+      "mediaUrls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2100846753302171648/img/pzIFun_j87cc_S4Y.jpg"
+      ]
+    }
+  },
+  {
+    "id": "x-2100888741418311971",
+    "type": "x",
+    "title": "如何用上 Jev：waitlist + typesafe-ai/skills",
+    "summary": "如何用上Jev：官网 waitlist → npx skills add typesafe-ai/skills → API Key → “use the TypeSafe skill”。https://typesafe.ai",
+    "url": "https://x.com/linmurannut/status/2100888741418311971",
+    "sourceMeta": {
+      "handle": "@linmurannut",
+      "likes": 0,
+      "date": "2026-09-18",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2097526682840133632/79lwEeAh_normal.jpg"
+    }
+  },
+  {
+    "id": "x-2100893138231472220",
+    "type": "x",
+    "title": "zoidsh/tenet — agent code review gate",
+    "summary": "@typesafeai — The review gate for code that agents write. https://github.com/zoidsh/tenet",
+    "url": "https://x.com/timche_/status/2100893138231472220",
+    "sourceMeta": {
+      "handle": "@timche_",
+      "likes": 0,
+      "date": "2026-09-18",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2067967050593574912/mPq9emlB_normal.jpg"
+    }
+  },
+  {
+    "id": "x-2100890292589056342",
+    "type": "x",
+    "title": "wtf is jev? (YouTube)",
+    "summary": "YouTube: wtf is jev? — explains the TypeSafe Jev model. https://youtu.be/QbYBRjOaGOo",
+    "url": "https://x.com/diakoptis/status/2100890292589056342",
+    "sourceMeta": {
+      "handle": "@diakoptis",
+      "likes": 0,
+      "date": "2026-09-18",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/972431099359002625/EIUwfSz4_normal.jpg"
+    }
+  },
+  {
+    "id": "x-2100890243515781453",
+    "type": "x",
+    "title": "Jev benchmarking",
+    "summary": "#jev #typesafeai — Jev benchmarking article.",
+    "url": "https://x.com/ctoagentic/status/2100890243515781453",
+    "sourceMeta": {
+      "handle": "@ctoagentic",
+      "likes": 2,
+      "date": "2026-09-18",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2097465135850008576/lmDFPx6E_normal.jpg"
+    }
+  },
+  {
+    "id": "x-2100888391889883564",
+    "type": "x",
+    "title": "PRomop with Jev (YouTube)",
+    "summary": "HealthKey's AI-Based Source Code to Concept Mapping in PRomop (now with Jev! — thanks @typesafeai). https://youtu.be/oCQs2m4F9So",
+    "url": "https://x.com/adamblum/status/2100888391889883564",
+    "sourceMeta": {
+      "handle": "@adamblum",
+      "likes": 0,
+      "date": "2026-09-18",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/918818911/launchpadsmall_normal.jpg"
+    }
+  },
+  {
+    "id": "x-2100894274066010463",
+    "type": "x",
+    "title": "Jev from TypeSafe AI — speed & cost take (FA)",
+    "summary": "Persian write-up: TypeSafe AI’s Jev model focuses on speed, lower cost, and correct conclusions; performance still needs benchmarks. https://typesafe.ai",
+    "url": "https://x.com/blkst8_/status/2100894274066010463",
+    "sourceMeta": {
+      "handle": "@blkst8_",
+      "likes": 0,
+      "date": "2026-09-18",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2088003369407578112/JNTnu-X1_normal.jpg"
+    }
+  },
+  {
+    "id": "x-2100891156758585729",
+    "type": "x",
+    "title": "Best AI Agent Skills for TypeSafe Jev in 2026",
+    "summary": "Roundup post: Best AI Agent Skills for TypeSafe Jev in 2026.",
+    "url": "https://x.com/edceezz/status/2100891156758585729",
+    "sourceMeta": {
+      "handle": "@edceezz",
+      "likes": 0,
+      "date": "2026-09-18",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2093112193529352192/F12x5JEq_normal.jpg"
+    }
+  },
+  {
+    "id": "x-2100888192576880692",
+    "type": "x",
+    "title": "读不懂也要读懂系列：不会聊天的 AI（GPT它爸 / TypeSafe）",
+    "summary": "Chinese explainer series on a non-chat AI from a GPT co-inventor — TypeSafe Jev / System One context.",
+    "url": "https://x.com/dboy_yi2025/status/2100888192576880692",
+    "sourceMeta": {
+      "handle": "@dboy_yi2025",
+      "likes": 0,
+      "date": "2026-09-18",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/1991364925701443584/RLm9-vTp_normal.jpg"
+    }
+  },
+  {
+    "id": "x-2100888097848459469",
+    "type": "x",
+    "title": "TypeSafe AI Jev — large product imagination space",
+    "summary": "CN: TypeSafe AI’s Jev has huge imagination space; try it if you haven’t. Link included.",
+    "url": "https://x.com/chisny/status/2100888097848459469",
+    "sourceMeta": {
+      "handle": "@chisny",
+      "likes": 0,
+      "date": "2026-09-18",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/1891328245427261440/9VjW8fX2_normal.png"
+    }
+  },
+  {
+    "id": "x-2100887864594895154",
+    "type": "x",
+    "title": "LayerX internal Jev study session (50+ engineers)",
+    "summary": "LayerX Tech: emergency internal study session on TypeSafe AI’s Jev led by @po3rin; 50+ engineers. Write-up on usage + culture.",
+    "url": "https://x.com/LayerX_tech/status/2100887864594895154",
+    "sourceMeta": {
+      "handle": "@LayerX_tech",
+      "likes": 6,
+      "date": "2026-09-18",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/1763472930326126592/ES6KnYlT_normal.jpg"
+    }
+  },
+  {
+    "id": "x-2100887554375745848",
+    "type": "x",
+    "title": "Jev beta on OpenRouter as System One model",
+    "summary": "TypeSafe AI launched Jev in beta on OpenRouter — System One model for typed queries → calibrated probabilities without JSON parsing.",
+    "url": "https://x.com/MehtoShishir/status/2100887554375745848",
+    "sourceMeta": {
+      "handle": "@MehtoShishir",
+      "likes": 0,
+      "date": "2026-09-18",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2077434161833676800/KoduHLOz_normal.jpg"
+    }
+  },
+  {
+    "id": "x-2100886851707924733",
+    "type": "x",
+    "title": "Cómo usar Jev (waitlist + typesafe-ai/skills)",
+    "summary": "Spanish how-to: join TypeSafe waitlist same-day, install typesafe-ai/skills for Claude Code / agents.",
+    "url": "https://x.com/josejordandev/status/2100886851707924733",
+    "sourceMeta": {
+      "handle": "@josejordandev",
+      "likes": 0,
+      "date": "2026-09-18",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/1441052460567699456/M9rfpvcM_normal.jpg"
+    }
+  },
+  {
+    "id": "x-2100883594977665454",
+    "type": "x",
+    "title": "Jev voice-controlling a browser in ~300ms",
+    "summary": "Jev voice-controlling a browser in ~300ms — talk, get a click; cheap enough to feel like a real interface.",
+    "url": "https://x.com/steveDOTplus/status/2100883594977665454",
+    "sourceMeta": {
+      "handle": "@steveDOTplus",
+      "likes": 0,
+      "date": "2026-09-18",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/1977454040586850304/W2w1js4K_normal.jpg"
+    }
+  },
+  {
+    "id": "x-2100883015983579421",
+    "type": "x",
+    "title": "TypeSafe.ai site design + Jev research KPI",
+    "summary": "CN: TypeSafe (Jev) website design praise; personal KPI to research Jev. https://typesafe.ai",
+    "url": "https://x.com/joielovecrypto/status/2100883015983579421",
+    "sourceMeta": {
+      "handle": "@joielovecrypto",
+      "likes": 2,
+      "date": "2026-09-18",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2099975996833415168/zg7Tt5bB_normal.jpg"
+    }
+  },
+  {
+    "id": "x-2100882941106655455",
+    "type": "x",
+    "title": "Jev on TopxAI — judgments, not text",
+    "summary": "Jev by TypeSafe now on TopxAI: state + typed questions (noul/choice/score) → calibrated numbers. ~$0.04494/1M input, output free.",
+    "url": "https://x.com/topxea/status/2100882941106655455",
+    "sourceMeta": {
+      "handle": "@topxea",
+      "likes": 0,
+      "date": "2026-09-18",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2098851237257150464/O57oWK5G_normal.jpg"
+    }
+  },
+  {
+    "id": "x-2100882561761460461",
+    "type": "x",
+    "title": "Jev on 100k movie titles + open-source demo",
+    "summary": "Tested Jev on 100,000 movie titles (~$0.76). Open-source API/demo: connect a read-only DB and describe what to find.",
+    "url": "https://x.com/luisf_mc/status/2100882561761460461",
+    "sourceMeta": {
+      "handle": "@luisf_mc",
+      "likes": 0,
+      "date": "2026-09-18",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2077122793997774848/-3nmcpmF_normal.jpg"
+    }
+  },
+  {
+    "id": "x-2100882503242227937",
+    "type": "x",
+    "title": "Introducing Jev Plays Minecraft (live Twitch)",
+    "summary": "Jev Plays Minecraft — goal: beat Minecraft / kill the Ender Dragon. Live on Twitch; fees to Jarrod GitHub.",
+    "url": "https://x.com/ForestManSol555/status/2100882503242227937",
+    "sourceMeta": {
+      "handle": "@ForestManSol555",
+      "likes": 1,
+      "date": "2026-09-18",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2066528778516353024/HKffQZ0P_normal.jpg",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HSfVgMTWMAASXRc.jpg"
+      ]
+    }
+  },
+  {
+    "id": "x-2100881912113909893",
+    "type": "x",
+    "title": "Jev on Atari Pong",
+    "summary": "Article: Jev on Atari Pong — structured decisions / System One gameplay experiments.",
+    "url": "https://x.com/MemorysaverMFA/status/2100881912113909893",
+    "sourceMeta": {
+      "handle": "@MemorysaverMFA",
+      "likes": 0,
+      "date": "2026-09-18",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/935778665274552320/ziTpJbtB_normal.jpg"
+    }
+  }
+]

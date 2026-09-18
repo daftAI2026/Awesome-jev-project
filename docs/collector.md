@@ -8,7 +8,7 @@ X search should stay on TypeSafe / Jev / System One / typesafe.ai (with links). 
 
 ## Role
 
-The **JEV 资讯收集** bot syncs curated signals into this repo’s [`data/items.json`](../data/items.json) so the navigation site stays current without hand-editing every entry.
+The **JEV 资讯收集** bot syncs curated signals into [`data/items.json`](../data/items.json) (GitHub / YouTube) and [`data/x.json`](../data/x.json) (X posts) so the navigation site stays current without hand-editing every entry.
 
 Intended cadence: **weekday sync** (Mon–Fri) — pull new GitHub finds and high-signal X posts, upsert by stable `id`, open or push a data PR / commit.
 
@@ -17,7 +17,7 @@ Intended cadence: **weekday sync** (Mon–Fri) — pull new GitHub finds and hig
 Each collected row must match the [`DirectoryItem`](data-model.md) schema:
 
 - GitHub → `type: "github"` with `sourceMeta.repo`, `stars`, `forks`, `openIssues`, `language`, …
-- X → `type: "x"` with `sourceMeta.handle`, `date`, `likes`, and optionally `mediaUrls` / `avatarUrl`
+- X → append to `data/x.json`, `type: "x"`, with `sourceMeta.handle`, `date`, `likes`, and optionally `mediaUrls` / `avatarUrl`. Do **not** add `tags`.
 
 Rules:
 
@@ -27,8 +27,8 @@ Rules:
 
 ## How the site consumes it
 
-1. Bot / PR updates `data/items.json`.
-2. Vite bundles the JSON at build time (`import itemsData from '../data/items.json'` in `App.tsx`).
+1. Bot / PR updates `data/items.json` and/or `data/x.json`.
+2. Vite bundles both JSON files at build time (`App.tsx` concatenates them).
 3. Fuse.js search + section boards re-render from that static array.
 4. Push to `main` → Workers Builds → `npm run build` → assets deploy.
 

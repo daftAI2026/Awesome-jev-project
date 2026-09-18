@@ -26,7 +26,8 @@ export interface DirectoryItem {
   type: ItemType
   title: string
   summary: string
-  tags: string[]
+  /** GitHub / YouTube only. X posts live in `data/x.json` and omit tags. */
+  tags?: string[]
   url: string
   sourceMeta: SourceMeta
 }
