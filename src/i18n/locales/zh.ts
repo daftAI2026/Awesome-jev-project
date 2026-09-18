@@ -23,7 +23,7 @@ export const zh: Messages = {
   emptySection: '暂无内容。',
   footerTitle: '社区目录',
   footerDescription:
-    'TypeSafe Jev / System One 项目与讨论介绍文章：typesafe.ai/blog/introducing-system-one-models-and-jev。实时 API 同步尚在规划；当前为静态种子数据，并由工作日 collector 增量更新。',
+    'TypeSafe Jev / System One 项目与讨论。介绍文章：typesafe.ai/blog/introducing-system-one-models-and-jev。实时 API 同步尚在规划；当前为静态种子数据，并由工作日 collector 增量更新。',
   sortStars: '星标',
   sortDate: '日期',
   sortName: '名称',

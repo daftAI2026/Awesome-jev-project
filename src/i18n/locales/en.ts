@@ -21,7 +21,7 @@ export const en = {
   emptySection: 'No items yet.',
   footerTitle: 'Community directory',
   footerDescription:
-    'TypeSafe Jev / System One projects and discussion Launch post: typesafe.ai/blog/introducing-system-one-models-and-jev. Live API sync is future work; content today is static seed data plus weekday collector updates.',
+    'TypeSafe Jev / System One projects and discussion. Launch post: typesafe.ai/blog/introducing-system-one-models-and-jev. Live API sync is future work; content today is static seed data plus weekday collector updates.',
   sortStars: 'Stars',
   sortDate: 'Date',
   sortName: 'Name',

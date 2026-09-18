@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for helping curate **Awesome JEV** — a link directory of **GitHub projects and X posts** about **TypeSafe AI’s System One model [Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev)** (typed decisions, SDKs, demos, integrations).
+Thanks for helping curate **Awesome JEV** — a directory of **GitHub projects and X posts** about **TypeSafe AI’s System One model [Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev)** (typed decisions, SDKs, demos, integrations).
 
 ## Add items via `data/items.json`
 
