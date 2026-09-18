@@ -1,0 +1,33 @@
+import type { Messages } from './en'
+
+export const zh: Messages = {
+  tagline:
+    '精选 GitHub 项目与 X 动态：TypeSafe AI 的 System One 模型 Jev（类型化决策、SDK、演示与集成）。',
+  searchPlaceholder: '搜索…',
+  searchLabel: '搜索',
+  skipToContent: '跳到主要内容',
+  openGithub: '在 GitHub 上查看源码',
+  languageToggle: '语言',
+  sectionGithub: 'GitHub 开源',
+  sectionX: 'X 动态',
+  sectionTikTok: 'TikTok 动态',
+  zoneLabel: '内容分区',
+  zoneAll: '全部',
+  zoneGithub: 'GitHub',
+  zoneX: 'X',
+  zoneTikTok: 'TikTok',
+  resultCount: '{count} 条结果',
+  resultCountPlural: '{count} 条结果',
+  emptySearch: '无匹配结果，请换个关键词试试。',
+  emptySection: '暂无内容。',
+  footerTitle: '社区目录',
+  footerDescription:
+    'TypeSafe Jev / System One 项目与讨论介绍文章：typesafe.ai/blog/introducing-system-one-models-and-jev。实时 API 同步尚在规划；当前为静态种子数据，并由工作日 collector 增量更新。',
+  sortStars: '星标',
+  sortDate: '日期',
+  sortName: '名称',
+  sortLikes: '点赞',
+  sortGithubLabel: '排序 GitHub 条目',
+  sortXLabel: '排序 X 条目',
+  sortTikTokLabel: '排序 TikTok 条目',
+}
