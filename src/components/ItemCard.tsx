@@ -6,19 +6,9 @@ import {
   GitFork,
   GithubLogo,
   Heart,
-  NumberCircleEight,
-  NumberCircleFive,
-  NumberCircleFour,
-  NumberCircleNine,
-  NumberCircleOne,
-  NumberCircleSeven,
-  NumberCircleSix,
-  NumberCircleThree,
-  NumberCircleTwo,
   Play,
   Repeat,
   Star,
-  type Icon,
 } from '@phosphor-icons/react'
 import { cn } from 'cn'
 import type { DirectoryItem } from '@/lib/types'
@@ -41,42 +31,6 @@ interface ItemCardProps {
 
 function formatCount(n: number): string {
   return n.toLocaleString()
-}
-
-const STAR_RANK_ICONS: Icon[] = [
-  NumberCircleOne,
-  NumberCircleTwo,
-  NumberCircleThree,
-  NumberCircleFour,
-  NumberCircleFive,
-  NumberCircleSix,
-  NumberCircleSeven,
-  NumberCircleEight,
-  NumberCircleNine,
-]
-
-function GithubStarRank({ rank, label }: { rank: number; label: string }) {
-  const RankIcon = rank >= 1 && rank <= STAR_RANK_ICONS.length
-    ? STAR_RANK_ICONS[rank - 1]
-    : null
-  return (
-    <span aria-label={label}>
-      {RankIcon ? (
-        <RankIcon
-          className="size-5 text-muted-foreground"
-          weight="fill"
-          aria-hidden
-        />
-      ) : (
-        <Badge
-          variant="outline"
-          className="rounded-lg font-mono font-normal tabular-nums text-muted-foreground"
-        >
-          {rank}
-        </Badge>
-      )}
-    </span>
-  )
 }
 
 function formatCompact(n: number): string {
@@ -140,10 +94,13 @@ function GithubCard({ item, rank }: ItemCardProps) {
           </CardDescription>
           {rank != null ? (
             <CardAction>
-              <GithubStarRank
-                rank={rank}
-                label={t('githubStarRank', { rank })}
-              />
+              <Badge
+                variant="outline"
+                className="rounded-lg font-mono font-normal tabular-nums text-muted-foreground"
+                aria-label={t('githubStarRank', { rank })}
+              >
+                {rank}
+              </Badge>
             </CardAction>
           ) : null}
         </CardHeader>

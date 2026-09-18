@@ -152,7 +152,7 @@ Hard reject decorative gradients, gradient text, glows, blobs, stripes, textures
 
 Directory cards are evidence, not decoration:
 
-- GitHub: title, summary, stars, forks, language, tags, outbound repo URL. Star rank sits in `CardAction` at the top-right: Phosphor `NumberCircleOne`–`Nine` (fill) for 1–9, outline `Badge` for 10+.
+- GitHub: title, summary, stars, forks, language, tags, outbound repo URL. Star rank sits in `CardAction` at the top-right as a quiet outline `Badge` with the number.
 - X: Twitter-like card — avatar, display name, handle, date; summary; media; bottom row of replies / reposts / likes / bookmarks (no view counts). Optional remote `mediaUrls` / `videoUrls` (never commit binary media). Native `<video controls>` for the first mp4; no autoplay.
 - Counts and sort keys come from `sourceMeta`. Do not fake precision.
 
