@@ -33,7 +33,7 @@ Mobile
 ```
 
 - **Search** is a full-width underline field on the GitHub board only. Fuse.js (`src/lib/search.ts`) does not filter X or YouTube.
-- **Rank** sits under search as underline tabs, not per-section toggles.
+- **Rank** sits under search as a shadcn `ToggleGroup`, not custom underline tabs.
 - **Source filter** is a left rail on large screens; below `lg` it opens a shadcn Sheet from the left.
 - **Section boards** are type-scoped lists (`github` / `x` / `youtube`). YouTube only appears when the directory has videos. Empty sections show “No items yet.”
 - Cards link out (`target="_blank"`) to the original GitHub repo or X post — this site does not host media.

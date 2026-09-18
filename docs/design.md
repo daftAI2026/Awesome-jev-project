@@ -27,7 +27,7 @@ When requirements compete, protect them in this order:
 
 ## Integrate with this project
 
-Edit the files that naturally own the experience (`src/App.tsx`, `src/components/*`, `src/index.css`, `index.html`, `scripts/generate-og.mjs`). Do not force a new framework, a parallel theme, or a second icon kit.
+Edit the files that naturally own the experience (`src/App.tsx`, `src/components/*`, `src/index.css`, `index.html`, `scripts/generate-og.ts`). Do not force a new framework, a parallel theme, or a second icon kit.
 
 - Primitives: shadcn base-nova under `@/components/ui/*` (`Card`, `Button`, `Badge`, `Input`, `ToggleGroup`, `Alert`, `Separator`, `Select`).
 - Icons: Phosphor only (`@phosphor-icons/react`).
@@ -36,7 +36,7 @@ Edit the files that naturally own the experience (`src/App.tsx`, `src/components
 - Search: Fuse.js over `data/items.json`.
 - Tokens: existing shadcn semantic CSS variables. Do not introduce a parallel token layer or a third-party brand stylesheet.
 
-Network allowlist for the site itself: GitHub / X outbound links, the Cloudflare deploy, and user-supplied remote thumbnails (`sourceMeta.mediaUrls`). Do not add analytics, chart libraries, icon CDNs, or stock assets without authorization.
+Network allowlist for the site itself: GitHub / X outbound links, the Cloudflare deploy, and user-supplied remote thumbnails / mp4s (`sourceMeta.mediaUrls`, `sourceMeta.videoUrls`). Do not add analytics, chart libraries, icon CDNs, or stock assets without authorization.
 
 ## Work in four passes
 
@@ -153,7 +153,7 @@ Hard reject decorative gradients, gradient text, glows, blobs, stripes, textures
 Directory cards are evidence, not decoration:
 
 - GitHub: title, summary, stars, forks, language, tags, outbound repo URL.
-- X: summary (post body), handle, date, likes, optional remote `mediaUrls` (never commit binary media).
+- X: summary (post body), handle, date, likes, optional remote `mediaUrls` / `videoUrls` (never commit binary media). Native `<video controls>` for the first mp4; no autoplay.
 - Counts and sort keys come from `sourceMeta`. Do not fake precision.
 
 Show units and comparators near the evidence they qualify (★ stars next to the number). Peer cards share type roles, meta positions, and action alignment. A row whose meta wraps while siblings have unused width is a layout failure.
@@ -168,7 +168,7 @@ Motion: default to stillness. Add motion only when it explains a state change. R
 
 #### Media
 
-X thumbnails use the first remote `sourceMeta.mediaUrls` entry. Never add stock imagery, decorative AI illustrations, abstract shapes, or fake screenshots. Open Graph uses `public/og.png` (1200×630), generated from `scripts/generate-og.mjs` + `public/og.svg`. Absolute URL: `https://awesomejev.cc/og.png`.
+X thumbnails use the first remote `sourceMeta.mediaUrls` entry. Tweet videos use the first remote `sourceMeta.videoUrls` mp4 with that thumbnail as `poster`. Never add stock imagery, decorative AI illustrations, abstract shapes, or fake screenshots. Open Graph uses `public/og.png` (1200×630), generated from `scripts/generate-og.ts` + `public/og.svg`. Absolute URL: `https://awesomejev.cc/og.png`.
 
 ### Inspect and revise privately
 

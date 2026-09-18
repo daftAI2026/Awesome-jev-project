@@ -120,6 +120,8 @@ function SocialCard({ item }: ItemCardProps) {
     : null
   const preview =
     meta.mediaUrls && meta.mediaUrls.length > 0 ? meta.mediaUrls[0] : null
+  const video =
+    meta.videoUrls && meta.videoUrls.length > 0 ? meta.videoUrls[0] : null
   const body = item.summary || item.title
 
   return (
@@ -166,7 +168,17 @@ function SocialCard({ item }: ItemCardProps) {
       </CardHeader>
       <CardContent className="space-y-3 pt-2">
         <TweetBody text={body} />
-        {preview && (
+        {video ? (
+          <video
+            className="block h-auto w-full overflow-hidden rounded-lg border border-border bg-muted"
+            controls
+            playsInline
+            preload="metadata"
+            poster={preview ?? undefined}
+          >
+            <source src={video} type="video/mp4" />
+          </video>
+        ) : preview ? (
           <a
             href={item.url}
             target="_blank"
@@ -180,7 +192,7 @@ function SocialCard({ item }: ItemCardProps) {
               className="block h-auto w-full"
             />
           </a>
-        )}
+        ) : null}
       </CardContent>
     </Card>
   )

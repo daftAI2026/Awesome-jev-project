@@ -1,20 +1,18 @@
-import {
-  useCallback,
-  useEffect,
-  useMemo,
-  useRef,
-  useState,
-  type ReactNode,
-} from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { GithubLogo, Info, List, MagnifyingGlass } from '@phosphor-icons/react'
 import itemsData from '../data/items.json'
 import xData from '../data/x.json'
 import { ItemCard } from '@/components/ItemCard'
 import { ZoneNav } from '@/components/ZoneNav'
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
+import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Separator } from '@/components/ui/separator'
+import {
+  ToggleGroup,
+  ToggleGroupItem,
+} from '@/components/ui/toggle-group'
 import {
   Sheet,
   SheetContent,
@@ -94,33 +92,6 @@ function readStoredZone(): FilterType {
     /* ignore */
   }
   return 'github'
-}
-
-function RankTab({
-  active,
-  onClick,
-  children,
-}: {
-  active: boolean
-  onClick: () => void
-  children: ReactNode
-}) {
-  return (
-    <button
-      type="button"
-      role="tab"
-      aria-selected={active}
-      onClick={onClick}
-      className={cn(
-        'border-b-2 pb-1 text-sm transition-colors',
-        active
-          ? 'border-foreground text-foreground'
-          : 'border-transparent text-muted-foreground hover:text-foreground',
-      )}
-    >
-      {children}
-    </button>
-  )
 }
 
 export default function App() {
@@ -327,9 +298,12 @@ export default function App() {
                   className="pointer-events-none absolute inset-y-0 right-0 hidden items-center sm:flex"
                   title={t('searchHint')}
                 >
-                  <span className="rounded-lg border border-border px-2 py-1 font-mono text-xs text-muted-foreground">
+                  <Badge
+                    variant="outline"
+                    className="rounded-lg font-mono font-normal text-muted-foreground"
+                  >
                     /
-                  </span>
+                  </Badge>
                 </kbd>
               </div>
             )}
@@ -371,67 +345,60 @@ export default function App() {
                   </div>
                 </SheetContent>
               </Sheet>
-              <div
-                className="flex gap-4"
-                role="tablist"
-                aria-label={t('rankLabel')}
-              >
-                {youtubeZone ? (
-                  <>
-                    <RankTab
-                      active={youtubeSort === 'date'}
-                      onClick={() => setYoutubeSort('date')}
-                    >
-                      {t('sortDate')}
-                    </RankTab>
-                    <RankTab
-                      active={youtubeSort === 'views'}
-                      onClick={() => setYoutubeSort('views')}
-                    >
-                      {t('sortViews')}
-                    </RankTab>
-                  </>
-                ) : socialZone ? (
-                  <>
-                    <RankTab
-                      active={xSort === 'date'}
-                      onClick={() => setXSort('date')}
-                    >
-                      {t('sortDate')}
-                    </RankTab>
-                    <RankTab
-                      active={xSort === 'likes'}
-                      onClick={() => setXSort('likes')}
-                    >
-                      {t('sortLikes')}
-                    </RankTab>
-                  </>
-                ) : (
-                  <>
-                    <RankTab
-                      active={githubSort === 'stars'}
-                      onClick={() => setGithubSort('stars')}
-                    >
-                      {t('sortStars')}
-                      <span className="ml-1 tabular-nums text-muted-foreground">
-                        ({githubProjectCount})
-                      </span>
-                    </RankTab>
-                    <RankTab
-                      active={githubSort === 'date'}
-                      onClick={() => setGithubSort('date')}
-                    >
-                      {t('sortDate')}
-                    </RankTab>
-                    <RankTab
-                      active={githubSort === 'name'}
-                      onClick={() => setGithubSort('name')}
-                    >
-                      {t('sortName')}
-                    </RankTab>
-                  </>
-                )}
-              </div>
+              {youtubeZone ? (
+                <ToggleGroup
+                  value={[youtubeSort]}
+                  onValueChange={(vals) => {
+                    const next = vals[0]
+                    if (next === 'date' || next === 'views') setYoutubeSort(next)
+                  }}
+                  variant="outline"
+                  size="sm"
+                  aria-label={t('rankLabel')}
+                  className="rounded-lg"
+                >
+                  <ToggleGroupItem value="date">{t('sortDate')}</ToggleGroupItem>
+                  <ToggleGroupItem value="views">{t('sortViews')}</ToggleGroupItem>
+                </ToggleGroup>
+              ) : socialZone ? (
+                <ToggleGroup
+                  value={[xSort]}
+                  onValueChange={(vals) => {
+                    const next = vals[0]
+                    if (next === 'date' || next === 'likes') setXSort(next)
+                  }}
+                  variant="outline"
+                  size="sm"
+                  aria-label={t('rankLabel')}
+                  className="rounded-lg"
+                >
+                  <ToggleGroupItem value="date">{t('sortDate')}</ToggleGroupItem>
+                  <ToggleGroupItem value="likes">{t('sortLikes')}</ToggleGroupItem>
+                </ToggleGroup>
+              ) : (
+                <ToggleGroup
+                  value={[githubSort]}
+                  onValueChange={(vals) => {
+                    const next = vals[0]
+                    if (next === 'stars' || next === 'date' || next === 'name') {
+                      setGithubSort(next)
+                    }
+                  }}
+                  variant="outline"
+                  size="sm"
+                  aria-label={t('rankLabel')}
+                  className="rounded-lg"
+                >
+                  <ToggleGroupItem value="stars">
+                    {t('sortStars')}
+                    <span className="ml-1 tabular-nums text-muted-foreground">
+                      ({githubProjectCount})
+                    </span>
+                  </ToggleGroupItem>
+                  <ToggleGroupItem value="date">{t('sortDate')}</ToggleGroupItem>
+                  <ToggleGroupItem value="name">{t('sortName')}</ToggleGroupItem>
+                </ToggleGroup>
+              )}
             </div>
           </div>
 
