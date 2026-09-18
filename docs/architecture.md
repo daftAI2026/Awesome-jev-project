@@ -22,7 +22,7 @@ Design stays monochrome / restrained: no decorative gradients. See [design.md](d
 Sticky header (full viewport, no divider)
   └── Title + GitHub + language
 Hero
-  └── ASCII wordmark (scale to column) + tagline (stacked on small, beside on lg)
+  └── Full-width ASCII wordmark + tagline under it
 Body
   ├── Aside (lg+): source nav — GitHub / X / YouTube
   └── Main

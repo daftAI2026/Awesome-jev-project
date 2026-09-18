@@ -291,13 +291,11 @@ export default function App() {
         </div>
       </header>
 
-      <div className="mx-auto w-full max-w-6xl px-4 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
-        <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] lg:gap-14">
-          <AsciiWordmark />
-          <p className="text-center text-xl leading-tight tracking-tight text-balance text-muted-foreground sm:text-2xl lg:text-left lg:text-3xl">
-            {t('tagline')}
-          </p>
-        </div>
+      <div className="mx-auto w-full max-w-6xl px-4 py-8 sm:px-8 lg:py-10">
+        <AsciiWordmark />
+        <p className="mt-8 max-w-3xl text-xl leading-tight tracking-tight text-muted-foreground sm:text-2xl">
+          {t('tagline')}
+        </p>
       </div>
 
       <div className="mx-auto grid w-full max-w-6xl flex-1 grid-cols-1 gap-8 px-4 pb-8 sm:px-6 lg:grid-cols-[12rem_minmax(0,1fr)] lg:gap-10 lg:px-8 lg:pb-10">
