@@ -25,8 +25,6 @@ export function searchItems(
   filter: FilterType,
   activeTags: string[],
 ): DirectoryItem[] {
-  // ItemType includes github, x, and tiktok; keep the same filter path for
-  // every content zone so newly seeded TikTok items are searchable immediately.
   const typed =
     filter === 'all' ? items : items.filter((item) => item.type === filter)
 

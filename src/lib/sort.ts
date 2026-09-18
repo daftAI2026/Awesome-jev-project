@@ -1,4 +1,4 @@
-import type { DirectoryItem, GithubSort, XSort } from './types'
+import type { DirectoryItem, GithubSort, XSort, YoutubeSort } from './types'
 
 function numOrZero(v: number | null | undefined): number {
   return typeof v === 'number' && !Number.isNaN(v) ? v : 0
@@ -26,6 +26,28 @@ export function sortGithubItems(
     )
   } else {
     // date — newest first; missing last
+    copy.sort((a, b) => {
+      const da = dateKey(a)
+      const db = dateKey(b)
+      if (da == null && db == null) return 0
+      if (da == null) return 1
+      if (db == null) return -1
+      return db.localeCompare(da)
+    })
+  }
+  return copy
+}
+
+export function sortYoutubeItems(
+  items: DirectoryItem[],
+  sort: YoutubeSort,
+): DirectoryItem[] {
+  const copy = [...items]
+  if (sort === 'views') {
+    copy.sort(
+      (a, b) => numOrZero(b.sourceMeta.views) - numOrZero(a.sourceMeta.views),
+    )
+  } else {
     copy.sort((a, b) => {
       const da = dateKey(a)
       const db = dateKey(b)

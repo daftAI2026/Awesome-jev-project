@@ -9,7 +9,7 @@ Types live in [`src/lib/types.ts`](../src/lib/types.ts).
 ```ts
 interface DirectoryItem {
   id: string
-  type: 'github' | 'x' | 'tiktok'
+  type: 'github' | 'x' | 'youtube'
   title: string
   summary: string
   tags: string[]
@@ -57,13 +57,14 @@ interface SourceMeta {
 - Collectors may emit `null` when unknown
 - Optional `date` (YYYY-MM-DD) supports the section “Date” sort
 
-### X / TikTok / media
+### X / YouTube / media
 
 - `handle` — `@user` or `user` (UI normalizes `@`)
 - `date` — ISO or short display string (YYYY-MM-DD preferred for sorting)
 - `likes` — engagement count
-- **`mediaUrls`** — remote image URLs from the post; the UI shows the **first** image inside the social card. Never commit binary media into this repo.
+- **`mediaUrls`** — remote image URLs from the post; the UI shows the **first** image inside the social / video card. Never commit binary media into this repo.
 - **`avatarUrl`** — optional; reserved for future avatar chrome
+- YouTube rows use `type: "youtube"`, `sourceMeta.videoId`, `sourceMeta.views`, and a watch URL. Thumbnail is the first `mediaUrls` entry or `https://i.ytimg.com/vi/{videoId}/hqdefault.jpg`.
 
 ### Collector note
 
@@ -77,6 +78,7 @@ Persisted in `localStorage`:
 | --- | --- | --- | --- |
 | GitHub | `awesome-jev-github-sort` | `stars` | `stars` \| `date` \| `name` |
 | X | `awesome-jev-x-sort` | `date` (newest first) | `date` \| `likes` |
+| YouTube | `awesome-jev-youtube-sort` | `date` (newest first) | `date` \| `views` |
 
 Missing numeric fields sort as `0`; missing dates sort last.
 

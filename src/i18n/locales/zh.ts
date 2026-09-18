@@ -3,7 +3,7 @@ import type { Messages } from './en'
 export const zh: Messages = {
   githubCount: '已收录 {count} 个 GitHub 项目',
   tagline:
-    '精选 GitHub 项目与 X 动态：TypeSafe AI 的 System One 模型 Jev（类型化决策、SDK、演示与集成）。',
+    '精选 GitHub 项目、X 动态与 YouTube 讲解：TypeSafe AI 的 System One 模型 Jev（类型化决策、SDK、演示与集成）。',
   searchPlaceholder: '搜索…',
   searchLabel: '搜索',
   skipToContent: '跳到主要内容',
@@ -11,12 +11,12 @@ export const zh: Messages = {
   languageToggle: '语言',
   sectionGithub: 'GitHub 开源',
   sectionX: 'X 动态',
-  sectionTikTok: 'TikTok 动态',
+  sectionYoutube: 'YouTube',
   zoneLabel: '来源',
   zoneAll: '全部',
   zoneGithub: 'GitHub',
   zoneX: 'X',
-  zoneTikTok: 'TikTok',
+  zoneYoutube: 'YouTube',
   openZones: '打开来源筛选',
   rankLabel: '排名',
   searchHint: '按 / 搜索',
@@ -33,5 +33,6 @@ export const zh: Messages = {
   sortLikes: '点赞',
   sortGithubLabel: '排序 GitHub 条目',
   sortXLabel: '排序 X 条目',
-  sortTikTokLabel: '排序 TikTok 条目',
+  sortYoutubeLabel: '排序 YouTube 条目',
+  sortViews: '播放',
 }

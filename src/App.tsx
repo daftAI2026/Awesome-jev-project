@@ -24,7 +24,7 @@ import {
 import { useI18n } from '@/i18n'
 import { countByType, countGithubProjects } from '@/lib/counts'
 import { searchItems } from '@/lib/search'
-import { sortGithubItems, sortXItems } from '@/lib/sort'
+import { sortGithubItems, sortXItems, sortYoutubeItems } from '@/lib/sort'
 import { cn } from 'cn'
 import type {
   DirectoryItem,
@@ -32,6 +32,7 @@ import type {
   GithubSort,
   ItemType,
   XSort,
+  YoutubeSort,
 } from '@/lib/types'
 
 const items = itemsData as DirectoryItem[]
@@ -40,11 +41,18 @@ const zoneCounts: Record<FilterType, number> = {
   all: items.length,
   github: countByType(items, 'github'),
   x: countByType(items, 'x'),
-  tiktok: countByType(items, 'tiktok'),
+  youtube: countByType(items, 'youtube'),
 }
+const visibleZones: FilterType[] = [
+  'all',
+  'github',
+  'x',
+  ...(zoneCounts.youtube > 0 ? (['youtube'] as const) : []),
+]
 
 const GITHUB_SORT_KEY = 'awesome-jev-github-sort'
 const X_SORT_KEY = 'awesome-jev-x-sort'
+const YOUTUBE_SORT_KEY = 'awesome-jev-youtube-sort'
 const ZONE_KEY = 'awesome-jev-zone'
 
 function readStoredGithubSort(): GithubSort {
@@ -67,10 +75,20 @@ function readStoredXSort(): XSort {
   return 'date'
 }
 
+function readStoredYoutubeSort(): YoutubeSort {
+  try {
+    const v = localStorage.getItem(YOUTUBE_SORT_KEY)
+    if (v === 'date' || v === 'views') return v
+  } catch {
+    /* ignore */
+  }
+  return 'date'
+}
+
 function readStoredZone(): FilterType {
   try {
     const v = localStorage.getItem(ZONE_KEY)
-    if (v === 'all' || v === 'github' || v === 'x' || v === 'tiktok') return v
+    if (v === 'all' || v === 'github' || v === 'x' || v === 'youtube') return v
   } catch {
     /* ignore */
   }
@@ -109,6 +127,9 @@ export default function App() {
   const [query, setQuery] = useState('')
   const [githubSort, setGithubSort] = useState<GithubSort>(readStoredGithubSort)
   const [xSort, setXSort] = useState<XSort>(readStoredXSort)
+  const [youtubeSort, setYoutubeSort] = useState<YoutubeSort>(
+    readStoredYoutubeSort,
+  )
   const [zone, setZone] = useState<FilterType>(readStoredZone)
   const [zoneOpen, setZoneOpen] = useState(false)
   const searchRef = useRef<HTMLInputElement>(null)
@@ -128,6 +149,14 @@ export default function App() {
       /* ignore */
     }
   }, [xSort])
+
+  useEffect(() => {
+    try {
+      localStorage.setItem(YOUTUBE_SORT_KEY, youtubeSort)
+    } catch {
+      /* ignore */
+    }
+  }, [youtubeSort])
 
   useEffect(() => {
     try {
@@ -164,7 +193,8 @@ export default function App() {
     setZoneOpen(false)
   }, [])
 
-  const socialZone = zone === 'x' || zone === 'tiktok'
+  const socialZone = zone === 'x'
+  const youtubeZone = zone === 'youtube'
 
   const matched = useMemo(
     () => searchItems(items, query, zone, []),
@@ -173,7 +203,9 @@ export default function App() {
 
   const sections = useMemo(() => {
     const sectionIds: ItemType[] =
-      zone === 'all' ? ['github', 'x', 'tiktok'] : [zone]
+      zone === 'all'
+        ? visibleZones.filter((id): id is ItemType => id !== 'all')
+        : [zone]
     const defs: { id: ItemType; title: string }[] = sectionIds.map((id) => ({
       id,
       title:
@@ -181,13 +213,25 @@ export default function App() {
           ? t('sectionGithub')
           : id === 'x'
             ? t('sectionX')
-            : t('sectionTikTok'),
+            : t('sectionYoutube'),
     }))
     return defs
       .map((section) => {
         let sectionItems = matched.filter((item) => item.type === section.id)
         if (section.id === 'github') {
           sectionItems = sortGithubItems(sectionItems, githubSort)
+        } else if (section.id === 'youtube') {
+          if (zone === 'all') {
+            if (githubSort === 'stars') {
+              sectionItems = sortYoutubeItems(sectionItems, 'views')
+            } else if (githubSort === 'name') {
+              sectionItems = sortGithubItems(sectionItems, 'name')
+            } else {
+              sectionItems = sortYoutubeItems(sectionItems, 'date')
+            }
+          } else {
+            sectionItems = sortYoutubeItems(sectionItems, youtubeSort)
+          }
         } else if (zone === 'all') {
           if (githubSort === 'stars') {
             sectionItems = sortXItems(sectionItems, 'likes')
@@ -202,7 +246,7 @@ export default function App() {
         return { ...section, items: sectionItems }
       })
       .filter((section) => section.items.length > 0 || !query.trim())
-  }, [matched, query, zone, githubSort, xSort, t])
+  }, [matched, query, zone, githubSort, xSort, youtubeSort, t])
 
   const hasQuery = query.trim().length > 0
   const totalMatched = matched.length
@@ -273,6 +317,7 @@ export default function App() {
             </p>
             <ZoneNav
               zone={zone}
+              zones={visibleZones}
               counts={zoneCounts}
               onZoneChange={onZoneChange}
             />
@@ -332,7 +377,7 @@ export default function App() {
                       ? t('zoneGithub')
                       : zone === 'x'
                         ? t('zoneX')
-                        : t('zoneTikTok')}
+                        : t('zoneYoutube')}
                 </SheetTrigger>
                 <SheetContent side="left" className="w-72 p-0">
                   <SheetHeader>
@@ -341,6 +386,7 @@ export default function App() {
                   <div className="px-4 pb-4">
                     <ZoneNav
                       zone={zone}
+                      zones={visibleZones}
                       counts={zoneCounts}
                       onZoneChange={onZoneChange}
                     />
@@ -352,7 +398,22 @@ export default function App() {
                 role="tablist"
                 aria-label={t('rankLabel')}
               >
-                {socialZone ? (
+                {youtubeZone ? (
+                  <>
+                    <RankTab
+                      active={youtubeSort === 'date'}
+                      onClick={() => setYoutubeSort('date')}
+                    >
+                      {t('sortDate')}
+                    </RankTab>
+                    <RankTab
+                      active={youtubeSort === 'views'}
+                      onClick={() => setYoutubeSort('views')}
+                    >
+                      {t('sortViews')}
+                    </RankTab>
+                  </>
+                ) : socialZone ? (
                   <>
                     <RankTab
                       active={xSort === 'date'}
@@ -430,7 +491,7 @@ export default function App() {
                     <p className="text-sm text-muted-foreground">
                       {t('emptySection')}
                     </p>
-                  ) : section.id === 'x' || section.id === 'tiktok' ? (
+                  ) : section.id === 'x' || section.id === 'youtube' ? (
                     <ul className="columns-1 gap-4 sm:columns-2 lg:columns-3">
                       {section.items.map((item) => (
                         <li key={item.id} className="mb-4 break-inside-avoid">

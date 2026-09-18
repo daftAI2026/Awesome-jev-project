@@ -1,6 +1,6 @@
-export type ItemType = 'github' | 'x' | 'tiktok'
+export type ItemType = 'github' | 'x' | 'youtube'
 
-/** GitHub, X, and TikTok collectors may emit null for unknown fields. */
+/** GitHub, X, and YouTube collectors may emit null for unknown fields. */
 export interface SourceMeta {
   stars?: number | null
   forks?: number | null
@@ -11,10 +11,14 @@ export interface SourceMeta {
   likes?: number | null
   date?: string | null
   repo?: string | null
-  /** X: image / media URLs attached to the post (first used as card preview). */
+  /** X / YouTube: remote preview image URLs (first used as card image). */
   mediaUrls?: string[] | null
   /** Optional profile avatar URL (X or GitHub). */
   avatarUrl?: string | null
+  /** YouTube: watch id `xxxxxxxxxxx`. */
+  videoId?: string | null
+  /** YouTube: view count. */
+  views?: number | null
 }
 
 export interface DirectoryItem {
@@ -31,3 +35,4 @@ export type FilterType = 'all' | ItemType
 
 export type GithubSort = 'stars' | 'date' | 'name'
 export type XSort = 'date' | 'likes'
+export type YoutubeSort = 'date' | 'views'

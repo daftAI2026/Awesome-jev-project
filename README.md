@@ -5,7 +5,7 @@
 
 # Awesome JEV
 
-A curated list of **TypeSafe [Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev)** / **System One** ecosystem projects — official SDKs, agent skills, browser & computer-use demos, MCP connectors, routers, and community awesome-lists — plus high-signal X posts. Searchable navigation site mirrors this list.
+A curated list of **TypeSafe [Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev)** / **System One** ecosystem projects — official SDKs, agent skills, browser & computer-use demos, MCP connectors, routers, and community awesome-lists — plus high-signal X posts and YouTube explainers. Searchable navigation site mirrors this list.
 
 **Site:** [awesomejev.cc](https://awesomejev.cc) · **Data:** [`data/items.json`](data/items.json)
 

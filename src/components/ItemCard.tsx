@@ -4,6 +4,7 @@ import {
   GitFork,
   GithubLogo,
   Heart,
+  Play,
   Star,
 } from '@phosphor-icons/react'
 import type { DirectoryItem } from '@/lib/types'
@@ -107,7 +108,7 @@ function GithubCard({ item }: ItemCardProps) {
   )
 }
 
-/** Compact social card for X and TikTok posts. Whole card links to the source. */
+/** Compact social card for X posts. Whole card links to the source. */
 function SocialCard({ item }: ItemCardProps) {
   const meta = item.sourceMeta
   const handle = meta.handle
@@ -195,16 +196,78 @@ function XCard({ item }: ItemCardProps) {
   return <SocialCard item={item} />
 }
 
-function TikTokCard({ item }: ItemCardProps) {
-  return <SocialCard item={item} />
+function YoutubeCard({ item }: ItemCardProps) {
+  const meta = item.sourceMeta
+  const videoId = meta.videoId
+  const preview =
+    meta.mediaUrls && meta.mediaUrls.length > 0
+      ? meta.mediaUrls[0]
+      : videoId
+        ? `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`
+        : null
+  const channel = meta.handle || meta.author
+  const views = meta.views
+
+  return (
+    <a
+      href={item.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group block rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+    >
+      <Card
+        size="sm"
+        className="overflow-hidden transition-colors hover:bg-muted/60"
+      >
+        {preview && (
+          <div className="relative overflow-hidden border-b border-border bg-muted">
+            <img
+              src={preview}
+              alt=""
+              loading="lazy"
+              className="block aspect-video h-auto w-full object-cover"
+            />
+            <span className="pointer-events-none absolute inset-0 flex items-center justify-center">
+              <span className="flex size-10 items-center justify-center rounded-lg bg-background/90 text-foreground">
+                <Play className="size-4" weight="fill" aria-hidden />
+              </span>
+            </span>
+          </div>
+        )}
+        <CardHeader className="gap-2">
+          <CardTitle className="text-sm leading-snug">{item.title}</CardTitle>
+          <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
+            {channel && <span className="text-foreground">{channel}</span>}
+            {meta.date && (
+              <time className="font-mono tabular-nums" dateTime={meta.date}>
+                {meta.date}
+              </time>
+            )}
+            {views != null && (
+              <span className="font-mono tabular-nums">
+                {views.toLocaleString()}
+              </span>
+            )}
+          </div>
+        </CardHeader>
+        {item.summary ? (
+          <CardContent>
+            <p className="line-clamp-3 text-sm leading-relaxed text-muted-foreground">
+              {item.summary}
+            </p>
+          </CardContent>
+        ) : null}
+      </Card>
+    </a>
+  )
 }
 
 export function ItemCard({ item }: ItemCardProps) {
   if (item.type === 'x') {
     return <XCard item={item} />
   }
-  if (item.type === 'tiktok') {
-    return <TikTokCard item={item} />
+  if (item.type === 'youtube') {
+    return <YoutubeCard item={item} />
   }
   return <GithubCard item={item} />
 }

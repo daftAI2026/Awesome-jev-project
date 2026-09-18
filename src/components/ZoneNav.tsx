@@ -3,28 +3,30 @@ import { Button } from '@/components/ui/button'
 import { useI18n } from '@/i18n'
 import type { FilterType } from '@/lib/types'
 
-const ZONES: FilterType[] = ['all', 'github', 'x', 'tiktok']
+const ZONE_LABEL: Record<FilterType, 'zoneAll' | 'zoneGithub' | 'zoneX' | 'zoneYoutube'> =
+  {
+    all: 'zoneAll',
+    github: 'zoneGithub',
+    x: 'zoneX',
+    youtube: 'zoneYoutube',
+  }
 
 export function ZoneNav({
   zone,
+  zones,
   counts,
   onZoneChange,
 }: {
   zone: FilterType
+  zones: FilterType[]
   counts: Record<FilterType, number>
   onZoneChange: (zone: FilterType) => void
 }) {
   const { t } = useI18n()
-  const labels: Record<FilterType, string> = {
-    all: t('zoneAll'),
-    github: t('zoneGithub'),
-    x: t('zoneX'),
-    tiktok: t('zoneTikTok'),
-  }
 
   return (
     <nav aria-label={t('zoneLabel')} className="flex flex-col gap-2">
-      {ZONES.map((id) => {
+      {zones.map((id) => {
         const selected = zone === id
         return (
           <Button
@@ -38,7 +40,7 @@ export function ZoneNav({
               selected ? 'text-foreground' : 'text-muted-foreground',
             )}
           >
-            <span>{labels[id]}</span>
+            <span>{t(ZONE_LABEL[id])}</span>
             <span className="tabular-nums text-xs text-muted-foreground">
               {counts[id]}
             </span>

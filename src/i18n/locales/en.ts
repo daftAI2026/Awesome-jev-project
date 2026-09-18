@@ -1,7 +1,7 @@
 export const en = {
   githubCount: '{count} GitHub projects indexed',
   tagline:
-    "Curated GitHub projects and X posts about TypeSafe AI's System One model Jev — typed decisions, SDKs, demos, integrations.",
+    "Curated GitHub projects, X posts, and YouTube explainers about TypeSafe AI's System One model Jev — typed decisions, SDKs, demos, integrations.",
   searchPlaceholder: 'Search…',
   searchLabel: 'Search',
   skipToContent: 'Skip to content',
@@ -9,12 +9,12 @@ export const en = {
   languageToggle: 'Language',
   sectionGithub: 'GitHub Open Source',
   sectionX: 'X Posts',
-  sectionTikTok: 'TikTok Posts',
+  sectionYoutube: 'YouTube',
   zoneLabel: 'Source',
   zoneAll: 'All',
   zoneGithub: 'GitHub',
   zoneX: 'X',
-  zoneTikTok: 'TikTok',
+  zoneYoutube: 'YouTube',
   openZones: 'Open source filter',
   rankLabel: 'Rank',
   searchHint: 'Press / to search',
@@ -31,7 +31,8 @@ export const en = {
   sortLikes: 'Likes',
   sortGithubLabel: 'Sort GitHub items',
   sortXLabel: 'Sort X items',
-  sortTikTokLabel: 'Sort TikTok items',
+  sortYoutubeLabel: 'Sort YouTube items',
+  sortViews: 'Views',
 } as const
 
 export type MessageKey = keyof typeof en

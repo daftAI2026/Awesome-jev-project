@@ -22,7 +22,7 @@ Design stays monochrome / restrained: no decorative gradients. See [design.md](d
 Sticky header
   └── Title + GitHub + language
 Body
-  ├── Aside (lg+): source nav — All / GitHub / X / TikTok
+  ├── Aside (lg+): source nav — All / GitHub / X / YouTube (if any)
   └── Main
         ├── Search (full-width underline, / to focus)
         ├── Rank tabs (Stars / Date / Name, or Date / Likes)
@@ -35,7 +35,7 @@ Mobile
 - **Search** is a full-width underline field in the main column (skills.sh pattern). Query filters all boards via Fuse.js (`src/lib/search.ts`).
 - **Rank** sits under search as underline tabs, not per-section toggles.
 - **Source filter** is a left rail on large screens; below `lg` it opens a shadcn Sheet from the left.
-- **Section boards** are type-scoped lists (`github` / `x` / `tiktok`). Empty sections show “No items yet.”
+- **Section boards** are type-scoped lists (`github` / `x` / `youtube`). YouTube only appears when the directory has videos. Empty sections show “No items yet.”
 - Cards link out (`target="_blank"`) to the original GitHub repo or X post — this site does not host media.
 
 ## Workers auto-deploy
