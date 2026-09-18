@@ -19,7 +19,10 @@
       "author": "Starchild",
       "replies": 2,
       "retweets": 1,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.88,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.44
     }
   },
   {
@@ -42,7 +45,10 @@
       "author": "yehudab",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.84,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.5
     }
   },
   {
@@ -62,7 +68,10 @@
       "author": "moomooskycow",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.13,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.43
     }
   },
   {
@@ -82,7 +91,10 @@
       "author": "つんさん",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.25,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.24
     }
   },
   {
@@ -99,7 +111,10 @@
       "author": "Panagiotis Plytas",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.72,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.54
     }
   },
   {
@@ -122,7 +137,10 @@
       "author": "Oddly Useful",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.78,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.22
     }
   },
   {
@@ -142,7 +160,10 @@
       "author": "Alan AI",
       "replies": 2,
       "retweets": 1,
-      "bookmarks": 1
+      "bookmarks": 1,
+      "jevAbout": 0.72,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.49
     }
   },
   {
@@ -159,7 +180,10 @@
       "author": "Abdullah",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.2,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.33
     }
   },
   {
@@ -176,7 +200,10 @@
       "author": "Koichiro KAMADA / 鎌田 浩一郎",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.64,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.43
     }
   },
   {
@@ -193,7 +220,10 @@
       "author": "Antonio Coppe",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.65,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.24
     }
   },
   {
@@ -210,7 +240,10 @@
       "author": "Razor",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.44,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.57
     }
   },
   {
@@ -227,7 +260,10 @@
       "author": "黄熊",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.57,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.26
     }
   },
   {
@@ -244,7 +280,10 @@
       "author": "Bali as a Colony of Jakarta",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.65,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.78
     }
   },
   {
@@ -261,7 +300,10 @@
       "author": "きりい",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.77,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.5
     }
   },
   {
@@ -286,7 +328,10 @@
       "author": "Claude",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.53,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.28
     }
   },
   {
@@ -303,7 +348,10 @@
       "author": "Cloud Yoda 😶‍🌫️",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.87,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.67
     }
   },
   {
@@ -320,7 +368,10 @@
       "author": "Henry AI",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.93,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.33
     }
   },
   {
@@ -337,7 +388,10 @@
       "author": "Barun",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.77,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.54
     }
   },
   {
@@ -354,7 +408,10 @@
       "author": "Shinkai | システムエンジニア",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.79,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.52
     }
   },
   {
@@ -374,7 +431,10 @@
       "author": "Jeremy",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.49,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.27
     }
   },
   {
@@ -391,7 +451,10 @@
       "author": "Kaya Jones",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.86,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.14
     }
   },
   {
@@ -408,7 +471,10 @@
       "author": "A R Ayush",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.9,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.36
     }
   },
   {
@@ -425,7 +491,10 @@
       "author": "Krish Gupta",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.69,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.64
     }
   },
   {
@@ -442,7 +511,10 @@
       "author": "brewkeg",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.93,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.36
     }
   },
   {
@@ -465,7 +537,10 @@
       "author": "alaska",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 1
+      "bookmarks": 1,
+      "jevAbout": 0.82,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.53
     }
   },
   {
@@ -488,7 +563,10 @@
       "author": "Alex Hancock",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.82,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.42
     }
   },
   {
@@ -505,7 +583,10 @@
       "author": "Saul",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 1
+      "bookmarks": 1,
+      "jevAbout": 0.68,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.57
     }
   },
   {
@@ -525,7 +606,10 @@
       "author": "canbo",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 2
+      "bookmarks": 2,
+      "jevAbout": 0.09,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.3
     }
   },
   {
@@ -548,7 +632,10 @@
       "author": "yishan",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.83,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.71
     }
   },
   {
@@ -565,7 +652,10 @@
       "author": "Trung Nguyen",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.92,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.33
     }
   },
   {
@@ -582,7 +672,10 @@
       "author": "bastos",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.83,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.68
     }
   },
   {
@@ -599,7 +692,10 @@
       "author": "Qinyuan Wu",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.72,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.6
     }
   },
   {
@@ -616,7 +712,10 @@
       "author": "Tridibesh Nag",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.87,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.43
     }
   },
   {
@@ -636,7 +735,10 @@
       "author": "Sylvain Deauré",
       "replies": 1,
       "retweets": 1,
-      "bookmarks": 3
+      "bookmarks": 3,
+      "jevAbout": 0.91,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.33
     }
   },
   {
@@ -653,7 +755,10 @@
       "author": "sdiv",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.31,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.29
     }
   },
   {
@@ -676,7 +781,10 @@
       "author": "Kaushik",
       "replies": 2,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.87,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.7
     }
   },
   {
@@ -693,7 +801,10 @@
       "author": "うえだ | BtoBデザイナー",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.76,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.61
     }
   },
   {
@@ -710,7 +821,10 @@
       "author": "Abhishek",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.13,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.49
     }
   },
   {
@@ -733,7 +847,10 @@
       "author": "rmz 🌱🌐 - 🐺",
       "replies": 2,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.83,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.57
     }
   },
   {
@@ -753,7 +870,10 @@
       "author": "Residualsun",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.79,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.4
     }
   },
   {
@@ -770,7 +890,10 @@
       "author": "YeHe (🦾,🧠)",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.66,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.51
     }
   },
   {
@@ -787,7 +910,10 @@
       "author": "Byron Gee",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.82,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.46
     }
   },
   {
@@ -804,7 +930,10 @@
       "author": "Tim",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.7,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.59
     }
   },
   {
@@ -821,7 +950,10 @@
       "author": "nefuron",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.34,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.64
     }
   },
   {
@@ -844,7 +976,10 @@
       "author": "Christopher",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.72,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.35
     }
   },
   {
@@ -864,7 +999,10 @@
       "author": "テツメモ｜AI図解×検証｜Newsletter",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 3
+      "bookmarks": 3,
+      "jevAbout": 0.77,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.24
     }
   },
   {
@@ -881,7 +1019,10 @@
       "author": "せんべい",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.11,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.7
     }
   },
   {
@@ -902,7 +1043,10 @@
       "author": "Julius Danek",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.15,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.43
     }
   },
   {
@@ -919,7 +1063,10 @@
       "author": "茶谷 和弘 / K.Chatani",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.74,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.47
     }
   },
   {
@@ -942,7 +1089,10 @@
       "author": "Shahed Nasser",
       "replies": 3,
       "retweets": 2,
-      "bookmarks": 1
+      "bookmarks": 1,
+      "jevAbout": 0.62,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.67
     }
   },
   {
@@ -959,7 +1109,10 @@
       "author": "Kid",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.7,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.63
     }
   },
   {
@@ -976,7 +1129,10 @@
       "author": "ポンコツ@エンジニア",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.8,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.44
     }
   },
   {
@@ -999,7 +1155,10 @@
       "author": "Unnati",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.86,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.33
     }
   },
   {
@@ -1016,7 +1175,10 @@
       "author": "松本 勇気 (Yuki Matsumoto) | LayerX CTO",
       "replies": 0,
       "retweets": 2,
-      "bookmarks": 25
+      "bookmarks": 25,
+      "jevAbout": 0.41,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.62
     }
   },
   {
@@ -1039,7 +1201,10 @@
       "author": "Lescot Etienne",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.91,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.34
     }
   },
   {
@@ -1061,7 +1226,10 @@
       "author": "jiangkoumo",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.96,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.63
     }
   },
   {
@@ -1084,7 +1252,10 @@
       "author": "James Pardoe",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.7,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.56
     }
   },
   {
@@ -1101,7 +1272,10 @@
       "author": "Masato Sugiyama",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.65,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.69
     }
   },
   {
@@ -1124,7 +1298,10 @@
       "author": "Jev",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.71,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.29
     }
   },
   {
@@ -1141,7 +1318,10 @@
       "author": "AI 辅助软件开发伍斌",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.96,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.7
     }
   },
   {
@@ -1164,7 +1344,10 @@
       "author": "Viz",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.51,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.49
     }
   },
   {
@@ -1184,7 +1367,10 @@
       "author": "zanoum",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.76,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.71
     }
   },
   {
@@ -1201,7 +1387,10 @@
       "author": "thewho",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.61,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.44
     }
   },
   {
@@ -1218,7 +1407,10 @@
       "author": "Miguel Li",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.42,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.47
     }
   },
   {
@@ -1238,7 +1430,10 @@
       "author": "みゆ🌹ฅ^•ω•^ฅ @X68KBBS / MSXBBS / FANKS",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.53,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.47
     }
   },
   {
@@ -1255,7 +1450,10 @@
       "author": "Ashwini",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 1
+      "bookmarks": 1,
+      "jevAbout": 0.83,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.14
     }
   },
   {
@@ -1272,7 +1470,10 @@
       "author": "Pramod",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.27,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.27
     }
   },
   {
@@ -1289,7 +1490,10 @@
       "author": "Chandraprakash",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.79,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.44
     }
   },
   {
@@ -1312,7 +1516,10 @@
       "author": "Mo Elgaraihy",
       "replies": 2,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.84,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.34
     }
   },
   {
@@ -1335,7 +1542,10 @@
       "author": "E B",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 1
+      "bookmarks": 1,
+      "jevAbout": 0.76,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.42
     }
   },
   {
@@ -1352,7 +1562,10 @@
       "author": "ijonas",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.87,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.35
     }
   },
   {
@@ -1369,7 +1582,10 @@
       "author": "VastPlan",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.91,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.83
     }
   },
   {
@@ -1389,7 +1605,10 @@
       "author": "Maris",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.91,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.38
     }
   },
   {
@@ -1406,7 +1625,10 @@
       "author": "Black State 🏴‍☠️🐐",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 1
+      "bookmarks": 1,
+      "jevAbout": 0.93,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.56
     }
   },
   {
@@ -1429,7 +1651,10 @@
       "author": "Eddie | Mindful Hustle",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.92,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.4
     }
   },
   {
@@ -1446,7 +1671,10 @@
       "author": "コラセプタ｜中小企業の社外情シス",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.69,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.34
     }
   },
   {
@@ -1469,7 +1697,10 @@
       "author": "Phillip",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.88,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.37
     }
   },
   {
@@ -1486,7 +1717,10 @@
       "author": "𝗙𝗔𝗡.AI",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.44,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.55
     }
   },
   {
@@ -1503,7 +1737,10 @@
       "author": "🦄",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 1
+      "bookmarks": 1,
+      "jevAbout": 0.63,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.32
     }
   },
   {
@@ -1520,7 +1757,10 @@
       "author": "ctoagentic | CTO & AI agentic workflows",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.68,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.74
     }
   },
   {
@@ -1540,7 +1780,10 @@
       "author": "AIDb",
       "replies": 0,
       "retweets": 2,
-      "bookmarks": 3
+      "bookmarks": 3,
+      "jevAbout": 0.93,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.73
     }
   },
   {
@@ -1563,7 +1806,10 @@
       "author": "Framer Japan",
       "replies": 0,
       "retweets": 2,
-      "bookmarks": 7
+      "bookmarks": 7,
+      "jevAbout": 0.61,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.34
     }
   },
   {
@@ -1580,7 +1826,10 @@
       "author": "Picaye",
       "replies": 1,
       "retweets": 1,
-      "bookmarks": 2
+      "bookmarks": 2,
+      "jevAbout": 0.8,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.3
     }
   },
   {
@@ -1597,7 +1846,10 @@
       "author": "GMOペパボ",
       "replies": 0,
       "retweets": 10,
-      "bookmarks": 4
+      "bookmarks": 4,
+      "jevAbout": 0.45,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.29
     }
   },
   {
@@ -1614,7 +1866,10 @@
       "author": "Adam Blum",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.25,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.39
     }
   },
   {
@@ -1631,7 +1886,10 @@
       "author": "VIyozc",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.68,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.59
     }
   },
   {
@@ -1648,7 +1906,10 @@
       "author": "LayerX Tech",
       "replies": 0,
       "retweets": 32,
-      "bookmarks": 185
+      "bookmarks": 185,
+      "jevAbout": 0.69,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.45
     }
   },
   {
@@ -1665,7 +1926,10 @@
       "author": "Shishir Mehto",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.95,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.69
     }
   },
   {
@@ -1688,7 +1952,10 @@
       "author": "宮田 |Cloudflare x ClaudeCode",
       "replies": 1,
       "retweets": 2,
-      "bookmarks": 62
+      "bookmarks": 62,
+      "jevAbout": 0.82,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.23
     }
   },
   {
@@ -1705,7 +1972,10 @@
       "author": "Jose Jordan",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.93,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.58
     }
   },
   {
@@ -1722,7 +1992,10 @@
       "author": "Yuichi Uemura",
       "replies": 5,
       "retweets": 3,
-      "bookmarks": 14
+      "bookmarks": 14,
+      "jevAbout": 0.76,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.45
     }
   },
   {
@@ -1739,7 +2012,10 @@
       "author": "Steve • Plus",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.63,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.43
     }
   },
   {
@@ -1756,7 +2032,10 @@
       "author": "Joie Lee",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.81,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.52
     }
   },
   {
@@ -1773,7 +2052,10 @@
       "author": "Topxea",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.87,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.59
     }
   },
   {
@@ -1790,7 +2072,10 @@
       "author": "Luis",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 1
+      "bookmarks": 1,
+      "jevAbout": 0.69,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.3
     }
   },
   {
@@ -1810,7 +2095,10 @@
       "author": "The GeoRipper®20 MiniTrencher 🪚",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.08,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.45
     }
   },
   {
@@ -1827,7 +2115,10 @@
       "author": "Stas Kulesh",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.69,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.21
     }
   },
   {
@@ -1850,7 +2141,10 @@
       "author": "yishan",
       "replies": 8,
       "retweets": 1,
-      "bookmarks": 7
+      "bookmarks": 7,
+      "jevAbout": 0.91,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.41
     }
   },
   {
@@ -1873,7 +2167,10 @@
       "author": "蓝哥AI",
       "replies": 2,
       "retweets": 0,
-      "bookmarks": 1
+      "bookmarks": 1,
+      "jevAbout": 0.95,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.4
     }
   },
   {
@@ -1896,7 +2193,10 @@
       "author": "Jason Zhu",
       "replies": 4,
       "retweets": 2,
-      "bookmarks": 24
+      "bookmarks": 24,
+      "jevAbout": 0.92,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.77
     }
   },
   {
@@ -1913,7 +2213,10 @@
       "author": "nolan vance finch",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.69,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.83
     }
   },
   {
@@ -1930,7 +2233,10 @@
       "author": "Domas Bitvinskas ✨",
       "replies": 0,
       "retweets": 5,
-      "bookmarks": 10
+      "bookmarks": 10,
+      "jevAbout": 0.78,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.25
     }
   },
   {
@@ -1950,7 +2256,10 @@
       "author": "Ivan",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.76,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.54
     }
   },
   {
@@ -1970,7 +2279,10 @@
       "author": "mika",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.62,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.3
     }
   },
   {
@@ -1987,7 +2299,10 @@
       "author": "Ivan",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.81,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.5
     }
   },
   {
@@ -2004,7 +2319,10 @@
       "author": "Alex Vu",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.12,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.25
     }
   },
   {
@@ -2021,7 +2339,10 @@
       "author": "shipfrontier",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.96,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.87
     }
   },
   {
@@ -2044,7 +2365,10 @@
       "author": "Relo.Video",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.84,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.54
     }
   },
   {
@@ -2061,7 +2385,10 @@
       "author": "⚡Jessy SEO formation #IA générative #chatGPT 🦊",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 1
+      "bookmarks": 1,
+      "jevAbout": 0.67,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.53
     }
   },
   {
@@ -2078,7 +2405,10 @@
       "author": "Anita AGI/acc",
       "replies": 9,
       "retweets": 0,
-      "bookmarks": 1
+      "bookmarks": 1,
+      "jevAbout": 0.9,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.57
     }
   },
   {
@@ -2095,7 +2425,10 @@
       "author": "Paresh Bhangale",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.89,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.33
     }
   },
   {
@@ -2112,7 +2445,10 @@
       "author": "Jack",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.92,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.82
     }
   },
   {
@@ -2129,7 +2465,10 @@
       "author": "Ajamt",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 1
+      "bookmarks": 1,
+      "jevAbout": 0.84,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.43
     }
   },
   {
@@ -2146,7 +2485,10 @@
       "author": "fatwang2",
       "replies": 4,
       "retweets": 1,
-      "bookmarks": 40
+      "bookmarks": 40,
+      "jevAbout": 0.72,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.41
     }
   },
   {
@@ -2163,7 +2505,10 @@
       "author": "Aravind Kumar",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.49,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.56
     }
   },
   {
@@ -2183,7 +2528,10 @@
       "author": "Daninal Hung",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.86,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.73
     }
   },
   {
@@ -2200,7 +2548,10 @@
       "author": "akane",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.9,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.69
     }
   },
   {
@@ -2220,7 +2571,10 @@
       "author": "minhash",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.09,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.89
     }
   },
   {
@@ -2237,7 +2591,10 @@
       "author": "Monocursive",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.52,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.32
     }
   },
   {
@@ -2254,7 +2611,10 @@
       "author": "idoubi",
       "replies": 1,
       "retweets": 3,
-      "bookmarks": 28
+      "bookmarks": 28,
+      "jevAbout": 0.93,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.84
     }
   },
   {
@@ -2271,7 +2631,10 @@
       "author": "Nehemiah Kamolu",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.74,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.37
     }
   },
   {
@@ -2288,7 +2651,10 @@
       "author": "lagnajit.",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.96,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.79
     }
   },
   {
@@ -2308,7 +2674,10 @@
       "author": "Sai Yashwanth",
       "replies": 7,
       "retweets": 5,
-      "bookmarks": 22
+      "bookmarks": 22,
+      "jevAbout": 0.14,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.38
     }
   },
   {
@@ -2325,7 +2694,10 @@
       "author": "SSSS.CRYPTOMAN⚡️AI",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 1
+      "bookmarks": 1,
+      "jevAbout": 0.3,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.28
     }
   },
   {
@@ -2342,7 +2714,10 @@
       "author": "Feyber",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.15,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.85
     }
   },
   {
@@ -2359,7 +2734,10 @@
       "author": "Diogo Almeida",
       "replies": 8,
       "retweets": 1,
-      "bookmarks": 3
+      "bookmarks": 3,
+      "jevAbout": 0.23,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.91
     }
   },
   {
@@ -2376,7 +2754,10 @@
       "author": "Momo M",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.67,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.33
     }
   },
   {
@@ -2393,7 +2774,10 @@
       "author": "Diogo Almeida",
       "replies": 28,
       "retweets": 14,
-      "bookmarks": 43
+      "bookmarks": 43,
+      "jevAbout": 0.18,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.75
     }
   },
   {
@@ -2410,7 +2794,10 @@
       "author": "Diogo Almeida",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 8
+      "bookmarks": 8,
+      "jevAbout": 0.69,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.47
     }
   },
   {
@@ -2427,7 +2814,10 @@
       "author": "Malabar",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.81,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.73
     }
   },
   {
@@ -2444,7 +2834,10 @@
       "author": "Diogo Almeida",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 2
+      "bookmarks": 2,
+      "jevAbout": 0.65,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.46
     }
   },
   {
@@ -2461,7 +2854,10 @@
       "author": "Diogo Almeida",
       "replies": 38,
       "retweets": 19,
-      "bookmarks": 70
+      "bookmarks": 70,
+      "jevAbout": 0.25,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.76
     }
   },
   {
@@ -2478,7 +2874,10 @@
       "author": "Diogo Almeida",
       "replies": 8,
       "retweets": 7,
-      "bookmarks": 5
+      "bookmarks": 5,
+      "jevAbout": 0.13,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.97
     }
   },
   {
@@ -2495,7 +2894,10 @@
       "author": "Diogo Almeida",
       "replies": 8,
       "retweets": 3,
-      "bookmarks": 73
+      "bookmarks": 73,
+      "jevAbout": 0.12,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.61
     }
   },
   {
@@ -2512,7 +2914,10 @@
       "author": "Diogo Almeida",
       "replies": 2,
       "retweets": 2,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.21,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.56
     }
   },
   {
@@ -2529,7 +2934,10 @@
       "author": "Diogo Almeida",
       "replies": 2,
       "retweets": 1,
-      "bookmarks": 47
+      "bookmarks": 47,
+      "jevAbout": 0.08,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.98
     }
   },
   {
@@ -2546,7 +2954,10 @@
       "author": "Diogo Almeida",
       "replies": 3,
       "retweets": 0,
-      "bookmarks": 2
+      "bookmarks": 2,
+      "jevAbout": 0.12,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.65
     }
   },
   {
@@ -2563,7 +2974,10 @@
       "author": "ましゅ｜AI活用",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.63,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.46
     }
   },
   {
@@ -2580,7 +2994,10 @@
       "author": "dawn Sunya",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.78,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.24
     }
   },
   {
@@ -2603,7 +3020,10 @@
       "author": "bitslix",
       "replies": 4,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.82,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.48
     }
   },
   {
@@ -2620,7 +3040,10 @@
       "author": "スダFIRE｜半導体カバコで生活",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.62,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.25
     }
   },
   {
@@ -2637,7 +3060,10 @@
       "author": "gabriel 💻 orkestia.dev",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.86,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.57
     }
   },
   {
@@ -2654,7 +3080,10 @@
       "author": "pasar ginting perangin angin",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.82,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.63
     }
   },
   {
@@ -2671,7 +3100,10 @@
       "author": "율무커피 YulmuCoffee",
       "replies": 0,
       "retweets": 2,
-      "bookmarks": 6
+      "bookmarks": 6,
+      "jevAbout": 0.61,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.52
     }
   },
   {
@@ -2688,7 +3120,10 @@
       "author": "TypeSafe AI",
       "replies": 9,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.14,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.65
     }
   },
   {
@@ -2705,7 +3140,10 @@
       "author": "TypeSafe AI",
       "replies": 28,
       "retweets": 42,
-      "bookmarks": 273
+      "bookmarks": 273,
+      "jevAbout": 0.31,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.27
     }
   },
   {
@@ -2728,7 +3166,10 @@
       "author": "OpenRouter",
       "replies": 96,
       "retweets": 183,
-      "bookmarks": 1081
+      "bookmarks": 1081,
+      "jevAbout": 0.96,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.79
     }
   },
   {
@@ -2745,7 +3186,10 @@
       "author": "自娱自乐的小杨",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.66,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.36
     }
   },
   {
@@ -2768,7 +3212,10 @@
       "author": "Jon Taylor",
       "replies": 12,
       "retweets": 27,
-      "bookmarks": 243
+      "bookmarks": 243,
+      "jevAbout": 0.83,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.6
     }
   },
   {
@@ -2788,7 +3235,10 @@
       "author": "Matthew Williams",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.87,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.76
     }
   },
   {
@@ -2805,7 +3255,10 @@
       "author": "Nate Chan",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.84,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.34
     }
   },
   {
@@ -2822,7 +3275,10 @@
       "author": "evaan",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.74,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.59
     }
   },
   {
@@ -2842,7 +3298,10 @@
       "author": "🇫🇷 Le B. 🇫🇷",
       "replies": 1,
       "retweets": 2,
-      "bookmarks": 3
+      "bookmarks": 3,
+      "jevAbout": 0.07,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.17
     }
   },
   {
@@ -2859,7 +3318,10 @@
       "author": "晓",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.66,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.4
     }
   },
   {
@@ -2879,7 +3341,10 @@
       "author": "Lautaro",
       "replies": 7,
       "retweets": 0,
-      "bookmarks": 2
+      "bookmarks": 2,
+      "jevAbout": 0.55,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.32
     }
   },
   {
@@ -2902,7 +3367,10 @@
       "author": "Ariel Weinberger",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 1
+      "bookmarks": 1,
+      "jevAbout": 0.83,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.36
     }
   },
   {
@@ -2924,7 +3392,10 @@
       "author": "Mauro Bonfietti",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.11,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.42
     }
   },
   {
@@ -2941,7 +3412,10 @@
       "author": "UB360.ai",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.49,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.39
     }
   },
   {
@@ -2958,7 +3432,10 @@
       "author": "Dae",
       "replies": 12,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.61,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.56
     }
   },
   {
@@ -2975,7 +3452,10 @@
       "author": "multilayer",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.63,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.51
     }
   },
   {
@@ -2998,7 +3478,10 @@
       "author": "Daniel Bjånes",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.72,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.48
     }
   },
   {
@@ -3018,7 +3501,10 @@
       "author": "indigo",
       "replies": 7,
       "retweets": 8,
-      "bookmarks": 52
+      "bookmarks": 52,
+      "jevAbout": 0.95,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.89
     }
   },
   {
@@ -3035,7 +3521,10 @@
       "author": "H | Arikawa",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 15
+      "bookmarks": 15,
+      "jevAbout": 0.88,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.65
     }
   },
   {
@@ -3058,7 +3547,10 @@
       "author": "TypeSafe AI",
       "replies": 17,
       "retweets": 8,
-      "bookmarks": 36
+      "bookmarks": 36,
+      "jevAbout": 0.3,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.68
     }
   },
   {
@@ -3075,7 +3567,10 @@
       "author": "Ryan McAdams",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.84,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.51
     }
   },
   {
@@ -3098,7 +3593,10 @@
       "author": "Bogdan Dragomir",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.89,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.26
     }
   },
   {
@@ -3115,7 +3613,10 @@
       "author": "Alemar",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.78,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.45
     }
   },
   {
@@ -3132,7 +3633,10 @@
       "author": "Julien",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.89,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.54
     }
   },
   {
@@ -3149,7 +3653,10 @@
       "author": "connect24h",
       "replies": 0,
       "retweets": 1,
-      "bookmarks": 4
+      "bookmarks": 4,
+      "jevAbout": 0.65,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.32
     }
   },
   {
@@ -3166,7 +3673,10 @@
       "author": "TypeSafe AI",
       "replies": 22,
       "retweets": 43,
-      "bookmarks": 110
+      "bookmarks": 110,
+      "jevAbout": 0.28,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.26
     }
   },
   {
@@ -3189,7 +3699,10 @@
       "author": "tamara",
       "replies": 301,
       "retweets": 499,
-      "bookmarks": 6152
+      "bookmarks": 6152,
+      "jevAbout": 0.9,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.54
     }
   },
   {
@@ -3206,7 +3719,10 @@
       "author": "rita kozlov 🐀",
       "replies": 24,
       "retweets": 40,
-      "bookmarks": 164
+      "bookmarks": 164,
+      "jevAbout": 0.66,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.45
     }
   },
   {
@@ -3229,7 +3745,10 @@
       "author": "Sahibzada Allahyar",
       "replies": 34,
       "retweets": 50,
-      "bookmarks": 745
+      "bookmarks": 745,
+      "jevAbout": 0.39,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.46
     }
   },
   {
@@ -3252,7 +3771,10 @@
       "author": "alaska",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 3
+      "bookmarks": 3,
+      "jevAbout": 0.9,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.43
     }
   },
   {
@@ -3275,7 +3797,10 @@
       "author": "RaZaan",
       "replies": 17,
       "retweets": 12,
-      "bookmarks": 197
+      "bookmarks": 197,
+      "jevAbout": 0.7,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.33
     }
   },
   {
@@ -3295,7 +3820,10 @@
       "author": "tripcop",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.9,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.22
     }
   },
   {
@@ -3312,7 +3840,10 @@
       "author": "Vaibhav Acharya",
       "replies": 1,
       "retweets": 2,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.91,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.57
     }
   },
   {
@@ -3329,7 +3860,10 @@
       "author": "Unaiz",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.8,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.72
     }
   },
   {
@@ -3346,7 +3880,10 @@
       "author": "Veros",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.84,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.52
     }
   },
   {
@@ -3363,7 +3900,10 @@
       "author": "Muhammad Saad",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.9,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.65
     }
   },
   {
@@ -3380,7 +3920,10 @@
       "author": "Süha Boncukçu",
       "replies": 2,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.67,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.34
     }
   },
   {
@@ -3400,7 +3943,10 @@
       "author": "Bra1nD3aD (Ø,G) 🍊,💊",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 1
+      "bookmarks": 1,
+      "jevAbout": 0.36,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.33
     }
   },
   {
@@ -3423,7 +3969,10 @@
       "author": "atomic.chat",
       "replies": 10,
       "retweets": 30,
-      "bookmarks": 204
+      "bookmarks": 204,
+      "jevAbout": 0.9,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.67
     }
   },
   {
@@ -3443,7 +3992,10 @@
       "author": "giulio",
       "replies": 0,
       "retweets": 1,
-      "bookmarks": 12
+      "bookmarks": 12,
+      "jevAbout": 0.88,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.97
     }
   },
   {
@@ -3460,7 +4012,10 @@
       "author": "Jonathan Rhyne",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.62,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.37
     }
   },
   {
@@ -3477,7 +4032,10 @@
       "author": "ANUP",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.39,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.28
     }
   },
   {
@@ -3494,7 +4052,10 @@
       "author": "Manny",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 3
+      "bookmarks": 3,
+      "jevAbout": 0.84,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.57
     }
   },
   {
@@ -3511,7 +4072,10 @@
       "author": "Mihir Karia",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.56,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.3
     }
   },
   {
@@ -3534,7 +4098,10 @@
       "author": "Milind S",
       "replies": 81,
       "retweets": 78,
-      "bookmarks": 1263
+      "bookmarks": 1263,
+      "jevAbout": 0.79,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.38
     }
   },
   {
@@ -3551,7 +4118,10 @@
       "author": "Kenji Namatame",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 1
+      "bookmarks": 1,
+      "jevAbout": 0.81,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.46
     }
   },
   {
@@ -3574,7 +4144,10 @@
       "author": "松井健太郎 睡眠・精神医学 (Kentaro Matsui)",
       "replies": 0,
       "retweets": 1,
-      "bookmarks": 4
+      "bookmarks": 4,
+      "jevAbout": 0.81,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.69
     }
   },
   {
@@ -3597,7 +4170,10 @@
       "author": "Paolo Rosson",
       "replies": 90,
       "retweets": 124,
-      "bookmarks": 2416
+      "bookmarks": 2416,
+      "jevAbout": 0.94,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.67
     }
   },
   {
@@ -3620,7 +4196,10 @@
       "author": "Raihan Khan",
       "replies": 11,
       "retweets": 3,
-      "bookmarks": 61
+      "bookmarks": 61,
+      "jevAbout": 0.91,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.6
     }
   },
   {
@@ -3643,7 +4222,10 @@
       "author": "SKIPDAY (Takan - a vibe launcher) 🇮🇩",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.71,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.23
     }
   },
   {
@@ -3660,7 +4242,10 @@
       "author": "Peter Taras",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.86,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.67
     }
   },
   {
@@ -3677,7 +4262,10 @@
       "author": "松井健太郎 睡眠・精神医学 (Kentaro Matsui)",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.56,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.46
     }
   },
   {
@@ -3697,7 +4285,10 @@
       "author": "Plebus Maximus",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.85,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.26
     }
   },
   {
@@ -3714,7 +4305,10 @@
       "author": "jordan",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.63,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.42
     }
   },
   {
@@ -3731,7 +4325,10 @@
       "author": "Marton Dobos",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.48,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.32
     }
   },
   {
@@ -3748,7 +4345,10 @@
       "author": "chrisreedbates",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.72,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.46
     }
   },
   {
@@ -3771,7 +4371,10 @@
       "author": "Aamir | ai tools",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.78,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.23
     }
   },
   {
@@ -3788,7 +4391,10 @@
       "author": "Advany",
       "replies": 5,
       "retweets": 0,
-      "bookmarks": 126
+      "bookmarks": 126,
+      "jevAbout": 0.75,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.64
     }
   },
   {
@@ -3808,7 +4414,10 @@
       "author": "Wesley",
       "replies": 17,
       "retweets": 7,
-      "bookmarks": 112
+      "bookmarks": 112,
+      "jevAbout": 0.39,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.71
     }
   },
   {
@@ -3825,7 +4434,10 @@
       "author": "Yamasy",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.74,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.74
     }
   },
   {
@@ -3848,7 +4460,10 @@
       "author": "Seth Burkart",
       "replies": 0,
       "retweets": 2,
-      "bookmarks": 2
+      "bookmarks": 2,
+      "jevAbout": 0.53,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.21
     }
   },
   {
@@ -3865,7 +4480,10 @@
       "author": "Mike Hostetler // Actors & Agents on the BEAM",
       "replies": 10,
       "retweets": 2,
-      "bookmarks": 14
+      "bookmarks": 14,
+      "jevAbout": 0.87,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.37
     }
   },
   {
@@ -3882,7 +4500,10 @@
       "author": "Corey",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.14,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.51
     }
   },
   {
@@ -3905,7 +4526,10 @@
       "author": "Duncan",
       "replies": 7,
       "retweets": 9,
-      "bookmarks": 31
+      "bookmarks": 31,
+      "jevAbout": 0.88,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.78
     }
   },
   {
@@ -3925,7 +4549,10 @@
       "author": "Marcin Kłeczek",
       "replies": 2,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.91,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.36
     }
   },
   {
@@ -3942,7 +4569,10 @@
       "author": "abdel",
       "replies": 9,
       "retweets": 8,
-      "bookmarks": 80
+      "bookmarks": 80,
+      "jevAbout": 0.84,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.08
     }
   },
   {
@@ -3959,7 +4589,10 @@
       "author": "Kojo Jeffery",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.68,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.67
     }
   },
   {
@@ -3976,7 +4609,10 @@
       "author": "pixasocial",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.93,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.34
     }
   },
   {
@@ -3993,7 +4629,10 @@
       "author": "Rodrigo Ornellas",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.85,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.69
     }
   },
   {
@@ -4010,7 +4649,10 @@
       "author": "Elixir Forum",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 1
+      "bookmarks": 1,
+      "jevAbout": 0.87,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.33
     }
   },
   {
@@ -4027,7 +4669,10 @@
       "author": "Kasun Vithanage",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.76,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.53
     }
   },
   {
@@ -4047,7 +4692,10 @@
       "author": "James Tucker",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.64,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.71
     }
   },
   {
@@ -4064,7 +4712,10 @@
       "author": "율무커피 YulmuCoffee",
       "replies": 6,
       "retweets": 12,
-      "bookmarks": 80
+      "bookmarks": 80,
+      "jevAbout": 0.56,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.38
     }
   },
   {
@@ -4081,7 +4732,10 @@
       "author": "おれんじぷれっぱ。",
       "replies": 2,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.57,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.5
     }
   },
   {
@@ -4098,7 +4752,10 @@
       "author": "Victor Mario",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.73,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.63
     }
   },
   {
@@ -4115,7 +4772,10 @@
       "author": "jc_stack",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.86,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.22
     }
   },
   {
@@ -4132,7 +4792,10 @@
       "author": "Shoh G Man",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.93,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.65
     }
   },
   {
@@ -4149,7 +4812,10 @@
       "author": "Jalal Ashrafi",
       "replies": 4,
       "retweets": 1,
-      "bookmarks": 21
+      "bookmarks": 21,
+      "jevAbout": 0.76,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.31
     }
   },
   {
@@ -4172,7 +4838,10 @@
       "author": "OpaisOfficial",
       "replies": 2,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.79,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.25
     }
   },
   {
@@ -4189,7 +4858,10 @@
       "author": "Kabil ⚡",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.74,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.6
     }
   },
   {
@@ -4206,7 +4878,10 @@
       "author": "Vishal Pawar",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.55,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.45
     }
   },
   {
@@ -4226,7 +4901,10 @@
       "author": "Eternos974",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.74,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.65
     }
   },
   {
@@ -4243,7 +4921,10 @@
       "author": "为什么叫QQ",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 1
+      "bookmarks": 1,
+      "jevAbout": 0.87,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.53
     }
   },
   {
@@ -4266,7 +4947,10 @@
       "author": "Vlad Terin",
       "replies": 7,
       "retweets": 4,
-      "bookmarks": 136
+      "bookmarks": 136,
+      "jevAbout": 0.24,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.32
     }
   },
   {
@@ -4286,7 +4970,10 @@
       "author": "egoaidapp",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.73,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.78
     }
   },
   {
@@ -4306,7 +4993,10 @@
       "author": "Sadnan",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.82,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.63
     }
   },
   {
@@ -4323,7 +5013,10 @@
       "author": "Zane Starr 🌠",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.84,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.62
     }
   },
   {
@@ -4340,7 +5033,10 @@
       "author": "syumai",
       "replies": 1,
       "retweets": 2,
-      "bookmarks": 34
+      "bookmarks": 34,
+      "jevAbout": 0.91,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.53
     }
   },
   {
@@ -4360,7 +5056,10 @@
       "author": "SUGURU N",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 1
+      "bookmarks": 1,
+      "jevAbout": 0.9,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.59
     }
   },
   {
@@ -4380,7 +5079,10 @@
       "author": "Tobi | Rail",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.9,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.7
     }
   },
   {
@@ -4400,7 +5102,10 @@
       "author": "ジュンスポーツ北海道（体操競技）",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.37,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.62
     }
   },
   {
@@ -4420,7 +5125,10 @@
       "author": "JIN@★AI×クリプト&BCG",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.94,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.49
     }
   },
   {
@@ -4441,7 +5149,10 @@
       "author": "Fakhri Putra",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.74,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.49
     }
   },
   {
@@ -4458,7 +5169,10 @@
       "author": "TypeSafe AI",
       "replies": 7,
       "retweets": 13,
-      "bookmarks": 35
+      "bookmarks": 35,
+      "jevAbout": 0.31,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.26
     }
   },
   {
@@ -4475,7 +5189,10 @@
       "author": "Vercel Developers",
       "replies": 23,
       "retweets": 75,
-      "bookmarks": 517
+      "bookmarks": 517,
+      "jevAbout": 0.87,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.62
     }
   },
   {
@@ -4492,7 +5209,10 @@
       "author": "TypeSafe AI",
       "replies": 61,
       "retweets": 145,
-      "bookmarks": 785
+      "bookmarks": 785,
+      "jevAbout": 0.86,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.49
     }
   },
   {
@@ -4512,7 +5232,10 @@
       "author": "Bryan Bischof fka Dr. Donut",
       "replies": 0,
       "retweets": 1,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.71,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.65
     }
   },
   {
@@ -4529,7 +5252,10 @@
       "author": "Farzan Ansari",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.46,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.69
     }
   },
   {
@@ -4552,7 +5278,10 @@
       "author": "AI/ML API",
       "replies": 136,
       "retweets": 137,
-      "bookmarks": 726
+      "bookmarks": 726,
+      "jevAbout": 0.83,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.48
     }
   },
   {
@@ -4569,7 +5298,10 @@
       "author": "Marcos Besteiro 👧🏻👶🏻",
       "replies": 2,
       "retweets": 0,
-      "bookmarks": 8
+      "bookmarks": 8,
+      "jevAbout": 0.91,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.26
     }
   },
   {
@@ -4586,7 +5318,10 @@
       "author": "Marcos Besteiro 👧🏻👶🏻",
       "replies": 11,
       "retweets": 3,
-      "bookmarks": 27
+      "bookmarks": 27,
+      "jevAbout": 0.81,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.48
     }
   },
   {
@@ -4606,7 +5341,10 @@
       "author": "katrieme",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.81,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.49
     }
   },
   {
@@ -4626,7 +5364,10 @@
       "author": "AI SDK",
       "replies": 15,
       "retweets": 42,
-      "bookmarks": 333
+      "bookmarks": 333,
+      "jevAbout": 0.8,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.15
     }
   },
   {
@@ -4643,7 +5384,10 @@
       "author": "Read0nlyNet",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.95,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.38
     }
   },
   {
@@ -4660,7 +5404,10 @@
       "author": "Puffer",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 1
+      "bookmarks": 1,
+      "jevAbout": 0.86,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.26
     }
   },
   {
@@ -4677,7 +5424,10 @@
       "author": "esk",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.8,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.56
     }
   },
   {
@@ -4694,7 +5444,10 @@
       "author": "Saad | building CoralSwarm & CrossTask",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.8,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.27
     }
   },
   {
@@ -4711,7 +5464,10 @@
       "author": "📅 ThursdAI - live 8:30am every Thu",
       "replies": 1,
       "retweets": 1,
-      "bookmarks": 1
+      "bookmarks": 1,
+      "jevAbout": 0.27,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.47
     }
   },
   {
@@ -4728,7 +5484,10 @@
       "author": "Alex Volkov",
       "replies": 2,
       "retweets": 1,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.17,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.54
     }
   },
   {
@@ -4745,7 +5504,10 @@
       "author": "TypeSafe AI",
       "replies": 54,
       "retweets": 5,
-      "bookmarks": 7
+      "bookmarks": 7,
+      "jevAbout": 0.82,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.76
     }
   },
   {
@@ -4765,7 +5527,10 @@
       "author": "TypeSafe AI",
       "replies": 6,
       "retweets": 9,
-      "bookmarks": 24
+      "bookmarks": 24,
+      "jevAbout": 0.17,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.45
     }
   },
   {
@@ -4782,7 +5547,10 @@
       "author": "TypeSafe AI",
       "replies": 290,
       "retweets": 67,
-      "bookmarks": 130
+      "bookmarks": 130,
+      "jevAbout": 0.81,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.23
     }
   },
   {
@@ -4805,7 +5573,10 @@
       "author": "Justin Schroeder",
       "replies": 205,
       "retweets": 247,
-      "bookmarks": 1748
+      "bookmarks": 1748,
+      "jevAbout": 0.39,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.4
     }
   },
   {
@@ -4822,7 +5593,10 @@
       "author": "Ethan Abimelech",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.77,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.59
     }
   },
   {
@@ -4839,7 +5613,10 @@
       "author": "ボルゾイ🏝️がっちゃん（MAX改め）",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.84,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.34
     }
   },
   {
@@ -4856,7 +5633,10 @@
       "author": "Backlog Decay",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.9,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.34
     }
   },
   {
@@ -4879,7 +5659,10 @@
       "author": "Matt Simpson",
       "replies": 3,
       "retweets": 1,
-      "bookmarks": 3
+      "bookmarks": 3,
+      "jevAbout": 0.85,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.27
     }
   },
   {
@@ -4896,7 +5679,10 @@
       "author": "TypeSafe AI",
       "replies": 9,
       "retweets": 3,
-      "bookmarks": 57
+      "bookmarks": 57,
+      "jevAbout": 0.26,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.46
     }
   },
   {
@@ -4913,7 +5699,10 @@
       "author": "TypeSafe AI",
       "replies": 4,
       "retweets": 2,
-      "bookmarks": 27
+      "bookmarks": 27,
+      "jevAbout": 0.12,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.7
     }
   },
   {
@@ -4936,7 +5725,10 @@
       "author": "Tanmay Saboo",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.86,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.59
     }
   },
   {
@@ -4953,7 +5745,10 @@
       "author": "Abhijay",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.54,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.83
     }
   },
   {
@@ -4970,7 +5765,10 @@
       "author": "Redwood Labs",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.84,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.33
     }
   },
   {
@@ -4987,7 +5785,10 @@
       "author": "Allie the Icon",
       "replies": 2,
       "retweets": 0,
-      "bookmarks": 3
+      "bookmarks": 3,
+      "jevAbout": 0.85,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.37
     }
   },
   {
@@ -5004,7 +5805,10 @@
       "author": "Mitchell Agoma",
       "replies": 2,
       "retweets": 1,
-      "bookmarks": 13
+      "bookmarks": 13,
+      "jevAbout": 0.81,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.19
     }
   },
   {
@@ -5021,7 +5825,10 @@
       "author": "TextLayer",
       "replies": 1,
       "retweets": 1,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.86,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.34
     }
   },
   {
@@ -5038,7 +5845,10 @@
       "author": "jordan",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.74,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.54
     }
   },
   {
@@ -5055,7 +5865,10 @@
       "author": "iaexpertos.net",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.7,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.39
     }
   },
   {
@@ -5072,7 +5885,10 @@
       "author": "Guillermo Rauch",
       "replies": 134,
       "retweets": 168,
-      "bookmarks": 1436
+      "bookmarks": 1436,
+      "jevAbout": 0.83,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.25
     }
   },
   {
@@ -5089,7 +5905,10 @@
       "author": "dax",
       "replies": 94,
       "retweets": 110,
-      "bookmarks": 1643
+      "bookmarks": 1643,
+      "jevAbout": 0.62,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.52
     }
   },
   {
@@ -5106,7 +5925,10 @@
       "author": "seva konjahhin",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.57,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.49
     }
   },
   {
@@ -5123,7 +5945,10 @@
       "author": "Simo | ai-costguard",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.91,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.27
     }
   },
   {
@@ -5140,7 +5965,10 @@
       "author": "Martice",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.95,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.62
     }
   },
   {
@@ -5157,7 +5985,10 @@
       "author": "Sebastian Gallic",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.19,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.47
     }
   },
   {
@@ -5174,7 +6005,10 @@
       "author": "Gaurav Albal",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.14,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.58
     }
   },
   {
@@ -5191,7 +6025,10 @@
       "author": "danilolima",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.48,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.49
     }
   },
   {
@@ -5208,7 +6045,10 @@
       "author": "Roger HE",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.86,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.31
     }
   },
   {
@@ -5231,7 +6071,10 @@
       "author": "it’s rivian",
       "replies": 12,
       "retweets": 7,
-      "bookmarks": 49
+      "bookmarks": 49,
+      "jevAbout": 0.76,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.49
     }
   },
   {
@@ -5248,7 +6091,10 @@
       "author": "TypeSafe AI",
       "replies": 33,
       "retweets": 26,
-      "bookmarks": 137
+      "bookmarks": 137,
+      "jevAbout": 0.81,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.43
     }
   },
   {
@@ -5268,7 +6114,10 @@
       "author": "Malte Ubl",
       "replies": 40,
       "retweets": 37,
-      "bookmarks": 225
+      "bookmarks": 225,
+      "jevAbout": 0.89,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.26
     }
   },
   {
@@ -5291,7 +6140,10 @@
       "author": "aaron",
       "replies": 64,
       "retweets": 118,
-      "bookmarks": 1999
+      "bookmarks": 1999,
+      "jevAbout": 0.66,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.36
     }
   },
   {
@@ -5311,7 +6163,10 @@
       "author": "Local Tourist",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.84,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.46
     }
   },
   {
@@ -5331,7 +6186,10 @@
       "author": "Montissol Stevens",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.82,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.45
     }
   },
   {
@@ -5354,7 +6212,10 @@
       "author": "L'Carpetron",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.64,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.3
     }
   },
   {
@@ -5371,7 +6232,10 @@
       "author": "RabbitHoleExplorer",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.79,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.26
     }
   },
   {
@@ -5388,7 +6252,10 @@
       "author": "John Luke",
       "replies": 0,
       "retweets": 1,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.87,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.24
     }
   },
   {
@@ -5408,7 +6275,10 @@
       "author": "Calissa M",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.67,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.49
     }
   },
   {
@@ -5425,7 +6295,10 @@
       "author": "Ángel Molina Laguna",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.87,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.43
     }
   },
   {
@@ -5445,7 +6318,10 @@
       "author": "Davide Crapis",
       "replies": 7,
       "retweets": 1,
-      "bookmarks": 3
+      "bookmarks": 3,
+      "jevAbout": 0.89,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.37
     }
   },
   {
@@ -5468,7 +6344,10 @@
       "author": "ChillHaven𝕏",
       "replies": 0,
       "retweets": 1,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.95,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.88
     }
   },
   {
@@ -5485,7 +6364,10 @@
       "author": "Mahlum Innovations, LLC",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.4,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.52
     }
   },
   {
@@ -5502,7 +6384,10 @@
       "author": "ラクシュ/Tech_AI&3D",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.95,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.76
     }
   },
   {
@@ -5519,7 +6404,10 @@
       "author": "Blognone",
       "replies": 0,
       "retweets": 1,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.7,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.28
     }
   },
   {
@@ -5536,7 +6424,10 @@
       "author": "Caleb Gross",
       "replies": 0,
       "retweets": 3,
-      "bookmarks": 2
+      "bookmarks": 2,
+      "jevAbout": 0.22,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.48
     }
   },
   {
@@ -5553,7 +6444,10 @@
       "author": "율무커피 YulmuCoffee",
       "replies": 11,
       "retweets": 66,
-      "bookmarks": 226
+      "bookmarks": 226,
+      "jevAbout": 0.88,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.19
     }
   },
   {
@@ -5570,7 +6464,10 @@
       "author": "Erhan Meydan",
       "replies": 10,
       "retweets": 10,
-      "bookmarks": 211
+      "bookmarks": 211,
+      "jevAbout": 0.63,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.2
     }
   },
   {
@@ -5587,7 +6484,10 @@
       "author": "初心者",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.37,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.64
     }
   },
   {
@@ -5604,7 +6504,10 @@
       "author": "宮治 裕 MIYAJI, Yutaka",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.88,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.33
     }
   },
   {
@@ -5621,7 +6524,10 @@
       "author": "Ondrej Bacina ⚡️🔋🚗 🤖🇨🇿🇺🇦",
       "replies": 2,
       "retweets": 2,
-      "bookmarks": 17
+      "bookmarks": 17,
+      "jevAbout": 0.92,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.41
     }
   },
   {
@@ -5638,7 +6544,10 @@
       "author": "LumaDock",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.85,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.19
     }
   },
   {
@@ -5655,7 +6564,10 @@
       "author": "ITフレブル【実務派エンジニア速報】",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.94,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.42
     }
   },
   {
@@ -5672,7 +6584,10 @@
       "author": "David Borish",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.94,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.67
     }
   },
   {
@@ -5689,7 +6604,10 @@
       "author": "Vishesh Baghel",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.95,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.7
     }
   },
   {
@@ -5706,7 +6624,10 @@
       "author": "Subhash Yadav",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.86,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.26
     }
   },
   {
@@ -5723,7 +6644,10 @@
       "author": "David Borish",
       "replies": 3,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.88,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.22
     }
   },
   {
@@ -5743,7 +6667,10 @@
       "author": "Ederson Melo",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.48,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.66
     }
   },
   {
@@ -5760,7 +6687,10 @@
       "author": "Sakiyomi｜世界のAI関連動向",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.88,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.49
     }
   },
   {
@@ -5777,7 +6707,10 @@
       "author": "Y.Yamashiro",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.77,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.34
     }
   },
   {
@@ -5797,7 +6730,10 @@
       "author": "Mira Ai",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.85,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.34
     }
   },
   {
@@ -5814,7 +6750,10 @@
       "author": "Mo Shaik",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.89,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.51
     }
   },
   {
@@ -5831,7 +6770,10 @@
       "author": "株式会社グランドリーム",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.69,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.37
     }
   },
   {
@@ -5851,7 +6793,10 @@
       "author": "ASM",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 1
+      "bookmarks": 1,
+      "jevAbout": 0.81,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.3
     }
   },
   {
@@ -5874,7 +6819,10 @@
       "author": "fox hsiao",
       "replies": 1,
       "retweets": 5,
-      "bookmarks": 17
+      "bookmarks": 17,
+      "jevAbout": 0.87,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.49
     }
   },
   {
@@ -5891,7 +6839,10 @@
       "author": "現役電気系エンジニア | 氷河期世代",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.82,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.3
     }
   },
   {
@@ -5913,7 +6864,10 @@
       "author": "typespace",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 1
+      "bookmarks": 1,
+      "jevAbout": 0.87,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.62
     }
   },
   {
@@ -5930,7 +6884,10 @@
       "author": "Ayyaz",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 1
+      "bookmarks": 1,
+      "jevAbout": 0.91,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.74
     }
   },
   {
@@ -5947,7 +6904,10 @@
       "author": "Saudi Arabian",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.86,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.35
     }
   },
   {
@@ -5964,7 +6924,10 @@
       "author": "Raitox",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.76,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.73
     }
   },
   {
@@ -5981,7 +6944,10 @@
       "author": "Saudi Arabian",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.87,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.29
     }
   },
   {
@@ -5998,7 +6964,10 @@
       "author": ":omer",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.55,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.27
     }
   },
   {
@@ -6015,7 +6984,10 @@
       "author": "Chandramouly Kandachar",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 2
+      "bookmarks": 2,
+      "jevAbout": 0.59,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.45
     }
   },
   {
@@ -6032,7 +7004,10 @@
       "author": "meow",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.87,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.26
     }
   },
   {
@@ -6049,7 +7024,10 @@
       "author": "pulpmatrix",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.92,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.6
     }
   },
   {
@@ -6066,7 +7044,10 @@
       "author": "Bill Xie",
       "replies": 2,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.78,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.42
     }
   },
   {
@@ -6083,7 +7064,10 @@
       "author": "TypeSafe AI",
       "replies": 123,
       "retweets": 57,
-      "bookmarks": 74
+      "bookmarks": 74,
+      "jevAbout": 0.47,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.31
     }
   },
   {
@@ -6100,7 +7084,10 @@
       "author": "Les Mileistes Français 🦁🇫🇷",
       "replies": 4,
       "retweets": 16,
-      "bookmarks": 25
+      "bookmarks": 25,
+      "jevAbout": 0.52,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.3
     }
   },
   {
@@ -6123,7 +7110,10 @@
       "author": "Kalai",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.59,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.48
     }
   },
   {
@@ -6140,7 +7130,10 @@
       "author": "Sami",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.57,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.58
     }
   },
   {
@@ -6157,7 +7150,10 @@
       "author": "FlorisFok",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.9,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.3
     }
   },
   {
@@ -6174,7 +7170,10 @@
       "author": "Olive Eyes",
       "replies": 2,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.84,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.63
     }
   },
   {
@@ -6194,7 +7193,10 @@
       "author": "Sumjit",
       "replies": 1,
       "retweets": 1,
-      "bookmarks": 3
+      "bookmarks": 3,
+      "jevAbout": 0.67,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.77
     }
   },
   {
@@ -6211,7 +7213,10 @@
       "author": "Omid",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.75,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.61
     }
   },
   {
@@ -6228,7 +7233,10 @@
       "author": "AarynLu",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.57,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.77
     }
   },
   {
@@ -6248,7 +7256,10 @@
       "author": "Nate Chan",
       "replies": 78,
       "retweets": 11,
-      "bookmarks": 259
+      "bookmarks": 259,
+      "jevAbout": 0.79,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.67
     }
   },
   {
@@ -6265,7 +7276,10 @@
       "author": "ghtght",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.65,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.5
     }
   },
   {
@@ -6282,7 +7296,10 @@
       "author": "ARGO",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.79,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.37
     }
   },
   {
@@ -6299,7 +7316,10 @@
       "author": "AM09:21",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 10
+      "bookmarks": 10,
+      "jevAbout": 0.62,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.52
     }
   },
   {
@@ -6316,7 +7336,10 @@
       "author": "soba (dist/acc)",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.92,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.63
     }
   },
   {
@@ -6339,7 +7362,10 @@
       "author": "Jason",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 1
+      "bookmarks": 1,
+      "jevAbout": 0.46,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.25
     }
   },
   {
@@ -6356,7 +7382,10 @@
       "author": "Michael R Dawley Jr",
       "replies": 0,
       "retweets": 1,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.95,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.37
     }
   },
   {
@@ -6379,7 +7408,10 @@
       "author": "TORA",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.75,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.53
     }
   },
   {
@@ -6396,7 +7428,10 @@
       "author": "د. عيسى المزروعي",
       "replies": 0,
       "retweets": 1,
-      "bookmarks": 1
+      "bookmarks": 1,
+      "jevAbout": 0.9,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.47
     }
   },
   {
@@ -6413,7 +7448,10 @@
       "author": "Raymond",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.83,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.41
     }
   },
   {
@@ -6433,7 +7471,10 @@
       "author": "Matsumoto | 大手開拓AI | Sales Retriever CEO🐶",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.77,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.24
     }
   },
   {
@@ -6450,7 +7491,10 @@
       "author": "Decoding CyberSecurity by Rakesh Nayam",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 1
+      "bookmarks": 1,
+      "jevAbout": 0.94,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.53
     }
   },
   {
@@ -6467,7 +7511,10 @@
       "author": "Swedbankz",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.4,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.61
     }
   },
   {
@@ -6484,7 +7531,10 @@
       "author": "Qore.com",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.69,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.35
     }
   },
   {
@@ -6501,7 +7551,10 @@
       "author": "top traders desk | Algo",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 1
+      "bookmarks": 1,
+      "jevAbout": 0.81,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.41
     }
   },
   {
@@ -6518,7 +7571,10 @@
       "author": "Mechagems",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.76,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.18
     }
   },
   {
@@ -6535,7 +7591,10 @@
       "author": "Adam Jacob",
       "replies": 2,
       "retweets": 3,
-      "bookmarks": 9
+      "bookmarks": 9,
+      "jevAbout": 0.53,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.28
     }
   },
   {
@@ -6552,7 +7611,10 @@
       "author": "Felipe Demartini",
       "replies": 22,
       "retweets": 74,
-      "bookmarks": 1035
+      "bookmarks": 1035,
+      "jevAbout": 0.95,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.51
     }
   },
   {
@@ -6572,7 +7634,10 @@
       "author": "Bad Signal",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.93,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.64
     }
   },
   {
@@ -6592,7 +7657,10 @@
       "author": "Przemyslaw",
       "replies": 1,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.67,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.43
     }
   },
   {
@@ -6609,7 +7677,10 @@
       "author": "xIA",
       "replies": 0,
       "retweets": 1,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.81,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.33
     }
   },
   {
@@ -6626,7 +7697,10 @@
       "author": "Michael",
       "replies": 127,
       "retweets": 177,
-      "bookmarks": 2593
+      "bookmarks": 2593,
+      "jevAbout": 0.83,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.24
     }
   },
   {
@@ -6643,7 +7717,10 @@
       "author": "JimiLonbo",
       "replies": 2,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.96,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.8
     }
   },
   {
@@ -6663,7 +7740,10 @@
       "author": "ByungJun Ahn",
       "replies": 2,
       "retweets": 34,
-      "bookmarks": 92
+      "bookmarks": 92,
+      "jevAbout": 0.94,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.43
     }
   },
   {
@@ -6680,7 +7760,10 @@
       "author": "根岸智幸@AIを使役する人",
       "replies": 1,
       "retweets": 4,
-      "bookmarks": 6
+      "bookmarks": 6,
+      "jevAbout": 0.87,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.41
     }
   },
   {
@@ -6697,7 +7780,10 @@
       "author": "Rainey",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.91,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.49
     }
   },
   {
@@ -6714,7 +7800,10 @@
       "author": "CatsGPT",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.94,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.47
     }
   },
   {
@@ -6734,7 +7823,10 @@
       "author": "Mikel | AI Engineer",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 1
+      "bookmarks": 1,
+      "jevAbout": 0.85,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.47
     }
   },
   {
@@ -6754,7 +7846,10 @@
       "author": "Midas",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.92,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.25
     }
   },
   {
@@ -6774,7 +7869,10 @@
       "author": "NewsTongue",
       "replies": 0,
       "retweets": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.94,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.58
     }
   },
   {
@@ -6791,7 +7889,10 @@
       "author": "AI Frontliner",
       "replies": 1,
       "retweets": 16,
-      "bookmarks": 39
+      "bookmarks": 39,
+      "jevAbout": 0.82,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.26
     }
   },
   {
@@ -6808,7 +7909,10 @@
       "author": "The AI Colony",
       "replies": 1,
       "retweets": 18,
-      "bookmarks": 41
+      "bookmarks": 41,
+      "jevAbout": 0.82,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.49
     }
   },
   {
@@ -6825,7 +7929,10 @@
       "author": "imjustnewatai",
       "replies": 1,
       "retweets": 3,
-      "bookmarks": 3
+      "bookmarks": 3,
+      "jevAbout": 0.96,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.64
     }
   },
   {
@@ -6842,7 +7949,10 @@
       "author": "KC",
       "replies": 0,
       "retweets": 1,
-      "bookmarks": 4
+      "bookmarks": 4,
+      "jevAbout": 0.93,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.25
     }
   },
   {
@@ -6859,7 +7969,10 @@
       "author": "silvan",
       "replies": 0,
       "retweets": 1,
-      "bookmarks": 2
+      "bookmarks": 2,
+      "jevAbout": 0.82,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.41
     }
   },
   {
@@ -6882,7 +7995,10 @@
       "author": "Rohan Paul",
       "replies": 16,
       "retweets": 18,
-      "bookmarks": 63
+      "bookmarks": 63,
+      "jevAbout": 0.9,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.64
     }
   },
   {
@@ -6902,7 +8018,10 @@
       "author": "AGTP",
       "replies": 4,
       "retweets": 9,
-      "bookmarks": 81
+      "bookmarks": 81,
+      "jevAbout": 0.93,
+      "jevKeep": "keep",
+      "jevKeepConfidence": 0.73
     }
   },
   {
@@ -6919,7 +8038,10 @@
       "author": "SONIA",
       "replies": 0,
       "retweets": 1,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.88,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.27
     }
   },
   {
@@ -6936,7 +8058,10 @@
       "author": "draven",
       "replies": 1,
       "retweets": 1,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "jevAbout": 0.68,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.33
     }
   },
   {
@@ -6953,7 +8078,10 @@
       "author": "TypeSafe AI",
       "replies": 69,
       "retweets": 26,
-      "bookmarks": 114
+      "bookmarks": 114,
+      "jevAbout": 0.1,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.88
     }
   },
   {
@@ -6970,7 +8098,10 @@
       "author": "TypeSafe AI",
       "replies": 331,
       "retweets": 266,
-      "bookmarks": 476
+      "bookmarks": 476,
+      "jevAbout": 0.15,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.73
     }
   },
   {
@@ -6987,7 +8118,10 @@
       "author": "Diogo Almeida",
       "replies": 156,
       "retweets": 180,
-      "bookmarks": 3026
+      "bookmarks": 3026,
+      "jevAbout": 0.89,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.31
     }
   },
   {
@@ -7010,7 +8144,10 @@
       "author": "Diogo Almeida",
       "replies": 25,
       "retweets": 64,
-      "bookmarks": 400
+      "bookmarks": 400,
+      "jevAbout": 0.07,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 1
     }
   },
   {
@@ -7033,7 +8170,10 @@
       "author": "Diogo Almeida",
       "replies": 90,
       "retweets": 229,
-      "bookmarks": 1084
+      "bookmarks": 1084,
+      "jevAbout": 0.27,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.75
     }
   },
   {
@@ -7054,7 +8194,10 @@
       "author": "Diogo Almeida",
       "replies": 40,
       "retweets": 138,
-      "bookmarks": 736
+      "bookmarks": 736,
+      "jevAbout": 0.76,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.51
     }
   },
   {
@@ -7077,7 +8220,10 @@
       "author": "Diogo Almeida",
       "replies": 69,
       "retweets": 134,
-      "bookmarks": 1023
+      "bookmarks": 1023,
+      "jevAbout": 0.8,
+      "jevKeep": "review",
+      "jevKeepConfidence": 0.36
     }
   },
   {
@@ -7100,7 +8246,10 @@
       "author": "Diogo Almeida",
       "replies": 3603,
       "retweets": 7250,
-      "bookmarks": 55375
+      "bookmarks": 55375,
+      "jevAbout": 0.83,
+      "jevKeep": "drop",
+      "jevKeepConfidence": 0.27
     }
   }
 ]
