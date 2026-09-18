@@ -32,6 +32,11 @@ export const en = {
   sortXLabel: 'Sort X items',
   sortYoutubeLabel: 'Sort YouTube items',
   sortViews: 'Views',
+  tweetEngagement: 'Post stats',
+  tweetReplies: 'Replies',
+  tweetReposts: 'Reposts',
+  tweetLikes: 'Likes',
+  tweetBookmarks: 'Bookmarks',
 } as const
 
 export type MessageKey = keyof typeof en

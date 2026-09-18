@@ -34,4 +34,9 @@ export const zh: Messages = {
   sortXLabel: '排序 X 条目',
   sortYoutubeLabel: '排序 YouTube 条目',
   sortViews: '播放',
+  tweetEngagement: '帖子互动',
+  tweetReplies: '回复',
+  tweetReposts: '转发',
+  tweetLikes: '点赞',
+  tweetBookmarks: '收藏',
 }

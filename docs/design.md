@@ -153,7 +153,7 @@ Hard reject decorative gradients, gradient text, glows, blobs, stripes, textures
 Directory cards are evidence, not decoration:
 
 - GitHub: title, summary, stars, forks, language, tags, outbound repo URL.
-- X: summary (post body), handle, date, likes, optional remote `mediaUrls` / `videoUrls` (never commit binary media). Native `<video controls>` for the first mp4; no autoplay.
+- X: Twitter-like card — avatar, display name, handle, date; summary; media; bottom row of replies / reposts / likes / bookmarks (no view counts). Optional remote `mediaUrls` / `videoUrls` (never commit binary media). Native `<video controls>` for the first mp4; no autoplay.
 - Counts and sort keys come from `sourceMeta`. Do not fake precision.
 
 Show units and comparators near the evidence they qualify (★ stars next to the number). Peer cards share type roles, meta positions, and action alignment. A row whose meta wraps while siblings have unused width is a layout failure.

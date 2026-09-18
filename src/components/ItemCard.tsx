@@ -1,15 +1,20 @@
+import type { ReactNode } from 'react'
 import {
   ArrowSquareOut,
+  Bookmark,
   Bug,
+  ChatCircle,
   GitFork,
   GithubLogo,
   Heart,
   Play,
+  Repeat,
   Star,
 } from '@phosphor-icons/react'
 import { cn } from 'cn'
 import type { DirectoryItem } from '@/lib/types'
 import { TweetBody } from '@/components/TweetBody'
+import { useI18n } from '@/i18n'
 import { Badge } from '@/components/ui/badge'
 import {
   Card,
@@ -25,6 +30,34 @@ interface ItemCardProps {
 
 function formatCount(n: number): string {
   return n.toLocaleString()
+}
+
+function formatCompact(n: number): string {
+  return new Intl.NumberFormat('en', {
+    notation: 'compact',
+    maximumFractionDigits: 1,
+  }).format(n)
+}
+
+function TweetStat({
+  label,
+  count,
+  icon,
+}: {
+  label: string
+  count: number | null | undefined
+  icon: ReactNode
+}) {
+  const n = count ?? 0
+  return (
+    <span
+      className="inline-flex min-w-0 items-center gap-1 tabular-nums"
+      aria-label={n > 0 ? `${label}: ${n.toLocaleString()}` : label}
+    >
+      {icon}
+      {n > 0 ? <span aria-hidden>{formatCompact(n)}</span> : null}
+    </span>
+  )
 }
 
 function GithubCard({ item }: ItemCardProps) {
@@ -112,17 +145,20 @@ function GithubCard({ item }: ItemCardProps) {
 
 /** X post card. Body links stay clickable; the permalink is the header/media. */
 function SocialCard({ item }: ItemCardProps) {
+  const { t } = useI18n()
   const meta = item.sourceMeta
   const handle = meta.handle
     ? meta.handle.startsWith('@')
       ? meta.handle
       : `@${meta.handle}`
     : null
+  const displayName = meta.author?.trim() || null
   const preview =
     meta.mediaUrls && meta.mediaUrls.length > 0 ? meta.mediaUrls[0] : null
   const video =
     meta.videoUrls && meta.videoUrls.length > 0 ? meta.videoUrls[0] : null
   const body = item.summary || item.title
+  const avatar = meta.avatarUrl
 
   return (
     <Card
@@ -134,36 +170,42 @@ function SocialCard({ item }: ItemCardProps) {
           href={item.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 text-xs text-muted-foreground rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+          className="flex items-center gap-2 rounded-lg text-xs text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
         >
-          {handle && (
-            <span className="font-medium text-foreground">{handle}</span>
-          )}
-          {handle && meta.date && (
-            <span aria-hidden className="text-muted-foreground/60">
-              ·
+          {avatar ? (
+            <img
+              src={avatar}
+              alt=""
+              width={32}
+              height={32}
+              loading="lazy"
+              className="size-8 shrink-0 rounded-full bg-muted"
+            />
+          ) : null}
+          <span className="min-w-0">
+            {displayName ? (
+              <span className="block truncate font-medium text-foreground">
+                {displayName}
+              </span>
+            ) : null}
+            <span className="flex flex-wrap items-center gap-1">
+              {handle ? (
+                <span className={displayName ? undefined : 'font-medium text-foreground'}>
+                  {handle}
+                </span>
+              ) : null}
+              {handle && meta.date ? (
+                <span aria-hidden className="text-muted-foreground/60">
+                  ·
+                </span>
+              ) : null}
+              {meta.date ? (
+                <time className="font-mono tabular-nums" dateTime={meta.date}>
+                  {meta.date}
+                </time>
+              ) : null}
             </span>
-          )}
-          {meta.date && (
-            <time className="font-mono tabular-nums" dateTime={meta.date}>
-              {meta.date}
-            </time>
-          )}
-          {meta.likes != null && (
-            <>
-              <span aria-hidden className="text-muted-foreground/60">
-                ·
-              </span>
-              <span className="inline-flex items-center gap-1 font-mono tabular-nums">
-                <Heart
-                  className="size-3 shrink-0"
-                  weight="fill"
-                  aria-hidden
-                />
-                {meta.likes.toLocaleString()}
-              </span>
-            </>
-          )}
+          </span>
         </a>
       </CardHeader>
       <CardContent className="space-y-3 pt-2">
@@ -193,6 +235,31 @@ function SocialCard({ item }: ItemCardProps) {
             />
           </a>
         ) : null}
+        <p
+          className="flex items-center justify-between gap-2 text-xs text-muted-foreground"
+          aria-label={t('tweetEngagement')}
+        >
+          <TweetStat
+            label={t('tweetReplies')}
+            count={meta.replies}
+            icon={<ChatCircle className="size-3.5 shrink-0" weight="fill" aria-hidden />}
+          />
+          <TweetStat
+            label={t('tweetReposts')}
+            count={meta.retweets}
+            icon={<Repeat className="size-3.5 shrink-0" weight="fill" aria-hidden />}
+          />
+          <TweetStat
+            label={t('tweetLikes')}
+            count={meta.likes}
+            icon={<Heart className="size-3.5 shrink-0" weight="fill" aria-hidden />}
+          />
+          <TweetStat
+            label={t('tweetBookmarks')}
+            count={meta.bookmarks}
+            icon={<Bookmark className="size-3.5 shrink-0" weight="fill" aria-hidden />}
+          />
+        </p>
       </CardContent>
     </Card>
   )
