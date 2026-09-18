@@ -14,7 +14,7 @@ Searchable directory of curated **GitHub projects** and **X posts** about TypeSa
 | Search | Fuse.js over `data/items.json` |
 | Deploy | Cloudflare Workers static assets (`wrangler.toml` → `./dist`, SPA `not_found_handling`) |
 
-Design stays monochrome / restrained (Vercel-like): no decorative gradients.
+Design stays monochrome / restrained: no decorative gradients. See [design.md](design.md).
 
 ## Information architecture
 
