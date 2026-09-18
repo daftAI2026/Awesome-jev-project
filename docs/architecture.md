@@ -19,8 +19,10 @@ Design stays monochrome / restrained: no decorative gradients. See [design.md](d
 ## Information architecture
 
 ```
-Masthead (inverted, not sticky)
-  └── Wordmark + tagline + GitHub + language
+Sticky header
+  └── Title + GitHub + language
+Hero
+  └── ASCII wordmark + tagline
 Body
   ├── Aside (lg+): source nav — GitHub / X / YouTube
   └── Main

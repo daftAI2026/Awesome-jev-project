@@ -178,21 +178,6 @@
     white-space: nowrap;
     border-width: 0;
   }
-  .wordmark-line {
-    position: relative;
-    display: block;
-    line-height: 0.85;
-  }
-  .wordmark-line::after {
-    content: attr(data-text);
-    position: absolute;
-    inset-inline-start: 4px;
-    top: 4px;
-    color: transparent;
-    -webkit-text-stroke: 1px
-      color-mix(in oklab, var(--background) 40%, transparent);
-    pointer-events: none;
-  }
   .skip-link:focus {
     position: absolute;
     left: 1.25rem;

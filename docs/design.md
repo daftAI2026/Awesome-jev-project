@@ -83,7 +83,7 @@ Treat this section as the design authority for the product. Use Tailwind + shadc
 
 #### Shell
 
-Masthead: inverted `bg-foreground text-background` band, not sticky. Large stacked AWESOME / JEV wordmark (offset outline via `.wordmark-line`, 4px on-grid), directory subtitle, tagline to the right on large screens. GitHub and language controls sit on the band. Search is a full-width underline field in the main column, with rank tabs beneath it. GitHub also has a cards/list view toggle (Phosphor `SquaresFour` / `List`); list is a ranked table of #, project, stars — no invented activity charts. Source filter (GitHub / X / YouTube) is a left rail on large screens and a left Sheet on small screens — not a floating chip. Search is GitHub-only. Footer: short directory note and launch-post pointer. No third-party logos or decorative marks.
+Sticky header: `h-14`, `bg-background`, product title (`text-lg font-medium tracking-tight`), GitHub and language `Button`s. Hero under it on the same canvas: OG ASCII wordmark (`scripts/awesome-jev-banner.txt`, Geist Mono, `text-xs` / `lg:text-sm`) beside a large `text-muted-foreground` tagline (`text-xl` / `sm:text-2xl` / `lg:text-3xl`). Do not invert the masthead. Search is a full-width underline field in the main column, with rank tabs beneath it. GitHub also has a cards/list view toggle (Phosphor `SquaresFour` / `List`); list is a ranked table of #, project, stars — no invented activity charts. Source filter (GitHub / X / YouTube) is a left rail on large screens and a left Sheet on small screens — not a floating chip. Search is GitHub-only. Footer: short directory note and launch-post pointer. No third-party logos or decorative marks.
 
 Keep skip-to-content. One `h1`. Source order is reading order.
 
