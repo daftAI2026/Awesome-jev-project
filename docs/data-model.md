@@ -42,16 +42,19 @@ interface SourceMeta {
   forks?: number | null
   openIssues?: number | null
   language?: string | null
-  author?: string | null
+  author?: string | null       // GitHub owner, or X display name
   repo?: string | null
 
   // X
   handle?: string | null
   likes?: number | null
+  replies?: number | null
+  retweets?: number | null
+  bookmarks?: number | null
   date?: string | null
   mediaUrls?: string[] | null  // first URL used as tweet card image / video poster
   videoUrls?: string[] | null  // remote mp4 URLs; first plays in the card
-  avatarUrl?: string | null    // optional profile image
+  avatarUrl?: string | null    // profile image on the X card
 }
 ```
 
@@ -67,10 +70,11 @@ interface SourceMeta {
 
 - `handle` — `@user` or `user` (UI normalizes `@`)
 - `date` — ISO or short display string (YYYY-MM-DD preferred for sorting)
-- `likes` — engagement count
+- `likes`, `replies`, `retweets`, `bookmarks` — X card bottom row (no view counts)
+- `author` — display name next to the avatar on X cards
 - **`mediaUrls`** — remote image URLs from the post; the UI shows the **first** image inside the social card (or as the `<video poster>`). Never commit binary media into this repo.
 - **`videoUrls`** — remote mp4 URLs from the post; the UI plays the **first** with native `<video controls playsInline preload="metadata">`. No autoplay.
-- **`avatarUrl`** — optional; reserved for future avatar chrome
+- **`avatarUrl`** — X profile image in the card header
 - YouTube rows use `type: "youtube"`, `sourceMeta.videoId`, `sourceMeta.views`, and a watch URL. Thumbnail is the first `mediaUrls` entry or `https://i.ytimg.com/vi/{videoId}/hqdefault.jpg`.
 
 ### Collector note

@@ -9,6 +9,9 @@ export interface SourceMeta {
   author?: string | null
   handle?: string | null
   likes?: number | null
+  replies?: number | null
+  retweets?: number | null
+  bookmarks?: number | null
   date?: string | null
   repo?: string | null
   /** X / YouTube: remote preview image URLs (first used as card image / video poster). */
